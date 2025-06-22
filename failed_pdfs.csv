@@ -1,0 +1,7 @@
+timestamp,pdf_name,error
+2025-06-23T01:39:40.894554,ds30066.pdf,'current_idx'
+2025-06-23T01:40:48.452240,ds30066.pdf,'items'
+2025-06-23T01:42:00.240053,ds30066.pdf,'candidate_chunks'
+2025-06-23T01:53:07.501774,ds30066.pdf,"Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01jxjmrd8pf76vtk66gj6mv3av` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99689, Requested 3798. Please try again in 50m12.553s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"
+2025-06-23T02:04:38.480137,sn74lvc1g17.pdf,"Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT"
