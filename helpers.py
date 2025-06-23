@@ -14,22 +14,33 @@ def setup_converter() -> DocumentConverter:
     opts.do_ocr = True
     opts.do_table_structure = True
     opts.table_structure_options.do_cell_matching = True
-    # opts.ocr_options = EasyOcrOptions()
-    opts.ocr_options = TesseractCliOcrOptions(force_full_page_ocr=True)
-    # opts.ocr_options.lang = ["en"]
-    return DocumentConverter(format_options={InputFormat.PDF: PdfFormatOption(pipeline_options=opts, backend=PyPdfiumDocumentBackend)})
+    opts.images_scale = 2.0
+    opts.generate_page_images = True
+    opts.generate_picture_images = True
+    opts.ocr_options = EasyOcrOptions()
+    # opts.ocr_options = TesseractCliOcrOptions(force_full_page_ocr=True)
+    opts.ocr_options.lang = ["en"]
+    return DocumentConverter(format_options={InputFormat.PDF: PdfFormatOption(pipeline_options=opts)})
 
-def chunk_markdown(md: str, max_chars: int = 5000) -> List[str]:
+def chunk_markdown(md: str, max_words: int = 2000) -> List[str]:
+    print(f"Total words: {len(md.split())}")
     sections = re.split(r"\n(?=##\s)", md)
     chunks, buf = [], ""
+    
     for sec in sections:
-        if len(buf) + len(sec) < max_chars:
-            buf += sec.strip() + "\n"
+        sec = sec.strip()
+        buf_words = len(buf.split())
+        sec_words = len(sec.split())
+        
+        if buf_words + sec_words < max_words:
+            buf += sec + "\n"
         else:
             chunks.append(buf.strip())
-            buf = sec.strip() + "\n"
+            buf = sec + "\n"
+    
     if buf.strip():
         chunks.append(buf.strip())
+    print(f"Number of words in chunks: {[len(chunk.split()) for chunk in chunks]}")
     return chunks
 
 def generate_prompt(chunk: str, prev_items: List[dict], component: List[dict]) -> str:
@@ -47,7 +58,7 @@ def generate_prompt(chunk: str, prev_items: List[dict], component: List[dict]) -
     - **Does not remove or omit** previously found items, even if the current chunk contains no new data.
     - **Returning the exact previous list** unchanged if there are **no new valid items** in this chunk.
     - **Avoids duplicates**. Keep the more complete version if duplicates exist.
-    - **Small variations in `mpn` or `top_marking`** (e.g., suffixes, added characters, etc.) **must be treated as unique items**.
+    - **Small variations in `mpn` or `top_marking`** (e.g., suffixes, added characters, etc., SN74LVC1G17DBVR is different from SN74LVC1G17DBVR.Z) **must be treated as unique items**.
     - For each item, include an optional `confidence` field with one of: `"high"`, `"medium"`, or `"low"`.
     - Use:
         - `"high"` when all fields are clearly present and unambiguous.
@@ -61,7 +72,7 @@ def generate_prompt(chunk: str, prev_items: List[dict], component: List[dict]) -
     - package_case: Standardized mechanical format (e.g., DO-214AB, SOD-123)
     - description: Functional description (e.g., "Transient Voltage Suppression Diode")
 
-    Respond strictly in a valid JSON format, with no explanation or extra text:
+    Respond **only** with a JSON array of items. Do **not** include any explanation, thought process, or markdown formatting.
 
     [
     {{
@@ -79,6 +90,8 @@ def generate_prompt(chunk: str, prev_items: List[dict], component: List[dict]) -
 
     Document Chunk:
     {chunk}
+
+    STRICT INSTRUCTION: Return **only** a valid JSON list (i.e., starting with `[` and ending with `]`) and **nothing else**.
     """
 
 def save_items(items: List[dict]):

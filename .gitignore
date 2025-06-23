@@ -2,3 +2,5 @@
 idp_env
 idp_venv
 scratch
+__pycache__
+markdown/

@@ -6,12 +6,12 @@ from typing import Dict
 from datetime import datetime
 import time
 import pandas as pd
+from docling_core.types.doc import ImageRefMode, PictureItem, TableItem, TextItem
 from config import MARKDOWN_DIR, PROCESSED_DIR, METADATA_DIR
 
 logger = logging.getLogger(__name__)
 
 def load_and_split(state: Dict) -> Dict:
-
     pdf = Path(state["pdf_path"])
     converter = state["converter"]
 
@@ -23,20 +23,60 @@ def load_and_split(state: Dict) -> Dict:
         logger.info(f"Skipping already processed: {pdf.name}")
         return state
 
-    md_path = MARKDOWN_DIR / pdf.with_suffix(".md").name
+    output_dir = MARKDOWN_DIR / pdf.stem
+    output_dir.mkdir(parents=True, exist_ok=True)
+    md_path = output_dir / f"{pdf.stem}-with-image-refs.md"
+
     logger.info(f"Processing: {pdf.name}")
 
     try:
         if not md_path.exists():
             logger.info("Markdown not found. Converting PDF...")
-            start = time.time()
-            conv_result = converter.convert(pdf)
-            logger.info(f"Converted in {time.time() - start:.2f} seconds")
-            md_content = conv_result.document.export_to_markdown()
-            md_path.write_text(md_content, encoding="utf-8")
-            logger.info(f"Markdown saved to: {md_path}")
+            start_time = time.time()
+            conv_res = converter.convert(pdf)
+
+            doc_filename = pdf.stem
+
+            table_counter = 0
+            picture_counter = 0
+
+            for element, _level in conv_res.document.iterate_items():
+                if isinstance(element, TableItem):
+                    table_counter += 1
+                    element_image_filename = output_dir / f"{doc_filename}-table-{table_counter}.png"
+                    with element_image_filename.open("wb") as fp:
+                        element.get_image(conv_res.document).save(fp, "PNG")
+
+                if isinstance(element, PictureItem):
+                    picture_counter += 1
+                    element_image_filename = output_dir / f"{doc_filename}-picture-{picture_counter}.png"
+                    with element_image_filename.open("wb") as fp:
+                        element.get_image(conv_res.document).save(fp, "PNG")
+
+            conv_res.document.save_as_markdown(md_path,image_mode=ImageRefMode.REFERENCED)
+            logger.info(f"Markdown with image refs saved to: {md_path}")
+
+            logger.info(f"Document converted and figures exported in {time.time() - start_time:.2f} seconds.")
         else:
             logger.info("Markdown already exists. Skipping conversion.")
+
+        # Save picture text into a separate JSON file
+        # logger.info("Extracting picture text...")
+        # conv_doc = converter.convert(pdf).document
+        # picture_texts = {}
+        # for i, picture in enumerate(conv_doc.pictures, start=1):
+        #     image_filename = f"{pdf.stem}-picture-{i}.png"
+        #     lines = []
+        #     for item, _ in conv_doc.iterate_items(root=picture, traverse_pictures=True):
+        #         if isinstance(item, TextItem):
+        #             txt = item.text.strip()
+        #             if txt:
+        #                 lines.append(txt)
+        #     picture_texts[image_filename] = lines
+
+        # ocr_text_path = output_dir / f"{pdf.stem}-picture-text.json"
+        # ocr_text_path.write_text(json.dumps(picture_texts, indent=2), encoding="utf-8")
+        # logger.info(f"Picture text saved to: {ocr_text_path}") 
 
         md = md_path.read_text(encoding="utf-8").strip()
         chunks = chunk_markdown(md)
@@ -118,6 +158,71 @@ Markdown excerpt:
 #     logger.info(f"{len(top_chunks)} candidate chunks")
 #     return {**state, "candidate_chunks": top_chunks, "current_idx": 0, "items": []}
 
+def validate_items(state: Dict) -> Dict:
+    print("Validate Items STATE KEYS:", list(state.keys()))
+    client = state["client"]
+    items = state.get("items", [])
+    markdown = state.get("markdown", "")
+
+    excerpt = "\n".join(markdown.splitlines()[:200]).strip()
+
+    prompt = f"""
+You are an expert in electronics and component validation.
+
+You are given:
+- A list of extracted items from a technical document.
+- An excerpt from the original Markdown-formatted source.
+
+Your task is to:
+- Review each item in the extracted list.
+- Update the `confidence` field (`high`, `medium`, or `low`) if needed.
+- Add a `validation_comment` explaining issues, or leave it blank if the item is strong.
+- Use the markdown excerpt only for cross-checking plausibility, not extracting new items.
+
+Do not hallucinate or fabricate fields. Respond strictly in the following JSON format:
+
+[
+  {{
+    "mpn": "...",
+    "top_marking": "...",  // or null
+    "package_case": "...", // or null
+    "description": "...",
+    "confidence": "...",  // high, medium, or low
+    "validation_comment": "Explain confidence or highlight issues in 1 sentence if there are, leave if confident."
+  }},
+  ...
+]
+
+Extracted Items:
+{json.dumps(items, indent=2)}
+
+Markdown Excerpt:
+{excerpt}
+"""
+
+    print("Validation Prompt:\n", prompt)
+    resp = client.chat.completions.create(
+        model=state["model_name"],
+        messages=[
+            {"role": "system", "content": "You are a critical reviewer of component extraction data."},
+            {"role": "user", "content": prompt}
+        ],
+        temperature=0
+    )
+
+    raw = resp.choices[0].message.content.strip()
+    print("Validation Response:\n", raw)
+
+    try:
+        validated_items = json.loads(raw)
+    except Exception as e:
+        logger.warning(f"Validation parse failed: {e}")
+        validated_items = items
+
+    return {**state, "validated_items": validated_items}
+
+
+
 def save_candidates(state: Dict) -> Dict:
     print("Save Candidates STATE KEYS:", list(state.keys()))
     out_dir = Path("candidates")
@@ -153,10 +258,39 @@ def parse_and_repair(state: Dict) -> Dict:
         print(raw)
         fix = client.chat.completions.create(
             model=state["model_name"],
-            messages=[
-                {"role": "system", "content": "You are a JSON repair assistant."},
-                {"role": "user", "content": f"Fix this JSON array:\n{raw}"}
-            ],
+            messages = [
+            {
+                "role": "system",
+                "content": "You are a JSON repair assistant. You only return valid, well-formatted JSON. You do not explain or comment."
+            },
+            {
+                "role": "user",
+                "content": f"""The following JSON array is invalid, incomplete, or malformed.
+
+        Your task is to:
+        - Fix any syntax issues (e.g., unclosed braces, trailing commas, incorrect quotes).
+        - Ensure it follows **exactly** this format:
+
+        [
+        {{
+            "mpn": "...",
+            "top_marking": "...",
+            "package_case": "...",
+            "description": "...",
+            "confidence": "...", 
+            "validation_comment": "..."
+        }},
+        ...
+        ]
+
+        Only return the repaired JSON array. Do not include any other text or explanation.
+
+        Fix this JSON:
+
+        {raw}
+        """
+            }
+        ],
             temperature=0
         ).choices[0].message.content.strip()
         print(fix)
@@ -179,10 +313,10 @@ def parse_and_repair(state: Dict) -> Dict:
 
 def finalize(state: Dict) -> Dict:
     print("Finalize STATE KEYS:", list(state.keys()))
-    for item in state["items"]:
+    for item in state["validated_items"]:
         item["source"] = Path(state["pdf_path"]).name
         item["description"] = item.get("description") or state.get("description", "")
-    save_items(state["items"])
+    save_items(state["validated_items"])
     Path(state["pdf_path"]).rename(PROCESSED_DIR / Path(state["pdf_path"]).name)
     return state
 

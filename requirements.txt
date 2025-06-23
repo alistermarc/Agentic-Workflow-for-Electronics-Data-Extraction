@@ -1,7 +1,6 @@
 openai
-
-# groq
-# pymupdf
+groq
 docling
 langgraph
 tesseract
+accelerate

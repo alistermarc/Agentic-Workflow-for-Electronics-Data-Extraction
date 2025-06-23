@@ -25,7 +25,6 @@ def log_failure(pdf_path: Path, error: Exception):
 
 def main():
     load_dotenv(find_dotenv())
-    # client = OpenAI(base_url="https://api.inference.net/v1", api_key=os.getenv("INFERENCE_API_KEY"))
     client = Groq()
     converter = setup_converter()
     PROCESSED_DIR.mkdir(exist_ok=True)
