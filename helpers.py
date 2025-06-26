@@ -5,7 +5,7 @@ from docling.datamodel.base_models import InputFormat
 from docling.datamodel.pipeline_options import PdfPipelineOptions, EasyOcrOptions, TesseractCliOcrOptions
 from docling.document_converter import DocumentConverter, PdfFormatOption
 from docling.backend.pypdfium2_backend import PyPdfiumDocumentBackend
-from config import CSV_OUTPUT
+from config import CSV_OUTPUT, CSV_VALIDATED_OUTPUT
 
 logger = logging.getLogger(__name__)
 
@@ -22,7 +22,7 @@ def setup_converter() -> DocumentConverter:
     opts.ocr_options.lang = ["en"]
     return DocumentConverter(format_options={InputFormat.PDF: PdfFormatOption(pipeline_options=opts)})
 
-def chunk_markdown(md: str, max_words: int = 2000) -> List[str]:
+def chunk_markdown(md: str, max_words: int = 1000) -> List[str]:
     print(f"Total words: {len(md.split())}")
     sections = re.split(r"\n(?=##\s)", md)
     chunks, buf = [], ""
@@ -42,6 +42,35 @@ def chunk_markdown(md: str, max_words: int = 2000) -> List[str]:
         chunks.append(buf.strip())
     print(f"Number of words in chunks: {[len(chunk.split()) for chunk in chunks]}")
     return chunks
+
+def generate_anchor_prompt(excerpt: str) -> str:
+    return f"""
+    You are given the beginning of a Markdown-formatted technical document for an electronic component.
+
+    From the given text, perform two tasks:
+
+    1.  **Extraction**: Extract the following information:
+        - The **main component name(s)** (e.g., MMBT3906). If a range is shown (e.g., `BZX84C2V4W - BZX84C39W`), extract the **start and end MPNs**.
+        - A **short technical description** of the component (e.g., "40 V, 200 mA PNP switching transistor").
+
+    2.  **Classification**: Set the following boolean flags based on the component type.
+        - `is_chip_component`: Set to **true** ONLY if the component is explicitly described as a **resistor, capacitor (MLCC), inductor, or ferrite bead**. If the type is anything else or is not clearly mentioned, you MUST set this to **false**.
+        - `is_through_hole`: Set to **true** ONLY if the excerpt explicitly mentions that the component is THT (Through Hole Technology). If the text describes the component as SMD/SMT (Surface Mount Technology / Device)), or does not specify the type, set this to **false**.
+
+    Respond **strictly** in the correct JSON format, including the boolean classification:
+
+    [
+      {{
+        "component": ["StartMPN", "EndMPN"],
+        "description": "Short description of the component",
+        "is_chip_component": boolean,
+        "is_through_hole": boolean
+      }}
+    ]
+
+    Markdown excerpt:
+    {excerpt}
+    """
 
 def generate_prompt(chunk: str, prev_items: List[dict], component: List[dict]) -> str:
     prev = json.dumps(prev_items, indent=2) if prev_items else "[]"
@@ -94,9 +123,72 @@ def generate_prompt(chunk: str, prev_items: List[dict], component: List[dict]) -
     STRICT INSTRUCTION: Return **only** a valid JSON list (i.e., starting with `[` and ending with `]`) and **nothing else**.
     """
 
+def generate_repair_prompt(raw: str) -> str:
+    return f"""
+    The following JSON array is invalid, incomplete, or malformed.
+
+    Your task is to:
+    - Fix any syntax issues (e.g., unclosed braces, trailing commas, incorrect quotes).
+    - Ensure it follows **exactly** this format:
+
+    [
+    {{
+        "mpn": "...",
+        "top_marking": "...",
+        "package_case": "...",
+        "description": "...",
+        "confidence": "...", 
+        "validation_comment": "..."
+    }},
+    ...
+    ]
+
+    Only return the repaired JSON array. Do not include any other text or explanation.
+
+    Fix this JSON:
+
+    {raw}
+    """
+
+def generate_validation_prompt(items: list) -> str:
+    return f"""
+You are given a list of extracted items from a technical document.
+
+Your task is to:
+1. Validate each item as-is.
+2. Update the `confidence` field (`high`, `medium`, or `low`) depending on the consistency and plausibility of the fields.
+3. Add a `validation_comment`:
+   - Briefly explain why confidence is not high (e.g., missing `top_marking`, inconsistent `package_case`, suspicious values).
+   - Leave it blank if the data is strong.
+
+Respond strictly in the following JSON format — no explanations, markdown code blocks, or extra text. The response **must** start with `[` and end with `]`.
+
+[
+  {{
+    "mpn": "...",
+    "top_marking": "...",  // or null
+    "package_case": "...", // or null
+    "description": "...",
+    "confidence": "...",   // high, medium, or low
+    "validation_comment": "Explain confidence or highlight issues in 1 sentence if there are, leave blank if confident."
+  }},
+  ...
+]
+
+Extracted Items:
+{json.dumps(items, indent=2)}
+"""
+
 def save_items(items: List[dict]):
     df = pd.DataFrame(items)
     mode = "a" if CSV_OUTPUT.exists() else "w"
     header = not CSV_OUTPUT.exists()
     df.to_csv(CSV_OUTPUT, mode=mode, header=header, index=False)
     logger.info(f"Saved {len(items)} items to CSV")
+
+def save_validated_items(items: List[dict]):
+    df = pd.DataFrame(items)
+    mode = "a" if CSV_VALIDATED_OUTPUT.exists() else "w"
+    header = not CSV_VALIDATED_OUTPUT.exists()
+    df.to_csv(CSV_VALIDATED_OUTPUT, mode=mode, header=header, index=False)
+    logger.info(f"Saved {len(items)} validated items to CSV")

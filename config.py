@@ -3,7 +3,10 @@ from pathlib import Path
 DOCUMENTS_DIR = Path("documents")
 MARKDOWN_DIR = Path("markdown")
 PROCESSED_DIR = Path("processed")
+SKIPPED_DIR = Path("skipped")
 CSV_OUTPUT = Path("extracted_items.csv")
+CSV_VALIDATED_OUTPUT = Path("extracted_validated_items.csv")
+CSV_SKIPPED_OUTPUT = Path("skipped_components.csv")
 METADATA_DIR = Path("metadata")
 MODEL_NAME = "llama-3.3-70b-versatile"
 # MODEL_NAME = "deepseek-r1-distill-llama-70b"

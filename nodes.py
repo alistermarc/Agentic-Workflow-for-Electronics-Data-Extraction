@@ -1,13 +1,14 @@
 import json, logging
+import re
+import ast
 from pathlib import Path
-from config import PROCESSED_DIR
-from helpers import chunk_markdown, generate_prompt, save_items
+from helpers import chunk_markdown, generate_prompt, generate_anchor_prompt, generate_repair_prompt, generate_validation_prompt, save_items, save_validated_items
 from typing import Dict
 from datetime import datetime
 import time
 import pandas as pd
 from docling_core.types.doc import ImageRefMode, PictureItem, TableItem, TextItem
-from config import MARKDOWN_DIR, PROCESSED_DIR, METADATA_DIR
+from config import MARKDOWN_DIR, PROCESSED_DIR, SKIPPED_DIR, METADATA_DIR, CSV_SKIPPED_OUTPUT
 
 logger = logging.getLogger(__name__)
 
@@ -91,36 +92,13 @@ def load_and_split(state: Dict) -> Dict:
 
 def extract_anchor(state: Dict) -> Dict:
     print("Extract Anchor STATE KEYS:", list(state.keys()))
-    client = state["client"]
+    client = state["client_anchor"]
     excerpt = "\n".join(state["markdown"].splitlines()[:100]).strip()
 
-    prompt = f"""
-You are given the beginning of a Markdown-formatted technical document for an electronic component.
-
-From the given text, extract:
-
-- The **main component name(s)** (e.g., MMBT3906). If a **range** of part numbers is shown (e.g., `BZX84C2V4W - BZX84C39W`), extract the **start and end MPNs** as a list under the `"component"` field.
-- A **short technical description** of the component (e.g., "40 V, 200 mA PNP switching transistor").
-
-Ignore:
-- Tables of part number variants or packages.
-- Ordering info, dimensions, and electrical specs unless directly part of the short description.
-
-Respond **strictly** in the correct JSON format:
-
-[
-  {{
-    "component": ["StartMPN", "EndMPN"],  // or a single string if not a range
-    "description": "Short description of the component"
-  }}
-]
-
-Markdown excerpt:
-{excerpt}
-"""
+    prompt = generate_anchor_prompt(excerpt)
 
     resp = client.chat.completions.create(
-        model=state["model_name"],
+        model="gpt-4o-mini",
         messages=[
             {"role": "system", "content": "You are an information extraction assistant."},
             {"role": "user", "content": prompt}
@@ -129,114 +107,44 @@ Markdown excerpt:
     )
 
     raw = resp.choices[0].message.content.strip()
-    print(raw)
+
+    match = re.search(r"```json\s*(.*?)```", raw, re.DOTALL)
+    if match:
+        json_to_parse = match.group(1).strip()
+    else:
+        json_to_parse = raw
 
     try:
-        data = json.loads(raw)
+        data = json.loads(json_to_parse)
         if isinstance(data, list) and len(data) > 0:
-            component = data[0].get("component", [])
-            description = data[0].get("description", "")
+            item_data = data[0]
+            component = item_data.get("component", [])
+            description = item_data.get("description", "")
+            is_chip = item_data.get("is_chip_component", False)
+            is_tht = item_data.get("is_through_hole", False) 
         else:
-            component, description = [], ""
+            component, description, is_chip, is_tht = [], "", False, False
     except Exception as e:
         logger.warning(f"Anchor parse failed: {e}")
-        component, description = [], ""
+        component, description, is_chip, is_tht = [], "", False, False
+    
+    skip_reason = None
+    if is_chip:
+        skip_reason = "LLM classified it as a chip component."
+    elif is_tht:
+        skip_reason = "LLM classified it as a Through-Hole (THT) component."
 
+    if skip_reason:
+        logger.warning(f"Excluding document '{Path(state['pdf_path']).name}': {skip_reason}")
+        return {**state, "component": component, "description": description, "skip_reason": skip_reason, "current_idx": 0, "chunks": []}
+    
     return {**state, "component": component, "description": description, "current_idx": 0, "items": []}
-
-# def filter_chunks(state: Dict) -> Dict:
-#     print("Filter Chunks STATE KEYS:", list(state.keys()))
-#     components = state.get("component", [])
-#     scored = [(chunk, score_chunk(chunk, components)) for chunk in state["chunks"]]
-#     top_chunks = [chunk for chunk, score in sorted(scored, key=lambda x: -x[1]) if score > 1][:5]
-#     title = state.get("title", Path(state["pdf_path"]).stem)
-#     print(title.lower())
-#     # cands = [c for c in state["chunks"]
-#     #          if any(m.lower() in c.lower() for m in components)
-#     #          or title.lower() in c.lower()
-#     #          or any(k in c.lower() for k in ("part number", "ordering", "marking", "package option"))]
-#     logger.info(f"{len(top_chunks)} candidate chunks")
-#     return {**state, "candidate_chunks": top_chunks, "current_idx": 0, "items": []}
-
-def validate_items(state: Dict) -> Dict:
-    print("Validate Items STATE KEYS:", list(state.keys()))
-    client = state["client"]
-    items = state.get("items", [])
-    markdown = state.get("markdown", "")
-
-    excerpt = "\n".join(markdown.splitlines()[:200]).strip()
-
-    prompt = f"""
-You are an expert in electronics and component validation.
-
-You are given:
-- A list of extracted items from a technical document.
-- An excerpt from the original Markdown-formatted source.
-
-Your task is to:
-- Review each item in the extracted list.
-- Update the `confidence` field (`high`, `medium`, or `low`) if needed.
-- Add a `validation_comment` explaining issues, or leave it blank if the item is strong.
-- Use the markdown excerpt only for cross-checking plausibility, not extracting new items.
-
-Do not hallucinate or fabricate fields. Respond strictly in the following JSON format:
-
-[
-  {{
-    "mpn": "...",
-    "top_marking": "...",  // or null
-    "package_case": "...", // or null
-    "description": "...",
-    "confidence": "...",  // high, medium, or low
-    "validation_comment": "Explain confidence or highlight issues in 1 sentence if there are, leave if confident."
-  }},
-  ...
-]
-
-Extracted Items:
-{json.dumps(items, indent=2)}
-
-Markdown Excerpt:
-{excerpt}
-"""
-
-    print("Validation Prompt:\n", prompt)
-    resp = client.chat.completions.create(
-        model=state["model_name"],
-        messages=[
-            {"role": "system", "content": "You are a critical reviewer of component extraction data."},
-            {"role": "user", "content": prompt}
-        ],
-        temperature=0
-    )
-
-    raw = resp.choices[0].message.content.strip()
-    print("Validation Response:\n", raw)
-
-    try:
-        validated_items = json.loads(raw)
-    except Exception as e:
-        logger.warning(f"Validation parse failed: {e}")
-        validated_items = items
-
-    return {**state, "validated_items": validated_items}
-
-
-
-def save_candidates(state: Dict) -> Dict:
-    print("Save Candidates STATE KEYS:", list(state.keys()))
-    out_dir = Path("candidates")
-    out_dir.mkdir(exist_ok=True)
-    out_path = out_dir / f"{Path(state['pdf_path']).stem}_candidates.json"
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(state["chunks"], f, indent=2)
-    return state
 
 def call_llm(state: Dict) -> Dict:
     print("Call LLM STATE KEYS:", list(state.keys()))
-    # chunk = state["candidate_chunks"][state["current_idx"]]
     chunk = state["chunks"][state["current_idx"]]
     prompt = generate_prompt(chunk, state["items"], state["component"])
+    
     resp = state["client"].chat.completions.create(
         model=state["model_name"],
         messages=[
@@ -251,72 +159,128 @@ def call_llm(state: Dict) -> Dict:
 def parse_and_repair(state: Dict) -> Dict:
     client = state["client"]
     raw = state["raw_response"]
+
     try:
         data = json.loads(raw)
         print(f"Parsed {len(data)} items from chunk {state['current_idx'] + 1}")
-    except:
-        print(raw)
-        fix = client.chat.completions.create(
+    except Exception:
+        print("Initial JSON parsing failed. Attempting repair...")
+
+        repair_prompt = generate_repair_prompt(raw)
+
+        resp = client.chat.completions.create(
             model=state["model_name"],
-            messages = [
-            {
-                "role": "system",
-                "content": "You are a JSON repair assistant. You only return valid, well-formatted JSON. You do not explain or comment."
-            },
-            {
-                "role": "user",
-                "content": f"""The following JSON array is invalid, incomplete, or malformed.
-
-        Your task is to:
-        - Fix any syntax issues (e.g., unclosed braces, trailing commas, incorrect quotes).
-        - Ensure it follows **exactly** this format:
-
-        [
-        {{
-            "mpn": "...",
-            "top_marking": "...",
-            "package_case": "...",
-            "description": "...",
-            "confidence": "...", 
-            "validation_comment": "..."
-        }},
-        ...
-        ]
-
-        Only return the repaired JSON array. Do not include any other text or explanation.
-
-        Fix this JSON:
-
-        {raw}
-        """
-            }
-        ],
+            messages=[
+                {"role": "system", "content": "You are a JSON repair assistant."},
+                {"role": "user","content": repair_prompt}
+            ],
             temperature=0
-        ).choices[0].message.content.strip()
-        print(fix)
-        data = json.loads(fix)
+        )
+
+        fixed_raw = resp.choices[0].message.content.strip()
+
+        match = re.search(r"```json\s*(.*?)```", fixed_raw, re.DOTALL)
+        if match:
+            raw_json = match.group(1).strip()
+        else:
+            raw_json = fixed_raw
+
+        print("Repaired JSON:\n", raw_json)
+
+        try:
+            data = json.loads(raw_json)
+        except Exception as e:
+            logger.warning(f"Final JSON parse after repair failed: {e}")
+            data = []
+
     if isinstance(data, list) and data:
         state["items"] = data
     else:
-        logger.info("No new items; keeping previous")
+        logger.info("No valid items recovered after repair.")
+
     return {**state, "current_idx": state["current_idx"] + 1}
 
-# def score_chunk(chunk: str, components: list[str]) -> int:
-#     score = 0
-#     chunk_lower = chunk.lower()
-#     # Score for MPN matches
-#     score += sum(1 for m in components if m.lower() in chunk_lower)
-#     # Score for important keywords
-#     keywords = ["part number", "ordering", "marking", "package option", "overview", "description"]
-#     score += sum(1 for kw in keywords if kw in chunk_lower)
-#     return score
+def validate_items(state: Dict) -> Dict:
+    print("Validate Items STATE KEYS:", list(state.keys()))
+    client = state["client"]
+    items = state.get("items", [])
+
+    grouped = {}
+    for item in items:
+        mpn = item["mpn"]
+        grouped.setdefault(mpn, []).append(item)
+
+    deduped = []
+    for mpn, group in grouped.items():
+        top_markings = set()
+        package_cases = set()
+        description = ""
+        confidence = ""
+        for entry in group:
+            if entry.get("top_marking"):
+                if isinstance(entry["top_marking"], list):
+                    top_markings.update(entry["top_marking"])
+                else:
+                    top_markings.add(entry["top_marking"])
+            if entry.get("package_case"):
+                if isinstance(entry["package_case"], list):
+                    package_cases.update(entry["package_case"])
+                else:
+                    package_cases.add(entry["package_case"])
+            if not description and entry.get("description"):
+                description = entry["description"]
+            if not confidence and entry.get("confidence"):
+                confidence = entry["confidence"]
+
+        deduped.append({
+            "mpn": mpn,
+            "top_marking": ", ".join(sorted(set(top_markings))) if top_markings else None,
+            "package_case": ", ".join(sorted(set(package_cases))) if package_cases else None,
+            "description": description,
+            "confidence": confidence,
+            "validation_comment": ""
+        })
+    validated_items = deduped 
+    # prompt = generate_validation_prompt(deduped)
+    # resp = client.chat.completions.create(
+    #     model=state["model_name"],
+    #     messages=[
+    #         {"role": "system", "content": "You are a critical reviewer of component extraction data."},
+    #         {"role": "user", "content": prompt}
+    #     ],
+    #     temperature=0
+    # )
+
+    # raw = resp.choices[0].message.content.strip()
+    # match = re.search(r"```json\s*(.*?)```", raw, re.DOTALL)
+    # if match:
+    #     raw_json = match.group(1).strip()
+    # else:
+    #     raw_json = raw
+    # print("Validation Response:\n", raw)
+
+    # try:
+    #     validated_items = json.loads(raw_json)
+    # except Exception as e:
+    #     logger.warning(f"Validation parse failed: {e}")
+    #     validated_items = deduped 
+
+    return {**state, "validated_items": validated_items}
+
 
 def finalize(state: Dict) -> Dict:
     print("Finalize STATE KEYS:", list(state.keys()))
+    for item in state["items"]:
+        item["source"] = Path(state["pdf_path"]).name
+        item["description"] = item.get("description") or state.get("description", "")
+    
     for item in state["validated_items"]:
         item["source"] = Path(state["pdf_path"]).name
         item["description"] = item.get("description") or state.get("description", "")
-    save_items(state["validated_items"])
+    
+    save_items(state["items"])
+    save_validated_items(state["validated_items"])
+
     Path(state["pdf_path"]).rename(PROCESSED_DIR / Path(state["pdf_path"]).name)
     return state
 
@@ -341,3 +305,78 @@ def save_full_state(state: Dict) -> Dict:
 
     print(f"Saved metadata to {json_path}")
     return state
+
+def save_skipped_component(state: Dict) -> Dict:
+    print("Save Skipped Component STATE KEYS:", list(state.keys()))
+
+    skipped_info = {
+        "source": Path(state["pdf_path"]).name,
+        "component": ", ".join(state.get("component", [])),
+        "description": state.get("description", ""),
+        "reason": state.get("skip_reason", "")
+    }
+    df = pd.DataFrame([skipped_info])
+    
+    mode = "a" if CSV_SKIPPED_OUTPUT.exists() else "w"
+    header = not CSV_SKIPPED_OUTPUT.exists()
+    df.to_csv(CSV_SKIPPED_OUTPUT, mode=mode, header=header, index=False)
+    
+    logger.info(f"Logged skipped component from '{skipped_info['source']}' to {CSV_SKIPPED_OUTPUT}")
+    SKIPPED_DIR.mkdir(exist_ok=True)
+    Path(state["pdf_path"]).rename(SKIPPED_DIR / Path(state["pdf_path"]).name)
+
+    return state
+
+# def filter_chunks(state: Dict) -> Dict:
+#     print("Filter Chunks STATE KEYS:", list(state.keys()))
+#     raw_components = state.get("component", "[]")
+#     if isinstance(raw_components, str):
+#         raw_components = raw_components.strip()
+#         try:
+#             parsed = ast.literal_eval(raw_components)
+#             components = parsed if isinstance(parsed, list) else [str(parsed)]
+#         except Exception:
+#             components = [raw_components.strip('"')]
+#     elif isinstance(raw_components, list):
+#         components = raw_components
+#     else:
+#         components = []
+#     scored = [(chunk, score_chunk(chunk, components)) for chunk in state["chunks"]]
+#     top_chunks = [chunk for chunk, score in sorted(scored, key=lambda x: -x[1]) if score > 1][:5]
+#     title = state.get("title", Path(state["pdf_path"]).stem)
+#     print(title.lower())
+#     pattern = re.compile(
+#     r"\b("
+#     r"part( numbers?)?|"
+#     r"type numbers?|"
+#     r"ordering|"
+#     r"markings?|"
+#     r"package options?"
+#     r")\b",
+#     re.IGNORECASE
+# )
+#     cands = [c for c in state["chunks"]
+#              if any(m.lower() in c.lower() for m in components)
+#              or title.lower() in c.lower()
+#              or pattern.search(c)]
+#     logger.info(f"{len(top_chunks)} candidate chunks")
+#     return {**state, "candidate_chunks": top_chunks, "current_idx": 0, "items": []}
+
+# def save_candidates(state: Dict) -> Dict:
+#     print("Save Candidates STATE KEYS:", list(state.keys()))
+#     out_dir = Path("candidates")
+#     out_dir.mkdir(exist_ok=True)
+#     out_path = out_dir / f"{Path(state['pdf_path']).stem}_candidates.json"
+#     with open(out_path, "w", encoding="utf-8") as f:
+#         json.dump(state["chunks"], f, indent=2)
+#     return state
+
+# def score_chunk(chunk: str, components: list[str]) -> int:
+#     score = 0
+#     chunk_lower = chunk.lower()
+#     # Score for MPN matches
+#     score += sum(1 for m in components if m.lower() in chunk_lower)
+#     # Score for important keywords
+#     keywords = ["part number", "ordering", "marking", "package option", "overview", "description"]
+#     score += sum(1 for kw in keywords if kw in chunk_lower)
+#     return score

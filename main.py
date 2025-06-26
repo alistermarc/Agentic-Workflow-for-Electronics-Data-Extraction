@@ -12,6 +12,7 @@ from graph_builder import build_graph
 from datetime import datetime
 import csv
 from groq import Groq
+from openai import OpenAI
 
 logging.basicConfig(format="%(asctime)s [%(levelname)s] %(message)s", level=logging.INFO)
 
@@ -26,6 +27,7 @@ def log_failure(pdf_path: Path, error: Exception):
 def main():
     load_dotenv(find_dotenv())
     client = Groq()
+    client_anchor = OpenAI()
     converter = setup_converter()
     PROCESSED_DIR.mkdir(exist_ok=True)
     app = build_graph()
@@ -37,20 +39,19 @@ def main():
             "pdf_path": str(pdf),
             "title": pdf.stem,
             "client": client,
+            "client_anchor": client_anchor,
             "converter": converter,
             "model_name": MODEL_NAME
         }
         try:
-            app.invoke(state, {"recursion_limit": 100})
+            app.invoke(state, {"recursion_limit": 1000})
         except Exception as e:
             logging.error(f"Failed processing {pdf.name}: {e}")
             log_failure(pdf, e)
 
 if __name__ == "__main__":
-    # Initialize failure log with headers if not exists
     if not FAILURE_LOG_PATH.exists():
         with open(FAILURE_LOG_PATH, "w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
             writer.writerow(["timestamp", "pdf_name", "error"])
-
     main()

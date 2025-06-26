@@ -1,5 +1,5 @@
 from langgraph.graph import StateGraph, START, END
-from nodes import load_and_split, extract_anchor, call_llm, parse_and_repair, finalize, save_full_state, validate_items
+from nodes import load_and_split, extract_anchor, call_llm, parse_and_repair, finalize, save_full_state, validate_items, save_skipped_component
 
 def build_graph():
     g = StateGraph(dict)
@@ -10,10 +10,16 @@ def build_graph():
     g.add_node("final", finalize)
     g.add_node("save", save_full_state)
     g.add_node("validate", validate_items)
+    g.add_node("save_skipped", save_skipped_component)
 
     g.add_edge(START, "load")
     g.add_edge("load", "anchor")
-    g.add_edge("anchor", "llm")
+    g.add_conditional_edges(
+        "anchor",
+        lambda s: "llm" if s.get("chunks") else "save_skipped",
+        {"llm": "llm", "save_skipped": "save_skipped"}
+    )
+    g.add_edge("save_skipped", END)
     g.add_edge("llm", "parse")
     g.add_conditional_edges(
         "parse",
