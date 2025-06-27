@@ -1,337 +1,195 @@
 mpn,top_marking,package_case,description,confidence,source
-MAX5033AUSA,,8 SO,"500mA, 76V, High-Efficiency, MAXPower Step-Down DC-DC Converter",high,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-MAX5033AUPA,,8 PDIP,"500mA, 76V, High-Efficiency, MAXPower Step-Down DC-DC Converter",high,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-MAX5033AASA,,8 SO,"500mA, 76V, High-Efficiency, MAXPower Step-Down DC-DC Converter",high,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-MAX5033BUSA,,8 SO,"500mA, 76V, High-Efficiency, MAXPower Step-Down DC-DC Converter",high,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-MAX5033BUPA,,8 PDIP,"500mA, 76V, High-Efficiency, MAXPower Step-Down DC-DC Converter",high,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-MAX5033BASA,,8 SO,"500mA, 76V, High-Efficiency, MAXPower Step-Down DC-DC Converter",high,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-MAX5033CUSA,,8 SO,"500mA, 76V, High-Efficiency, MAXPower Step-Down DC-DC Converter",high,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-MAX5033CUPA,,8 PDIP,"500mA, 76V, High-Efficiency, MAXPower Step-Down DC-DC Converter",high,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-MAX5033CASA,,8 SO,"500mA, 76V, High-Efficiency, MAXPower Step-Down DC-DC Converter",high,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-MAX5033DUSA,,8 SO,"500mA, 76V, High-Efficiency, MAXPower Step-Down DC-DC Converter",high,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-MAX5033DUPA,,8 PDIP,"500mA, 76V, High-Efficiency, MAXPower Step-Down DC-DC Converter",high,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-MAX5033DASA,,8 SO,"500mA, 76V, High-Efficiency, MAXPower Step-Down DC-DC Converter",high,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-15MQ040N,,,Schottky Rectifier Diode,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-B240A,,,Schottky Rectifier Diode,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-B240,,,Schottky Rectifier Diode,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-"MBRS240, MBRS1540",,,Schottky Rectifier Diode,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-30BQ060,,,Schottky Rectifier Diode,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-B360A,,,Schottky Rectifier Diode,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-CMSH3-60,,,Schottky Rectifier Diode,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-"MBRD360, MBR3060",,,Schottky Rectifier Diode,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-"50SQ100, 50SQ80",,,Schottky Rectifier Diode,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-MBRM5100,,,Schottky Rectifier Diode,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-B220/A,,,Schottky Rectifier Diode,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
-PCA9548ABS,548A,HVQFN24,8-channel I2C-bus switch with reset,high,PCA9548A-3139384 (1).pdf
-PCA9548AD,PCA9548AD,SO24,8-channel I2C-bus switch with reset,high,PCA9548A-3139384 (1).pdf
-PCA9548APW,PCA9548A,TSSOP24,8-channel I2C-bus switch with reset,high,PCA9548A-3139384 (1).pdf
-PCA9548A,,,8-channel I2C-bus switch with reset,low,PCA9548A-3139384 (1).pdf
-"PCA9548ABS,118",,,8-channel I2C-bus switch with reset,low,PCA9548A-3139384 (1).pdf
-"PCA9548AD,112",,,8-channel I2C-bus switch with reset,low,PCA9548A-3139384 (1).pdf
-"PCA9548AD,118",,,8-channel I2C-bus switch with reset,low,PCA9548A-3139384 (1).pdf
-"PCA9548APW,112",,,8-channel I2C-bus switch with reset,low,PCA9548A-3139384 (1).pdf
-"PCA9548APW,118",,,8-channel I2C-bus switch with reset,low,PCA9548A-3139384 (1).pdf
-PCA9548ABSHP,,,8-channel I2C-bus switch with reset,low,PCA9548A-3139384 (1).pdf
-V6300,,SOT-23 5L,Ultra Low Power 3-Pin Power-On Reset IC,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6301,,SOT-23 5L,Ultra Low Power 3-Pin Power-On Reset IC,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6300ASP5B,E0##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6300BSP5B,E0##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6300CSP5B,E0##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6300DSP5B,PB##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6300ESP5B,PA##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6300FSP5B,PA##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6300GSP5B,PA##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6300HSP5B,PA##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6300ISP5B,EM#,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6300JSP5B,EM#,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6300KSP5B,EM#,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6300LSP5B,EM#,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6300MSP5B,EM#,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6300NSP5B,EE##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6300OSP5B,EE##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6300PSP5B,EE##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6300QSP5B,EE##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6300RSP5B,EH##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6301ASP5B,EN##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6301BSP5B,EN##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6301CSP5B,EN##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6301DSP5B,EN##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6301ESP5B,EN##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6301FSP5B,EN##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6301GSP5B,EN##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6301HSP5B,EN##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6301ISP5B,EN##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6301JSP5B,EP##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6301KSP5B,EP##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6301LSP5B,EP##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6301MSP5B,EP##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6301NSP5B,EP##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6301OSP5B,EP##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6301PSP5B,EP##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6301QSP5B,EP##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-V6301RSP5B,EP##,SOT23-5L,Ultra Low Power 3-Pin Power-On Reset IC,medium,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
-8SLVP1204,,16-Lead VFQFPN,"Low Phase Noise, 2:4, 3.3V, 2.5V LVPECL Output Fanout Buffer",high,REN_8SLVP1204_DST_20210520.pdf
-8SLVP1204ANLGI,204AI,3.0 × 3.0 × 0.9 mm 16-VFQFPN,"Low Phase Noise, 2:4, 3.3V, 2.5V LVPECL Output Fanout Buffer",high,REN_8SLVP1204_DST_20210520.pdf
-8SLVP1204ANLGI8,204AI,3.0 × 3.0 × 0.9 mm 16-VFQFPN,"Low Phase Noise, 2:4, 3.3V, 2.5V LVPECL Output Fanout Buffer",high,REN_8SLVP1204_DST_20210520.pdf
-8SLVP1204ANLGI/W,204AI,3.0 × 3.0 × 0.9 mm 16-VFQFPN,"Low Phase Noise, 2:4, 3.3V, 2.5V LVPECL Output Fanout Buffer",high,REN_8SLVP1204_DST_20210520.pdf
-XC6220A,,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator with 'GreenOperation',medium,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220B,,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator with 'GreenOperation',medium,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220C,,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator with 'GreenOperation',medium,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220D,,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator with 'GreenOperation',medium,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220C/D,,,1A LDO Voltage Regulator with 'GreenOperation' function,low,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220D501ER,,,LDO Voltage Regulator,low,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220x121,,,1A LDO Voltage Regulator with 'GreenOperation' function,low,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220x301,,,1A LDO Voltage Regulator with 'GreenOperation' function,low,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220x501,,,1A LDO Voltage Regulator with 'GreenOperation' function,low,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220B121,,,1A LDO Voltage Regulator with 'GreenOperation' function,low,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220B/D,,,1A LDO Voltage Regulator with 'GreenOperation' function,low,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220A081,0,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220A08B,1,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220A291,0,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220A29B,1,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220A301,2,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220A30B,3,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220A501,2,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220A49B,3,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220B081,4,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220B08B,5,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220B291,4,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220B29B,5,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220B301,6,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220B30B,7,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220B501,6,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220B49B,7,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220C081,8,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220C08B,9,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220C291,8,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220C29B,9,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220C301,A,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220C30B,B,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220C501,A,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220C49B,B,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220D081,C,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220D08B,D,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220D291,C,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220D29B,D,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220D301,E,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220D30B,F,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220D501,E,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-XC6220D49B,F,"USP-6C, SOT-25, SOT-89-5",1A LDO Voltage Regulator,high,XC6220D501ER__TOREX_0_alldatasheet.pdf
-MAX5038EAI12,,28 SSOP,"Dual-Phase, Parallelable, Average Current-Mode Controller",high,MAX5038EAI18__MaximIntegratedProducts_8223_componentsearchengine.pdf
-MAX5038EAI15,,28 SSOP,"Dual-Phase, Parallelable, Average Current-Mode Controller",high,MAX5038EAI18__MaximIntegratedProducts_8223_componentsearchengine.pdf
-MAX5038EAI18,,28 SSOP,"Dual-Phase, Parallelable, Average Current-Mode Controller",high,MAX5038EAI18__MaximIntegratedProducts_8223_componentsearchengine.pdf
-MAX5038EAI25,,28 SSOP,"Dual-Phase, Parallelable, Average Current-Mode Controller",high,MAX5038EAI18__MaximIntegratedProducts_8223_componentsearchengine.pdf
-MAX5038EAI33,,28 SSOP,"Dual-Phase, Parallelable, Average Current-Mode Controller",high,MAX5038EAI18__MaximIntegratedProducts_8223_componentsearchengine.pdf
-MAX5041EAI,,28 SSOP,"Dual-Phase, Parallelable, Average Current-Mode Controller",high,MAX5038EAI18__MaximIntegratedProducts_8223_componentsearchengine.pdf
-MAX5041BEAI,,28 SSOP,"Dual-Phase, Parallelable, Average Current-Mode Controller",high,MAX5038EAI18__MaximIntegratedProducts_8223_componentsearchengine.pdf
-MAX5038,,,"Dual-Phase, Parallelable, Average Current-Mode Controller",medium,MAX5038EAI18__MaximIntegratedProducts_8223_componentsearchengine.pdf
-MAX5041,,,"Dual-Phase, Parallelable, Average Current-Mode Controller",medium,MAX5038EAI18__MaximIntegratedProducts_8223_componentsearchengine.pdf
-MMBT3906,7B%,SOT23,PNP switching transistor,high,MMBT3906.pdf
-VS-40L15CTS-M3,VS-40L15CT S -M 3,"D 2 PAK (TO-263AB), TO-262AA","High Performance Schottky Rectifier, 2 x 20 A",high,VS-40L15CTSTRL-M3__VishayIntertechnologies_39_componentsearchengine.pdf
-VS-40L15CT-1-M3,VS-40L15CT-1-M 3,"D 2 PAK (TO-263AB), TO-262AA","High Performance Schottky Rectifier, 2 x 20 A",high,VS-40L15CTSTRL-M3__VishayIntertechnologies_39_componentsearchengine.pdf
-VS-40L15CTSTRL-M3,,D 2 PAK (TO-263AB),High Performance Schottky Rectifier,medium,VS-40L15CTSTRL-M3__VishayIntertechnologies_39_componentsearchengine.pdf
-VS-40L15CTSTRR-M3,,D 2 PAK (TO-263AB),High Performance Schottky Rectifier,medium,VS-40L15CTSTRL-M3__VishayIntertechnologies_39_componentsearchengine.pdf
-MAX5048AAUT-T,ABEC,SOT23,"7.6A, 12ns, SOT23/TDFN, MOSFET Driver",high,MAX5048AAUT#TWG16__MaximIntegratedProducts_8289_componentsearchengine.pdf
-MAX5048BAUT-T,ABED,SOT23,"7.6A, 12ns, SOT23/TDFN, MOSFET Driver",high,MAX5048AAUT#TWG16__MaximIntegratedProducts_8289_componentsearchengine.pdf
-MAX5048AATT-T,AKV,TDFN-EP,"7.6A, 12ns, SOT23/TDFN, MOSFET Driver",high,MAX5048AAUT#TWG16__MaximIntegratedProducts_8289_componentsearchengine.pdf
-MAX5048BATT-T,AKW,TDFN-EP,"7.6A, 12ns, SOT23/TDFN, MOSFET Driver",high,MAX5048AAUT#TWG16__MaximIntegratedProducts_8289_componentsearchengine.pdf
-MAX5048AAUT+T,ABEC,SOT23,"7.6A, 12ns, SOT23/TDFN, MOSFET Driver",high,MAX5048AAUT#TWG16__MaximIntegratedProducts_8289_componentsearchengine.pdf
-MAX5048BAUT+T,ABED,SOT23,"7.6A, 12ns, SOT23/TDFN, MOSFET Driver",high,MAX5048AAUT#TWG16__MaximIntegratedProducts_8289_componentsearchengine.pdf
-MAX5048AATT+T,AKV,TDFN-EP,"7.6A, 12ns, SOT23/TDFN, MOSFET Driver",high,MAX5048AAUT#TWG16__MaximIntegratedProducts_8289_componentsearchengine.pdf
-MAX5048BATT+T,AKW,TDFN-EP,"7.6A, 12ns, SOT23/TDFN, MOSFET Driver",high,MAX5048AAUT#TWG16__MaximIntegratedProducts_8289_componentsearchengine.pdf
-ULN2002AN,ULN2002AN,PDIP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2002ANE4,,PDIP (16),"High-Voltage, High-Current Darlington Transistor Arrays",medium,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2003AN,ULN2003AN,PDIP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2004AN,ULN2004AN,PDIP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2004ANE4,,PDIP (16),"High-Voltage, High-Current Darlington Transistor Arrays",medium,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULQ2003AN,ULQ2003AN,PDIP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULQ2004AD,ULQ2004AD,SOIC (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULQ2004ADG4,ULQ2004ADG4,SOIC (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULQ2004AN,ULQ2004AN,PDIP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2002A,,"SOIC (16), PDIP (16), SOP (16), TSSOP (16), SOT (16)","High-Voltage, High-Current Darlington Transistor Arrays",medium,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2003A,,"SOIC (16), PDIP (16), SOP (16), TSSOP (16), SOT (16)","High-Voltage, High-Current Darlington Transistor Arrays",medium,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2004A,,"SOIC (16), PDIP (16), SOP (16), TSSOP (16), SOT (16)","High-Voltage, High-Current Darlington Transistor Arrays",medium,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULQ2003A,,,"High-Voltage, High-Current Darlington Transistor Arrays",low,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULQ2004A,,,"High-Voltage, High-Current Darlington Transistor Arrays",low,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-SN75468,,,"High-Voltage, High-Current Darlington Transistor Arrays",low,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-SN75469,,,"High-Voltage, High-Current Darlington Transistor Arrays",low,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN200xAD,,SOIC (16),"High-Voltage, High-Current Darlington Transistor Arrays",medium,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN200xAN,,PDIP (16),"High-Voltage, High-Current Darlington Transistor Arrays",medium,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN200xANS,,SOP (16),"High-Voltage, High-Current Darlington Transistor Arrays",medium,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN200xAPW,,TSSOP (16),"High-Voltage, High-Current Darlington Transistor Arrays",medium,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2003ADYY,,SOT (16),"High-Voltage, High-Current Darlington Transistor Arrays",medium,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2004ADR,,,"High-Voltage, High-Current Darlington Transistor Arrays",low,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULQ200xA,,,"High-Voltage, High-Current Darlington Transistor Arrays",low,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULQ200xAT,,,"High-Voltage, High-Current Darlington Transistor Arrays",low,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2003AI,,,"High-Voltage, High-Current Darlington Transistor Arrays",medium,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2004ADR,,,"High-Voltage, High-Current Darlington Transistor Arrays",medium,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULQ2004ADRG4,,,Integrated Circuit,high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2002AN,ULN2002AN,PDIP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2003ADR,ULN2003A,SOIC (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2003ADYYR,UN2003A,SOT-23-THIN (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2003AIDR,ULN2003AI,SOIC (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2003AIN,ULN2003AIN,PDIP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2003AINSR,ULN2003AI,SOP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2003AIPW,UN2003AI,TSSOP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2003AIPWR,"(U2003AI, UN2003AI)",TSSOP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2003AN,ULN2003AN,PDIP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2003ANS,ULN2003A,SOP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2003ANSR,ULN2003A,SOP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2003ANSRE4,ULN2003A,SOP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2003ANSRG4,ULN2003A,SOP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2003APW,UN2003A,TSSOP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2003APWR,UN2003A,TSSOP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2003APWRG4,UN2003A,TSSOP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2004AD,ULN2004A,SOIC (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2004ADR,ULN2004A,SOIC (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2004ADRG4,ULN2004A,SOIC (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2004ADYYR,UN2004A,SOT-23-THIN (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2004AN,ULN2004AN,PDIP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULN2004ANSR,ULN2004A,SOP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULQ2003AD,ULQ2003A,SOIC (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULQ2003ADG4,ULQ2003A,SOIC (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULQ2003AN,ULQ2003A,PDIP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULQ2004AD,ULQ2004A,SOIC (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULQ2004ADG4,ULQ2004A,SOIC (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULQ2004ADR,ULQ2004A,SOIC (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULQ2004ADRG4,ULQ2004A,SOIC (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULQ2004AN,ULQ2004AN,PDIP (16),"High-Voltage, High-Current Darlington Transistor Arrays",high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULQ2003A-Q1,,,"High-Voltage, High-Current Darlington Transistor Arrays",low,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-ULQ2004A-Q1,,,"High-Voltage, High-Current Darlington Transistor Arrays",low,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
-CYNVC-175-016,3-digit code,Unknown,Power Choke Coil,medium,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
-VCHA042A-R10MS6,Unknown,Unknown,Power Choke Coil,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
-VCHA042A-R22MS6,Unknown,Unknown,Power Choke Coil,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
-VCHA042A-R33MS6,Unknown,Unknown,Power Choke Coil,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
-VCHA042A-R40MS6,Unknown,Unknown,Power Choke Coil,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
-VCHA042A-R47MS6,Unknown,Unknown,Power Choke Coil,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
-VCHA042A-R60MS6,Unknown,Unknown,Power Choke Coil,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
-VCHA042A-R68MS6,Unknown,Unknown,Power Choke Coil,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
-VCHA042A-1R0MS6,Unknown,Unknown,Power Choke Coil,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
-VCHA042A-1R5MS6,Unknown,Unknown,Power Choke Coil,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
-VCHA042A-2R2MS6,Unknown,Unknown,Power Choke Coil,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
-VCHA042A-3R3MS6,Unknown,Unknown,Power Choke Coil,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
-VCHA042A-4R7MS6,Unknown,Unknown,Power Choke Coil,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
-VCHA042A-5R6MS6,Unknown,Unknown,Power Choke Coil,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
-VCHA042A-6R8MS6,Unknown,Unknown,Power Choke Coil,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
-VCHA042A-8R2MS6,Unknown,Unknown,Power Choke Coil,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
-VCHA042A-100MS6,Unknown,Unknown,Power Choke Coil,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
-BZX84C2V4W,KRB,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C39W,KPE,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C2V7W,KRC,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C3V0W,KRD,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C3V3W,KRE,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C3V6W,KRF,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C3V9W,KRG,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C4V3W,KRH,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C4V7W,KR1,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C5V1W,KR2,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C5V6W,KR3,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C6V2W,KR4,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C6V8W,KR5,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C7V5W,KR6,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C8V2W,KR7,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C9V1W,KR8,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C10W,KR9,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C11W,KP1,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C12W,KP2,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C13W,KP3,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C15W,KP4,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C16W,KP5,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C18W,KP6,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C20W,KP7,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C22W,KP8,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C24W,KP9,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C27W,KPA,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C30W,KPB,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C33W,KPC,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-BZX84C36W,KPD,SOT-323,200mW SURFACE MOUNT ZENER DIODE,high,ds30066.pdf
-SN74LVC1G17,,SOT-23,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17,,SC70,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17,,X2SON,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17,,SON,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17,,DPW,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17,,DBV,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17,,DCK,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17,,DRL,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17,,DRY,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17,,YZP,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17,,YZV,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DBVR,"C175, C17F, C17J, C17K, C17R, C17H, C17P, C17S",SOT-23,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DBVR.Z,"C175, C17F, C17J, C17K, C17R, C17H, C17P, C17S",SOT-23,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DBVRE4,C17F,SOT-23,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DBVRG4,C17F,SOT-23,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DBVRG4.Z,C17F,SOT-23,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DBVT,"C175, C17F, C17J, C17K, C17R, C17H, C17P, C17S",SOT-23,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DBVT.Z,"C175, C17F, C17J, C17K, C17R, C17H, C17P, C17S",SOT-23,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DBVTE4,C17F,SOT-23,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DBVTG4,C17F,SOT-23,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DBVTG4.Z,C17F,SOT-23,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DCK3,"C7F, C7Z",SC70,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DCK3.Z,"C7F, C7Z",SC70,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DCKR,"C75, C7F, C7J, C7K, C7R, C7T, C7H, C7P, C7S",SC70,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DCKR.Z,"C75, C7F, C7J, C7K, C7R, C7T, C7H, C7P, C7S",SC70,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DCKRE4,"C75, C7S",SC70,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DCKRG4,"C75, C7S",SC70,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DCKRG4.Z,"C75, C7S",SC70,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DCKT,"C75, C7F, C7J, C7K, C7R, C7T, C7H, C7P, C7S",SC70,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DCKT.Z,"C75, C7F, C7J, C7K, C7R, C7T, C7H, C7P, C7S",SC70,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DCKTE4,"C75, C7S",SC70,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DCKTG4,"C75, C7S",SC70,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DCKTG4.Z,"C75, C7S",SC70,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DPWR,S4,X2SON,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DPWR.Z,S4,X2SON,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DRLR,"C77, C7R",SOT-5X3,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DRLR.Z,"C77, C7R",SOT-5X3,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DRLRG4,"C77, C7R",SOT-5X3,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DRYR,C7,SON,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DRYR.Z,C7,SON,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DRYRG4.Z,C7,SON,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DSFR,C7,SON,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DSFR.Z,C7,SON,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17DSFRG4.Z,C7,SON,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17YZPR,C7N,DSBGA,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17YZPR.Z,C7N,DSBGA,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17YZTR.Z,C7,DSBGA,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17YZVR,"C7 (7, N)",DSBGA,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17YZVR.Z,"C7 (7, N)",DSBGA,Single Schmitt-Trigger Buffer,high,sn74lvc1g17.pdf
-SN74LVC1G17-Q1,,,Single Schmitt-Trigger Buffer for Automotive,medium,sn74lvc1g17.pdf
-SN74LVC1G17-EP,,,Single Schmitt-Trigger Buffer for Enhanced Product,medium,sn74lvc1g17.pdf
-SN74AVC2T45DCTR,DT2 Z,SSOP (DCT),"2-Bit, Dual Supply, Bus Transceiver with Configurable Level-Shifting and Translation",high,sn74avc2t45 (1).pdf
-SN74AVC2T45DCTT,DT2 Z,SSOP (DCT),"2-Bit, Dual Supply, Bus Transceiver with Configurable Level-Shifting and Translation",high,sn74avc2t45 (1).pdf
-SN74AVC2T45DCUR,"(DT2R, T2) DZ",VSSOP (DCU),"2-Bit, Dual Supply, Bus Transceiver with Configurable Level-Shifting and Translation",high,sn74avc2t45 (1).pdf
-SN74AVC2T45DCURG4,DT2R,VSSOP (DCU),"2-Bit, Dual Supply, Bus Transceiver with Configurable Level-Shifting and Translation",high,sn74avc2t45 (1).pdf
-SN74AVC2T45DCUTG4,DT2R,VSSOP (DCU),"2-Bit, Dual Supply, Bus Transceiver with Configurable Level-Shifting and Translation",high,sn74avc2t45 (1).pdf
-SN74AVC2T45DDFR,A2T45,SOT-23-THIN (DDF),"2-Bit, Dual Supply, Bus Transceiver with Configurable Level-Shifting and Translation",high,sn74avc2t45 (1).pdf
-SN74AVC2T45YZPR,TDN,DSBGA (YZP),"2-Bit, Dual Supply, Bus Transceiver with Configurable Level-Shifting and Translation",high,sn74avc2t45 (1).pdf
-SN74AVC2T45DCT,,"SSOP, 8","2-Bit, Dual Supply, Bus Transceiver with Configurable Level-Shifting and Translation",high,sn74avc2t45 (1).pdf
-SN74AVC2T45DCU,,"VSSOP, 8","2-Bit, Dual Supply, Bus Transceiver with Configurable Level-Shifting and Translation",high,sn74avc2t45 (1).pdf
-SN74AVC2T45YZP,,"DSBGA, 8","2-Bit, Dual Supply, Bus Transceiver with Configurable Level-Shifting and Translation",high,sn74avc2t45 (1).pdf
-SN74AVC2T45DDF,,"SOT-23, 8","2-Bit, Dual Supply, Bus Transceiver with Configurable Level-Shifting and Translation",high,sn74avc2t45 (1).pdf
-SN74AVC2T45-Q1,,,"2-Bit, Dual Supply, Bus Transceiver with Configurable Level-Shifting and Translation",medium,sn74avc2t45 (1).pdf
-SN74AVC2T45DCTR.Z,DT2 Z,SSOP (DCT),"2-Bit, Dual Supply, Bus Transceiver with Configurable Level-Shifting and Translation",high,sn74avc2t45 (1).pdf
-SN74AVC2T45DCTRE4,DT2 Z,SSOP (DCT),"2-Bit, Dual Supply, Bus Transceiver with Configurable Level-Shifting and Translation",high,sn74avc2t45 (1).pdf
-SN74AVC2T45DCTRG4.Z,DT2 Z,SSOP (DCT),"2-Bit, Dual Supply, Bus Transceiver with Configurable Level-Shifting and Translation",high,sn74avc2t45 (1).pdf
-SN74AVC2T45DCTT.Z,DT2 Z,SSOP (DCT),"2-Bit, Dual Supply, Bus Transceiver with Configurable Level-Shifting and Translation",high,sn74avc2t45 (1).pdf
-SN74AVC2T45DCUR.Z,"(DT2R, T2) DZ",VSSOP (DCU),"2-Bit, Dual Supply, Bus Transceiver with Configurable Level-Shifting and Translation",high,sn74avc2t45 (1).pdf
-SN74AVC2T45DCURG4.Z,DT2R,VSSOP (DCU),"2-Bit, Dual Supply, Bus Transceiver with Configurable Level-Shifting and Translation",high,sn74avc2t45 (1).pdf
-SN74AVC2T45DCUTG4.Z,DT2R,VSSOP (DCU),"2-Bit, Dual Supply, Bus Transceiver with Configurable Level-Shifting and Translation",high,sn74avc2t45 (1).pdf
-SN74AVC2T45DCUT.Z,DT2R,VSSOP (DCU),"2-Bit, Dual Supply, Bus Transceiver with Configurable Level-Shifting and Translation",high,sn74avc2t45 (1).pdf
-SN74AVC2T45YZPR.Z,TDN,DSBGA (YZP),"2-Bit, Dual Supply, Bus Transceiver with Configurable Level-Shifting and Translation",high,sn74avc2t45 (1).pdf
-PI3CH480,VUVVVVVVY,"TSSOP, QSOP, UQFN3x3-16","4-Channel 2:1 Mux/DeMux, Enable Low 1.8V/2.5V/3.3V, High-Bandwidth, Hot Plug",high,DIOD_S_A0007765693_1-2543006.pdf
-PI3CH480LEX,,"16-Pin, 173mil Wide (TSSOP)","4-Channel 2:1 Mux/DeMux, Enable Low 1.8V/2.5V/3.3V, High-Bandwidth, Hot Plug",medium,DIOD_S_A0007765693_1-2543006.pdf
-PI3CH480QEX,,"16-Pin, 150mil Wide (QSOP)","4-Channel 2:1 Mux/DeMux, Enable Low 1.8V/2.5V/3.3V, High-Bandwidth, Hot Plug",medium,DIOD_S_A0007765693_1-2543006.pdf
-PI3CH480ZHDEX,,"16-Pin, 3x3 (UQFN)","4-Channel 2:1 Mux/DeMux, Enable Low 1.8V/2.5V/3.3V, High-Bandwidth, Hot Plug",medium,DIOD_S_A0007765693_1-2543006.pdf
-MAX5068AAUE,,16 TSSOP-EP,"High-Frequency, Current-Mode PWM Controller with Accurate Programmable Oscillator",high,MAX5068CAUE+__MaximIntegratedProducts_8532_componentsearchengine.pdf
-MAX5068BAUE,,16 TSSOP-EP,"High-Frequency, Current-Mode PWM Controller with Accurate Programmable Oscillator",high,MAX5068CAUE+__MaximIntegratedProducts_8532_componentsearchengine.pdf
-MAX5068CAUE,,16 TSSOP-EP,"High-Frequency, Current-Mode PWM Controller with Accurate Programmable Oscillator",high,MAX5068CAUE+__MaximIntegratedProducts_8532_componentsearchengine.pdf
-MAX5068DAUE,,16 TSSOP-EP,"High-Frequency, Current-Mode PWM Controller with Accurate Programmable Oscillator",high,MAX5068CAUE+__MaximIntegratedProducts_8532_componentsearchengine.pdf
-MAX5068EAUE,,16 TSSOP-EP,"High-Frequency, Current-Mode PWM Controller with Accurate Programmable Oscillator",high,MAX5068CAUE+__MaximIntegratedProducts_8532_componentsearchengine.pdf
-MAX5068FAUE,,16 TSSOP-EP,"High-Frequency, Current-Mode PWM Controller with Accurate Programmable Oscillator",high,MAX5068CAUE+__MaximIntegratedProducts_8532_componentsearchengine.pdf
-MAX5068A,,,"High-Frequency, Current-Mode PWM Controller with Accurate Programmable Oscillator",medium,MAX5068CAUE+__MaximIntegratedProducts_8532_componentsearchengine.pdf
-MAX5068B,,,"High-Frequency, Current-Mode PWM Controller with Accurate Programmable Oscillator",medium,MAX5068CAUE+__MaximIntegratedProducts_8532_componentsearchengine.pdf
-MAX5068C,,,"High-Frequency, Current-Mode PWM Controller with Accurate Programmable Oscillator",medium,MAX5068CAUE+__MaximIntegratedProducts_8532_componentsearchengine.pdf
-MAX5068D,,,"High-Frequency, Current-Mode PWM Controller with Accurate Programmable Oscillator",medium,MAX5068CAUE+__MaximIntegratedProducts_8532_componentsearchengine.pdf
-MAX5068E,,,"High-Frequency, Current-Mode PWM Controller with Accurate Programmable Oscillator",medium,MAX5068CAUE+__MaximIntegratedProducts_8532_componentsearchengine.pdf
-MAX5068F,,,"High-Frequency, Current-Mode PWM Controller with Accurate Programmable Oscillator",medium,MAX5068CAUE+__MaximIntegratedProducts_8532_componentsearchengine.pdf
-VCA2612Y,VCA2612Y,TQFP-48,"Dual, VARIABLE GAIN AMPLIFIER with Low Noise Preamp",high,VCA2612Y_slash_250__TexasInstruments_183_componentsearchengine.pdf
-VCA2612Y/250,VCA2612Y,TQFP,"Dual, VARIABLE GAIN AMPLIFIER with Low Noise Preamp",medium,VCA2612Y_slash_250__TexasInstruments_183_componentsearchengine.pdf
+MAX5033AUSA,,SO,Voltage regulator with adjustable output voltage and various fixed output voltage options.,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
+MAX5033AUPA,,PDIP,Voltage regulator with adjustable output voltage and various fixed output voltage options.,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
+MAX5033AASA,,SO,Voltage regulator with adjustable output voltage and various fixed output voltage options.,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
+MAX5033BUSA,,SO,Voltage regulator with adjustable output voltage and various fixed output voltage options.,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
+MAX5033BUPA,,PDIP,Voltage regulator with adjustable output voltage and various fixed output voltage options.,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
+MAX5033BASA,,SO,Voltage regulator with adjustable output voltage and various fixed output voltage options.,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
+MAX5033CUSA,,SO,Voltage regulator with adjustable output voltage and various fixed output voltage options.,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
+MAX5033CUPA,,PDIP,Voltage regulator with adjustable output voltage and various fixed output voltage options.,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
+MAX5033CASA,,SO,Voltage regulator with adjustable output voltage and various fixed output voltage options.,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
+MAX5033DUSA,,SO,Voltage regulator with adjustable output voltage and various fixed output voltage options.,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
+MAX5033DUPA,,PDIP,Voltage regulator with adjustable output voltage and various fixed output voltage options.,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
+MAX5033DASA,,SO,Voltage regulator with adjustable output voltage and various fixed output voltage options.,medium,MAX5033BUSA+__AnalogDevices_8125_componentsearchengine.pdf
+PCA9548ABS,548A,HVQFN24,I2C-bus controlled 8-channel multiplexer/demultiplexer,high,PCA9548A-3139384 (1).pdf
+PCA9548AD,PCA9548AD,SO24,I2C-bus controlled 8-channel multiplexer/demultiplexer,high,PCA9548A-3139384 (1).pdf
+PCA9548APW,PCA9548A,TSSOP24,I2C-bus controlled 8-channel multiplexer/demultiplexer,high,PCA9548A-3139384 (1).pdf
+VCHA042A-R10MS6,,,Inductor with various inductance values ranging from 0.10 µH to 10.0 µH,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
+VCHA042A-R22MS6,,,Inductor with various inductance values ranging from 0.10 µH to 10.0 µH,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
+VCHA042A-R33MS6,,,Inductor with various inductance values ranging from 0.10 µH to 10.0 µH,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
+VCHA042A-R40MS6,,,Inductor with various inductance values ranging from 0.10 µH to 10.0 µH,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
+VCHA042A-R47MS6,,,Inductor with various inductance values ranging from 0.10 µH to 10.0 µH,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
+VCHA042A-R60MS6,,,Inductor with various inductance values ranging from 0.10 µH to 10.0 µH,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
+VCHA042A-R68MS6,,,Inductor with various inductance values ranging from 0.10 µH to 10.0 µH,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
+VCHA042A-1R0MS6,,,Inductor with various inductance values ranging from 0.10 µH to 10.0 µH,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
+VCHA042A-1R5MS6,,,Inductor with various inductance values ranging from 0.10 µH to 10.0 µH,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
+VCHA042A-2R2MS6,,,Inductor with various inductance values ranging from 0.10 µH to 10.0 µH,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
+VCHA042A-3R3MS6,,,Inductor with various inductance values ranging from 0.10 µH to 10.0 µH,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
+VCHA042A-4R7MS6,,,Inductor with various inductance values ranging from 0.10 µH to 10.0 µH,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
+VCHA042A-5R6MS6,,,Inductor with various inductance values ranging from 0.10 µH to 10.0 µH,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
+VCHA042A-6R8MS6,,,Inductor with various inductance values ranging from 0.10 µH to 10.0 µH,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
+VCHA042A-8R2MS6,,,Inductor with various inductance values ranging from 0.10 µH to 10.0 µH,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
+VCHA042A-100MS6,,,Inductor with various inductance values ranging from 0.10 µH to 10.0 µH,low,VCHA042A-1R0MS6__CyntecCoLtd_136_componentsearchengine.pdf
+BZX84C2V4W,KRB,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C2V7W,KRC,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C3V0W,KRD,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C3V3W,KRE,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C3V6W,KRF,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C3V9W,KRG,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C4V3W,KRH,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C4V7W,KR1,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C5V1W,KR2,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C5V6W,KR3,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C6V2W,KR4,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C6V8W,KR5,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C7V5W,KR6,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C8V2W,KR7,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C9V1W,KR8,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C10W,KR9,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C11W,KP1,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C12W,KP2,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C13W,KP3,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C15W,KP4,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C16W,KP5,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C18W,KP6,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C20W,KP7,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C22W,KP8,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C24W,KP9,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C27W,KPA,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C30W,KPB,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C33W,KPC,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C36W,KPD,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+BZX84C39W,KPE,SOT-323,Transient Voltage Suppression Diode,high,ds30066.pdf
+SN74LVC1G17DBVR,"(C175, C17F, C17J, C17K, C17R) (C17H, C17P, C17S)",SOT-23 (DBV),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DBVR.Z,"(C175, C17F, C17J, C17K, C17R) (C17H, C17P, C17S)",SOT-23 (DBV),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DBVRE4,C17F,SOT-23 (DBV),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DBVRG4,C17F,SOT-23 (DBV),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DBVRG4.Z,C17F,SOT-23 (DBV),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DBVT,"(C175, C17F, C17J, C17K, C17R) (C17H, C17P, C17S)",SOT-23 (DBV),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DBVT.Z,"(C175, C17F, C17J, C17K, C17R) (C17H, C17P, C17S)",SOT-23 (DBV),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DBVTE4,C17F,SOT-23 (DBV),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DBVTG4,C17F,SOT-23 (DBV),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DBVTG4.Z,C17F,SOT-23 (DBV),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DCK3,"(C7F, C7Z)",SC70 (DCK),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DCK3.Z,"(C7F, C7Z)",SC70 (DCK),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DCKR,"(C75, C7F, C7J, C7 K, C7R, C7T) (C7H, C7P, C7S)",SC70 (DCK),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DCKR.Z,"(C75, C7F, C7J, C7 K, C7R, C7T) (C7H, C7P, C7S)",SC70 (DCK),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DCKRE4,C75 C7S,SC70 (DCK),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DCKRG4,C75 C7S,SC70 (DCK),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DCKRG4.Z,C75 C7S,SC70 (DCK),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DCKT,"(C75, C7F, C7J, C7 K, C7R, C7T) (C7H, C7P, C7S)",SC70 (DCK),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DCKT.Z,"(C75, C7F, C7J, C7 K, C7R, C7T) (C7H, C7P, C7S)",SC70 (DCK),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DCKTE4,C75 C7S,SC70 (DCK),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DCKTG4,C75 C7S,SC70 (DCK),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DCKTG4.Z,C75 C7S,SC70 (DCK),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DPWR,S4,X2SON (DPW),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DPWR.Z,S4,X2SON (DPW),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DRLR,"(C77, C7R)",SOT-5X3 (DRL),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DRLR.Z,"(C77, C7R)",SOT-5X3 (DRL),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DRLRG4,"(C77, C7R)",SOT-5X3 (DRL),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DRYR,C7,SON (DRY),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DRYR.Z,C7,SON (DRY),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DRYRG4.Z,C7,SON (DRY),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DSFR,C7,SON (DSF),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DSFR.Z,C7,SON (DSF),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17DSFRG4.Z,C7,SON (DSF),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17YZPR,C7N,DSBGA (YZP),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17YZPR.Z,C7N,DSBGA (YZP),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17YZTR.Z,C7,DSBGA (YZT),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17YZVR,"C7 (7, N)",DSBGA (YZV),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+SN74LVC1G17YZVR.Z,"C7 (7, N)",DSBGA (YZV),Single Schmitt-trigger buffer,high,sn74lvc1g17.pdf
+V6300ASP5B,E0##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300BSP5B,E0##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300CSP5B,E0##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300CSP5B+,E0##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300DSP5B,PB##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300ESP5B,PA##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300ESP5B+,PA##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300FSP5B,PA##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300FSP5B+,PA##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300GSP5B,PA##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300HSP5B,PA##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300ISP5B,EM##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300JSP5B,EM##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300KSP5B,EM##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300LSP5B,EM##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300LSP5B+,EM##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300MSP5B,EM##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300NSP5B,EE##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300OSP5B,EE##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300OSP5B+,EE##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300PSP5B,EE##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300QSP5B,EE##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6300RSP5B+,EH##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6301ASP5B,EN##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6301ASP5B+,EN##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6301BSP5B,EN##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6301CSP5B,EN##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6301DSP5B,EN##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6301ESP5B,EN##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6301FSP5B,EN##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6301FSP5B+,EN##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6301GSP5B,EN##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6301HSP5B,EN##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6301ISP5B,EN##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6301JSP5B,EP##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6301KSP5B,EP##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6301LSP5B,EP##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6301MSP5B,EP##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6301NSP5B,EP##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6301OSP5B,EP##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+V6301OSP5B+,EL##,SOT23-5L,Reset Circuit,high,V6301GSP5B__EMMicroelectronic-MarinSA_240_componentsearchengine.pdf
+8SLVP1204ANLGI,204AI,3.0 × 3.0 × 0.9 mm 16-VFQFPN,Differential LVPECL clock/data input and output interface,high,REN_8SLVP1204_DST_20210520.pdf
+8SLVP1204ANLGI8,204AI,3.0 × 3.0 × 0.9 mm 16-VFQFPN,Differential LVPECL clock/data input and output interface,high,REN_8SLVP1204_DST_20210520.pdf
+8SLVP1204ANLGI/W,204AI,3.0 × 3.0 × 0.9 mm 16-VFQFPN,Differential LVPECL clock/data input and output interface,high,REN_8SLVP1204_DST_20210520.pdf
+SN74AVC2T45DCT,DT2 Z,SSOP (DCT),Voltage translator,high,sn74avc2t45 (1).pdf
+SN74AVC2T45DCU,"(DT2R, T2) DZ",VSSOP (DCU),Voltage translator,high,sn74avc2t45 (1).pdf
+SN74AVC2T45YZP,TDN,DSBGA (YZP),Voltage translator,high,sn74avc2t45 (1).pdf
+SN74AVC2T45DDF,A2T45,SOT-23-THIN (DDF),Voltage translator,high,sn74avc2t45 (1).pdf
+PI3CH480LEX,,TSSOP,Control logic component with various input and output characteristics.,high,DIOD_S_A0007765693_1-2543006.pdf
+PI3CH480QEX,,QSOP,Control logic component with various input and output characteristics.,high,DIOD_S_A0007765693_1-2543006.pdf
+PI3CH480ZHDEX,,UQFN,Control logic component with various input and output characteristics.,high,DIOD_S_A0007765693_1-2543006.pdf
+XC6220A,,"SOT-25, SOT-89-5, USP-6C",Voltage Regulator,medium,XC6220D501ER__TOREX_0_alldatasheet.pdf
+XC6220B,,"SOT-25, SOT-89-5, USP-6C",Voltage Regulator,medium,XC6220D501ER__TOREX_0_alldatasheet.pdf
+XC6220C,,"SOT-25, SOT-89-5, USP-6C",Voltage Regulator,medium,XC6220D501ER__TOREX_0_alldatasheet.pdf
+XC6220D,,"SOT-25, SOT-89-5, USP-6C",Voltage Regulator,medium,XC6220D501ER__TOREX_0_alldatasheet.pdf
+MAX5038 EAI12,,28 SSOP,Fixed +1.2V,high,MAX5038EAI18__MaximIntegratedProducts_8223_componentsearchengine.pdf
+MAX5038EAI15,,28 SSOP,Fixed +1.5V,high,MAX5038EAI18__MaximIntegratedProducts_8223_componentsearchengine.pdf
+MAX5038EAI18,,28 SSOP,Fixed +1.8V,high,MAX5038EAI18__MaximIntegratedProducts_8223_componentsearchengine.pdf
+MAX5038EAI25,,28 SSOP,Fixed +2.5V,high,MAX5038EAI18__MaximIntegratedProducts_8223_componentsearchengine.pdf
+MAX5038EAI33,,28 SSOP,Fixed +3.3V,high,MAX5038EAI18__MaximIntegratedProducts_8223_componentsearchengine.pdf
+MAX5041 EAI,,28 SSOP,Adj +1.0V to +3.3V,high,MAX5038EAI18__MaximIntegratedProducts_8223_componentsearchengine.pdf
+MAX5041BEAI,,28 SSOP,Adj +1.0V to +3.3V,high,MAX5038EAI18__MaximIntegratedProducts_8223_componentsearchengine.pdf
+MMBT3906,7B%,SOT23,Transient Voltage Suppression Diode,high,MMBT3906.pdf
+VS-40L15CTS-M3,40L15CTS,D 2 PAK (TO-263AB),Transient Voltage Suppression Diode,high,VS-40L15CTSTRL-M3__VishayIntertechnologies_39_componentsearchengine.pdf
+VS-40L15CT-1-M3,40L15CT-1,TO-262AA,Transient Voltage Suppression Diode,high,VS-40L15CTSTRL-M3__VishayIntertechnologies_39_componentsearchengine.pdf
+MAX5068AAUE,16 TSSOP-EP,high,MAX5068CAUE+__MaximIntegratedProducts_8532_componentsearchengine.pdf,Undervoltage lockout and startup voltage regulator with various electrical characteristics.
+MAX5068BAUE,16 TSSOP-EP,high,MAX5068CAUE+__MaximIntegratedProducts_8532_componentsearchengine.pdf,Undervoltage lockout and startup voltage regulator with various electrical characteristics.
+MAX5068CAUE,16 TSSOP-EP,high,MAX5068CAUE+__MaximIntegratedProducts_8532_componentsearchengine.pdf,Undervoltage lockout and startup voltage regulator with various electrical characteristics.
+MAX5068DAUE,16 TSSOP-EP,high,MAX5068CAUE+__MaximIntegratedProducts_8532_componentsearchengine.pdf,Undervoltage lockout and startup voltage regulator with various electrical characteristics.
+MAX5068EAUE,16 TSSOP-EP,high,MAX5068CAUE+__MaximIntegratedProducts_8532_componentsearchengine.pdf,Undervoltage lockout and startup voltage regulator with various electrical characteristics.
+MAX5068FAUE,16 TSSOP-EP,high,MAX5068CAUE+__MaximIntegratedProducts_8532_componentsearchengine.pdf,Undervoltage lockout and startup voltage regulator with various electrical characteristics.
+MAX5048AAUT-T,ABEC,SOT23,n-channel and p-channel output driver with a power supply range of 4.0V to 12.6V.,high,MAX5048AAUT#TWG16__MaximIntegratedProducts_8289_componentsearchengine.pdf
+MAX5048BAUT-T,ABED,SOT23,n-channel and p-channel output driver with a power supply range of 4.0V to 12.6V.,high,MAX5048AAUT#TWG16__MaximIntegratedProducts_8289_componentsearchengine.pdf
+MAX5048AATT-T,AKV,TDFN-EP,n-channel and p-channel output driver with a power supply range of 4.0V to 12.6V.,high,MAX5048AAUT#TWG16__MaximIntegratedProducts_8289_componentsearchengine.pdf
+MAX5048BATT-T,AKW,TDFN-EP,n-channel and p-channel output driver with a power supply range of 4.0V to 12.6V.,high,MAX5048AAUT#TWG16__MaximIntegratedProducts_8289_componentsearchengine.pdf
+VCA2612Y,VCA2612Y,TQFP-48,Programmable Variable Gain Amplifier,high,VCA2612Y_slash_250__TexasInstruments_183_componentsearchengine.pdf
+ULN2002AN,ULN2002AN,PDIP (N),Darlington Transistor Arrays,high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
+ULN2003ADR,ULN2003A,SOIC (D),Darlington Transistor Arrays,high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
+ULN2003ADYYR,UN2003A,SOT-23-THIN (DYY),Darlington Transistor Arrays,high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
+ULN2003AIDR,ULN2003AI,SOIC (D),Darlington Transistor Arrays,high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
+ULN2003AINSR,ULN2003AI,SOP (NS),Darlington Transistor Arrays,high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
+ULN2003AIPWR,"(U2003AI, UN2003AI )",TSSOP (PW),Darlington Transistor Arrays,high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
+ULN2003AN,ULN2003AN,PDIP (N),Darlington Transistor Arrays,high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
+ULN2003ANSR,ULN2003A,SOP (NS),Darlington Transistor Arrays,high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
+ULN2003APWR,UN2003A,TSSOP (PW),Darlington Transistor Arrays,high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
+ULN2004AD,Not specified,SOIC (D),Darlington Transistor Arrays,low,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
+ULN2004ADR,ULN2004A,SOIC (D),Darlington Transistor Arrays,high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
+ULN2004ADYYR,UN2004A,SOT-23-THIN (DYY),Darlington Transistor Arrays,high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
+ULN2004AN,ULN2004AN,PDIP (N),Darlington Transistor Arrays,high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
+ULN2004ANSR,ULN2004A,SOP (NS),Darlington Transistor Arrays,high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
+ULQ2003AD,Not specified,SOIC (D),Darlington Transistor Arrays,low,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
+ULQ2003AN,ULQ2003A,PDIP (N),Darlington Transistor Arrays,high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
+ULQ2004AD,ULQ2004A,SOIC (D),Darlington Transistor Arrays,high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
+ULQ2004ADR,ULQ2004A,SOIC (D),Darlington Transistor Arrays,high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf
+ULQ2004AN,ULQ2004AN,PDIP (N),Darlington Transistor Arrays,high,ULQ2004ADRG4__TexasInstruments_945_componentsearchengine.pdf

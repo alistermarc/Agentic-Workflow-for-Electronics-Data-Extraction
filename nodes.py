@@ -2,8 +2,8 @@ import json, logging
 import re
 import ast
 from pathlib import Path
-from helpers import chunk_markdown, generate_prompt, generate_anchor_prompt, generate_repair_prompt, generate_validation_prompt, save_items, save_validated_items
-from typing import Dict
+from helpers import chunk_markdown, generate_prompt, generate_anchor_prompt, generate_repair_prompt, generate_validation_prompt, save_items, save_validated_items, clean_markdown_text, extract_all_tables_with_optional_header, score_chunk
+from typing import Dict, List, Any, Optional
 from datetime import datetime
 import time
 import pandas as pd
@@ -11,6 +11,74 @@ from docling_core.types.doc import ImageRefMode, PictureItem, TableItem, TextIte
 from config import MARKDOWN_DIR, PROCESSED_DIR, SKIPPED_DIR, METADATA_DIR, CSV_SKIPPED_OUTPUT
 
 logger = logging.getLogger(__name__)
+
+
+def filter_chunks(state: Dict) -> Dict:
+    print("Filter Chunks STATE KEYS:", list(state.keys()))
+    chunks = state.get("chunks", [])
+    raw_components = state.get("component", "[]")
+    
+    # --- Component Parsing Logic ---
+    if isinstance(raw_components, str):
+        raw_components = raw_components.strip()
+        try:
+            parsed = ast.literal_eval(raw_components)
+            components = parsed if isinstance(parsed, list) else [str(parsed)]
+        except (ValueError, SyntaxError):
+            components = [raw_components.strip('"')]
+    elif isinstance(raw_components, list):
+        components = raw_components
+    else:
+        components = []
+
+    # 1. Score each chunk and store it with its original index.
+    indexed_scored_chunks = [
+        (i, chunk, score_chunk(chunk, components))
+        for i, chunk in enumerate(chunks)
+    ]
+
+    print("\n--- Chunk Scoring Details ---")
+    if not indexed_scored_chunks:
+        print("  No chunks to score.")
+    else:
+        for i, chunk, score in indexed_scored_chunks:
+            print(f"  - Chunk {i+1:02d}/{len(chunks):02d} | Score: {score}")
+    print("---------------------------\n")
+
+    high_scoring_chunks = [
+        (i, chunk, score) 
+        for i, chunk, score in indexed_scored_chunks if score > 1
+    ]
+    
+    # 2. Temporarily sort the high-scoring chunks by score to find the top 3.
+    sorted_by_score = sorted(high_scoring_chunks, key=lambda x: x[2], reverse=True)
+
+    # 3. Slice to get only the top 3 entries.
+    top_entries = sorted_by_score[:3]
+
+    # 4. Sort the top entries back by their original index.
+    top_entries_in_original_order = sorted(top_entries, key=lambda x: x[0])
+
+    # 5. Extract the text of the top chunks.
+    final_top_chunks = [chunk for i, chunk, score in top_entries_in_original_order]
+
+    # --- NEW: Combine the top chunks into a single final_chunk ---
+    if final_top_chunks:
+        final_chunk = "\n\n---\n\n".join(final_top_chunks)
+        logger.info(f"Combined the top {len(final_top_chunks)} chunks into a single chunk for processing.")
+        # The workflow expects a list of chunks, so we return a list containing our one combined chunk.
+        chunks_for_llm = [final_chunk]
+    else:
+        logger.warning("No relevant chunks found after filtering. Nothing to process.")
+        chunks_for_llm = []
+
+    chunk_scores_data = [
+        {"chunk_number": i + 1, "score": score, "chunk": chunk} 
+        for i, chunk, score in indexed_scored_chunks
+    ]
+
+    # Update the state with the single combined chunk.
+    return {**state, "final_chunks": chunks_for_llm, "chunk_scores": chunk_scores_data, "current_idx": 0, "items": []}
 
 def load_and_split(state: Dict) -> Dict:
     pdf = Path(state["pdf_path"])
@@ -79,7 +147,30 @@ def load_and_split(state: Dict) -> Dict:
         # ocr_text_path.write_text(json.dumps(picture_texts, indent=2), encoding="utf-8")
         # logger.info(f"Picture text saved to: {ocr_text_path}") 
 
-        md = md_path.read_text(encoding="utf-8").strip()
+        logger.info(f"Attempting to extract tables from {md_path.name}...")
+        full_md_content = md_path.read_text(encoding="utf-8").strip()
+        print(f"Full Markdown content length: {len(full_md_content)} characters")
+        cleaned_md = clean_markdown_text(full_md_content)
+        extracted_data = extract_all_tables_with_optional_header(cleaned_md)
+        print(f"Extracted {len(extracted_data)} tables from the cleaned Markdown content.")
+        
+        if extracted_data:
+            output_content = []
+            for item in extracted_data:
+                if item.get('header'):
+                    output_content.append(item['header'])
+                output_content.append(item['table'])
+            
+            final_output_string = "\n\n---\n\n".join(output_content)
+            
+            # Save the tables to a new file in the same folder.
+            tables_only_md_path = output_dir / f"{pdf.stem}_tables.md"
+            tables_only_md_path.write_text(final_output_string, encoding="utf-8")
+            logger.info(f"Successfully saved extracted tables to: {tables_only_md_path.name}")
+        else:
+            logger.info("No valid tables found to create a separate tables file.")
+
+        md = tables_only_md_path.read_text(encoding="utf-8").strip()
         chunks = chunk_markdown(md)
         logger.info(f"Markdown split into {len(chunks)} chunk(s)")
         return {**state, "markdown": md, "chunks": chunks}
@@ -142,7 +233,7 @@ def extract_anchor(state: Dict) -> Dict:
 
 def call_llm(state: Dict) -> Dict:
     print("Call LLM STATE KEYS:", list(state.keys()))
-    chunk = state["chunks"][state["current_idx"]]
+    chunk = state["final_chunks"][state["current_idx"]]
     prompt = generate_prompt(chunk, state["items"], state["component"])
     
     resp = state["client"].chat.completions.create(
@@ -288,7 +379,7 @@ def save_full_state(state: Dict) -> Dict:
     print("Save Full State STATE KEYS:", list(state.keys()))
     METADATA_DIR.mkdir(exist_ok=True)
 
-    keys_to_save = ['title', 'model_name', 'component', 'description', 'chunks', 'current_idx']
+    keys_to_save = ['title', 'model_name', 'component', 'description', 'chunks', 'final_chunks', 'current_idx']
 
     metadata = {
         k: json.dumps(state[k], ensure_ascii=False)
@@ -362,15 +453,6 @@ def save_skipped_component(state: Dict) -> Dict:
 #     logger.info(f"{len(top_chunks)} candidate chunks")
 #     return {**state, "candidate_chunks": top_chunks, "current_idx": 0, "items": []}
 
-# def save_candidates(state: Dict) -> Dict:
-#     print("Save Candidates STATE KEYS:", list(state.keys()))
-#     out_dir = Path("candidates")
-#     out_dir.mkdir(exist_ok=True)
-#     out_path = out_dir / f"{Path(state['pdf_path']).stem}_candidates.json"
-#     with open(out_path, "w", encoding="utf-8") as f:
-#         json.dump(state["chunks"], f, indent=2)
-#     return state
-
 # def score_chunk(chunk: str, components: list[str]) -> int:
 #     score = 0
 #     chunk_lower = chunk.lower()
@@ -380,3 +462,13 @@ def save_skipped_component(state: Dict) -> Dict:
 #     keywords = ["part number", "ordering", "marking", "package option", "overview", "description"]
 #     score += sum(1 for kw in keywords if kw in chunk_lower)
 #     return score
+
+# def save_candidates(state: Dict) -> Dict:
+#     print("Save Candidates STATE KEYS:", list(state.keys()))
+#     out_dir = Path("candidates")
+#     out_dir.mkdir(exist_ok=True)
+#     out_path = out_dir / f"{Path(state['pdf_path']).stem}_candidates.json"
+#     with open(out_path, "w", encoding="utf-8") as f:
+#         json.dump(state["chunks"], f, indent=2)
+#     return state
+

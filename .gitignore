@@ -6,3 +6,6 @@ __pycache__
 markdown/
 extracted_items_backup.csv
 backup
+tables
+table.py
+trial.py

@@ -1,6 +1,7 @@
 import re, json, logging
 import pandas as pd
 from typing import List
+from typing import Dict, List, Any, Optional
 from docling.datamodel.base_models import InputFormat
 from docling.datamodel.pipeline_options import PdfPipelineOptions, EasyOcrOptions, TesseractCliOcrOptions
 from docling.document_converter import DocumentConverter, PdfFormatOption
@@ -21,6 +22,85 @@ def setup_converter() -> DocumentConverter:
     # opts.ocr_options = TesseractCliOcrOptions(force_full_page_ocr=True)
     opts.ocr_options.lang = ["en"]
     return DocumentConverter(format_options={InputFormat.PDF: PdfFormatOption(pipeline_options=opts)})
+
+def score_chunk(chunk: str, components: list[str]) -> int:
+    """
+    Scores a chunk based on a combination of component name matches and
+    the presence of important keywords found via regex.
+    """
+    score = 0
+    chunk_lower = chunk.lower()
+
+    KEYWORD_PATTERN = re.compile(
+    r"\b("
+    r"part( numbers?)?|"
+    r"type numbers?|"
+    r"ordering|"
+    r"markings?|"
+    r"package options?"
+    r")\b",
+    re.IGNORECASE)
+
+    if components:
+        score += sum(1 for m in components if m.lower() in chunk_lower)
+
+    keyword_matches = KEYWORD_PATTERN.findall(chunk)
+    score += len(keyword_matches)
+    
+    return score
+
+def clean_markdown_text(document_text: str) -> str:
+    """
+    Safely removes common non-content artifacts from the markdown text.
+    This version is less aggressive to avoid damaging valid table structures.
+    """
+    # This pattern is safe. It only removes lines with 5 or more dots,
+    # which is unique to dot-leader style Tables of Contents.
+    toc_pattern = r'^.*\.{5,}.*\n?'
+    cleaned_text = re.sub(toc_pattern, '', document_text, flags=re.MULTILINE)
+
+    # Clean up any resulting excess blank lines
+    cleaned_text = re.sub(r'\n{2,}', '\n\n', cleaned_text)
+    return cleaned_text.strip()
+
+def extract_all_tables_with_optional_header(markdown_content: str) -> List[Dict[str, Any]]:
+    """
+    Extracts all valid Markdown tables (header + separator + at least one data row).
+    For each table, it includes the preceding '##' header and filters out ToC-like tables.
+    """
+    # Stricter regex: requires at least one data row by using '+'
+    table_pattern_with_capture = re.compile(
+        r'('
+        r'^\s*\|.*\|\s*\n'      # Header row
+        r'\s*\|[-|: ]+\|.*\n'   # Separator row
+        r'(?:^\s*\|.*\|\s*\n?)+' # Body rows (one or more required)
+        r')',
+        re.MULTILINE
+    )
+    parts = table_pattern_with_capture.split(markdown_content)
+    tables = parts[1::2]
+    preceding_texts = parts[0::2]
+    extracted_data: List[Dict[str, Any]] = []
+
+    for i, table_str in enumerate(tables):
+        if '.....' in table_str:
+            continue
+
+        preceding_text_block = preceding_texts[i].strip()
+        header: Optional[str] = None
+        if preceding_text_block:
+            possible_headers = [
+                line.strip() for line in preceding_text_block.splitlines()
+                if line.strip().startswith('##')
+            ]
+            if possible_headers:
+                header = possible_headers[-1]
+        
+        extracted_data.append({
+            'header': header,
+            'table': table_str.strip()
+        })
+    return extracted_data
 
 def chunk_markdown(md: str, max_words: int = 1000) -> List[str]:
     print(f"Total words: {len(md.split())}")
@@ -87,6 +167,7 @@ def generate_prompt(chunk: str, prev_items: List[dict], component: List[dict]) -
     - **Does not remove or omit** previously found items, even if the current chunk contains no new data.
     - **Returning the exact previous list** unchanged if there are **no new valid items** in this chunk.
     - **Avoids duplicates**. Keep the more complete version if duplicates exist.
+    - A single component's information may be split across multiple tables (chunks). For example, the `mpn` might be in one table, while its `top_marking` is in another. If you find new information for an `mpn` that already exists in the "Previously Extracted Items" list, **you must update the existing item** with the new information instead of creating a new, separate entry.
     - **Small variations in `mpn` or `top_marking`** (e.g., suffixes, added characters, etc., SN74LVC1G17DBVR is different from SN74LVC1G17DBVR.Z) **must be treated as unique items**.
     - For each item, include an optional `confidence` field with one of: `"high"`, `"medium"`, or `"low"`.
     - Use:
