@@ -1,1 +1,3 @@
 timestamp,pdf_name,error
+2025-06-28T13:31:47.855557,LM2990S-5.0__NSC_4_alldatasheet.pdf,'markdown'
+2025-06-28T13:48:45.387213,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf,"Error code: 413 - {'error': {'message': 'Request too large for model `llama-3.3-70b-versatile` in organization `org_01jxjmrd8pf76vtk66gj6mv3av` service tier `on_demand` on tokens per minute (TPM): Limit 12000, Requested 12865, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}"

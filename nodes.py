@@ -12,75 +12,24 @@ from config import MARKDOWN_DIR, PROCESSED_DIR, SKIPPED_DIR, METADATA_DIR, CSV_S
 
 logger = logging.getLogger(__name__)
 
-
-def filter_chunks(state: Dict) -> Dict:
-    print("Filter Chunks STATE KEYS:", list(state.keys()))
-    chunks = state.get("chunks", [])
-    raw_components = state.get("component", "[]")
-    
-    # --- Component Parsing Logic ---
-    if isinstance(raw_components, str):
-        raw_components = raw_components.strip()
-        try:
-            parsed = ast.literal_eval(raw_components)
-            components = parsed if isinstance(parsed, list) else [str(parsed)]
-        except (ValueError, SyntaxError):
-            components = [raw_components.strip('"')]
-    elif isinstance(raw_components, list):
-        components = raw_components
-    else:
-        components = []
-
-    # 1. Score each chunk and store it with its original index.
-    indexed_scored_chunks = [
-        (i, chunk, score_chunk(chunk, components))
-        for i, chunk in enumerate(chunks)
-    ]
-
-    print("\n--- Chunk Scoring Details ---")
-    if not indexed_scored_chunks:
-        print("  No chunks to score.")
-    else:
-        for i, chunk, score in indexed_scored_chunks:
-            print(f"  - Chunk {i+1:02d}/{len(chunks):02d} | Score: {score}")
-    print("---------------------------\n")
-
-    high_scoring_chunks = [
-        (i, chunk, score) 
-        for i, chunk, score in indexed_scored_chunks if score > 1
-    ]
-    
-    # 2. Temporarily sort the high-scoring chunks by score to find the top 3.
-    sorted_by_score = sorted(high_scoring_chunks, key=lambda x: x[2], reverse=True)
-
-    # 3. Slice to get only the top 3 entries.
-    top_entries = sorted_by_score[:3]
-
-    # 4. Sort the top entries back by their original index.
-    top_entries_in_original_order = sorted(top_entries, key=lambda x: x[0])
-
-    # 5. Extract the text of the top chunks.
-    final_top_chunks = [chunk for i, chunk, score in top_entries_in_original_order]
-
-    # --- NEW: Combine the top chunks into a single final_chunk ---
-    if final_top_chunks:
-        final_chunk = "\n\n---\n\n".join(final_top_chunks)
-        logger.info(f"Combined the top {len(final_top_chunks)} chunks into a single chunk for processing.")
-        # The workflow expects a list of chunks, so we return a list containing our one combined chunk.
-        chunks_for_llm = [final_chunk]
-    else:
-        logger.warning("No relevant chunks found after filtering. Nothing to process.")
-        chunks_for_llm = []
-
-    chunk_scores_data = [
-        {"chunk_number": i + 1, "score": score, "chunk": chunk} 
-        for i, chunk, score in indexed_scored_chunks
-    ]
-
-    # Update the state with the single combined chunk.
-    return {**state, "final_chunks": chunks_for_llm, "chunk_scores": chunk_scores_data, "current_idx": 0, "items": []}
-
 def load_and_split(state: Dict) -> Dict:
+    """
+    Node: Loads a PDF, converts it to markdown, and splits it into chunks.
+
+    This is the entry point of the processing graph. It performs the following steps:
+    1. Checks if the PDF has already been processed and skips if so.
+    2. If no markdown file exists, it converts the PDF to markdown, saving referenced
+       images and tables.
+    3. It cleans the markdown and extracts only the tables and their headers.
+    4. The table-focused markdown is then split into smaller, manageable chunks.
+    5. Updates the state with the markdown content and the list of chunks.
+
+    Args:
+        state (Dict): The current state, must contain 'pdf_path' and 'converter'.
+
+    Returns:
+        Dict: The updated state with 'markdown' and 'chunks' added.
+    """
     pdf = Path(state["pdf_path"])
     converter = state["converter"]
 
@@ -179,10 +128,23 @@ def load_and_split(state: Dict) -> Dict:
         logger.error(f"Failed to process {pdf.name}: {e}")
         with open("failed_files.log", "a", encoding="utf-8") as log_file:
             log_file.write(f"[{datetime.now()}] {pdf.name} | Error: {e}\n")
-        return state
 
+        return state
+    
 def extract_anchor(state: Dict) -> Dict:
-    print("Extract Anchor STATE KEYS:", list(state.keys()))
+    """
+    Node: Extracts the "anchor" component information from the start of the document.
+
+    This node calls the LLM with a specialized prompt to get the main component name,
+    description, and classification. It uses this information to decide whether to
+    skip processing the document entirely (e.g., if it's a chip component or THT).
+
+    Args:
+        state (Dict): The current state, must contain 'markdown' and 'client_anchor'.
+
+    Returns:
+        Dict: The updated state with 'component', 'description', and potentially a 'skip_reason'.
+    """
     client = state["client_anchor"]
     excerpt = "\n".join(state["markdown"].splitlines()[:100]).strip()
 
@@ -231,8 +193,95 @@ def extract_anchor(state: Dict) -> Dict:
     
     return {**state, "component": component, "description": description, "current_idx": 0, "items": []}
 
+def filter_chunks(state: Dict) -> Dict:
+    """
+    Node: Filters and combines chunks to create a single, high-relevance input for the LLM.
+
+    This optimization step scores all chunks, selects the top 4 highest-scoring chunks,
+    and then combines them into a single, dense text block. This reduces the number
+    of LLM calls and focuses the model on the most important parts of the document.
+
+    Args:
+        state (Dict): The current state, must contain 'chunks' and 'component'.
+
+    Returns:
+        Dict: The updated state with 'final_chunks' containing the combined top chunks.
+    """
+    chunks = state.get("chunks", [])
+    raw_components = state.get("component", "[]")
+    
+    if isinstance(raw_components, str):
+        raw_components = raw_components.strip()
+        try:
+            parsed = ast.literal_eval(raw_components)
+            components = parsed if isinstance(parsed, list) else [str(parsed)]
+        except (ValueError, SyntaxError):
+            components = [raw_components.strip('"')]
+    elif isinstance(raw_components, list):
+        components = raw_components
+    else:
+        components = []
+
+    # 1. Score each chunk and store it with its original index.
+    indexed_scored_chunks = [
+        (i, chunk, score_chunk(chunk, components))
+        for i, chunk in enumerate(chunks)
+    ]
+
+    print("\n--- Chunk Scoring Details ---")
+    if not indexed_scored_chunks:
+        print("  No chunks to score.")
+    else:
+        for i, chunk, score in indexed_scored_chunks:
+            print(f"  - Chunk {i+1:02d}/{len(chunks):02d} | Score: {score}")
+    print("---------------------------\n")
+
+    high_scoring_chunks = [
+        (i, chunk, score) 
+        for i, chunk, score in indexed_scored_chunks if score > 1
+    ]
+    
+    # 2. Temporarily sort the high-scoring chunks by score to find the top 3.
+    sorted_by_score = sorted(high_scoring_chunks, key=lambda x: x[2], reverse=True)
+
+    # 3. Slice to get only the top 4 entries.
+    top_entries = sorted_by_score[:4]
+
+    # 4. Sort the top entries back by their original index.
+    top_entries_in_original_order = sorted(top_entries, key=lambda x: x[0])
+
+    # 5. Extract the text of the top chunks.
+    final_top_chunks = [chunk for i, chunk, score in top_entries_in_original_order]
+
+    # 6. Combine the top chunks into a single final_chunk ---
+    if final_top_chunks:
+        final_chunk = "\n\n---\n\n".join(final_top_chunks)
+        logger.info(f"Combined the top {len(final_top_chunks)} chunks into a single chunk for processing.")
+        chunks_for_llm = [final_chunk]
+    else:
+        logger.warning("No relevant chunks found after filtering. Nothing to process.")
+        chunks_for_llm = []
+
+    chunk_scores_data = [
+        {"chunk_number": i + 1, "score": score, "chunk": chunk} 
+        for i, chunk, score in indexed_scored_chunks
+    ]
+
+    return {**state, "final_chunks": chunks_for_llm, "chunk_scores": chunk_scores_data, "current_idx": 0, "items": []}
+
 def call_llm(state: Dict) -> Dict:
-    print("Call LLM STATE KEYS:", list(state.keys()))
+    """
+    Node: Calls the main language model for information extraction.
+
+    This node takes the (filtered and combined) chunk, constructs the main extraction
+    prompt, sends it to the LLM, and stores the raw string response in the state.
+
+    Args:
+        state (Dict): The current state, containing 'final_chunks', 'items', 'component', etc.
+
+    Returns:
+        Dict: The updated state with the 'raw_response' from the LLM.
+    """
     chunk = state["final_chunks"][state["current_idx"]]
     prompt = generate_prompt(chunk, state["items"], state["component"])
     
@@ -248,6 +297,19 @@ def call_llm(state: Dict) -> Dict:
     return {**state, "raw_response": resp.choices[0].message.content.strip()}
 
 def parse_and_repair(state: Dict) -> Dict:
+    """
+    Node: Parses the LLM's response and attempts to repair it if it's invalid JSON.
+
+    It first tries to parse the 'raw_response'. If parsing fails, it calls the LLM
+    again with a 'repair' prompt. If the repaired response is valid JSON, it updates
+    the state. Otherwise, it logs a warning.
+
+    Args:
+        state (Dict): The current state, must contain 'raw_response' and 'client'.
+
+    Returns:
+        Dict: The updated state with the parsed 'items'.
+    """
     client = state["client"]
     raw = state["raw_response"]
 
@@ -276,8 +338,6 @@ def parse_and_repair(state: Dict) -> Dict:
         else:
             raw_json = fixed_raw
 
-        print("Repaired JSON:\n", raw_json)
-
         try:
             data = json.loads(raw_json)
         except Exception as e:
@@ -292,8 +352,21 @@ def parse_and_repair(state: Dict) -> Dict:
     return {**state, "current_idx": state["current_idx"] + 1}
 
 def validate_items(state: Dict) -> Dict:
-    print("Validate Items STATE KEYS:", list(state.keys()))
-    client = state["client"]
+    """
+    Node: Validates, deduplicates, and enriches the final list of extracted items.
+
+    This node performs a rule-based deduplication on the extracted items, grouping
+    them by 'mpn' (Manufacturer Part Number) and merging their information.
+    The commented-out code shows how an LLM could be used for a more advanced
+    validation step to add confidence scores and comments.
+
+    Args:
+        state (Dict): The current state, must contain 'items'.
+
+    Returns:
+        Dict: The updated state with the 'validated_items' list.
+    """
+    # client = state["client"]
     items = state.get("items", [])
 
     grouped = {}
@@ -355,12 +428,22 @@ def validate_items(state: Dict) -> Dict:
     # except Exception as e:
     #     logger.warning(f"Validation parse failed: {e}")
     #     validated_items = deduped 
-
     return {**state, "validated_items": validated_items}
 
-
 def finalize(state: Dict) -> Dict:
-    print("Finalize STATE KEYS:", list(state.keys()))
+    """
+    Node: Saves the final results and moves the processed file.
+
+    This is a terminal node for a successful run. It adds the source filename
+    to each extracted item, saves both the raw and validated items to CSV files,
+    and moves the original PDF to the 'processed' directory to prevent reprocessing.
+
+    Args:
+        state (Dict): The final state containing 'items' and 'validated_items'.
+
+    Returns:
+        Dict: The final state.
+    """
     for item in state["items"]:
         item["source"] = Path(state["pdf_path"]).name
         item["description"] = item.get("description") or state.get("description", "")
@@ -395,11 +478,23 @@ def save_full_state(state: Dict) -> Dict:
         json.dump(metadata, f, indent=2, ensure_ascii=False)
 
     print(f"Saved metadata to {json_path}")
+    
     return state
 
 def save_skipped_component(state: Dict) -> Dict:
-    print("Save Skipped Component STATE KEYS:", list(state.keys()))
+    """
+    Node: Logs information about a skipped document and moves the file.
 
+    This is a terminal node for a skipped run. It records the filename and the
+    reason for skipping to a dedicated CSV log file. It then moves the PDF to
+    the 'skipped' directory.
+
+    Args:
+        state (Dict): The state, must contain 'pdf_path' and 'skip_reason'.
+
+    Returns:
+        Dict: The final state for the skipped item.
+    """
     skipped_info = {
         "source": Path(state["pdf_path"]).name,
         "component": ", ".join(state.get("component", [])),
@@ -417,58 +512,3 @@ def save_skipped_component(state: Dict) -> Dict:
     Path(state["pdf_path"]).rename(SKIPPED_DIR / Path(state["pdf_path"]).name)
 
     return state
-
-# def filter_chunks(state: Dict) -> Dict:
-#     print("Filter Chunks STATE KEYS:", list(state.keys()))
-#     raw_components = state.get("component", "[]")
-#     if isinstance(raw_components, str):
-#         raw_components = raw_components.strip()
-#         try:
-#             parsed = ast.literal_eval(raw_components)
-#             components = parsed if isinstance(parsed, list) else [str(parsed)]
-#         except Exception:
-#             components = [raw_components.strip('"')]
-#     elif isinstance(raw_components, list):
-#         components = raw_components
-#     else:
-#         components = []
-#     scored = [(chunk, score_chunk(chunk, components)) for chunk in state["chunks"]]
-#     top_chunks = [chunk for chunk, score in sorted(scored, key=lambda x: -x[1]) if score > 1][:5]
-#     title = state.get("title", Path(state["pdf_path"]).stem)
-#     print(title.lower())
-#     pattern = re.compile(
-#     r"\b("
-#     r"part( numbers?)?|"
-#     r"type numbers?|"
-#     r"ordering|"
-#     r"markings?|"
-#     r"package options?"
-#     r")\b",
-#     re.IGNORECASE
-# )
-#     cands = [c for c in state["chunks"]
-#              if any(m.lower() in c.lower() for m in components)
-#              or title.lower() in c.lower()
-#              or pattern.search(c)]
-#     logger.info(f"{len(top_chunks)} candidate chunks")
-#     return {**state, "candidate_chunks": top_chunks, "current_idx": 0, "items": []}
-
-# def score_chunk(chunk: str, components: list[str]) -> int:
-#     score = 0
-#     chunk_lower = chunk.lower()
-#     # Score for MPN matches
-#     score += sum(1 for m in components if m.lower() in chunk_lower)
-#     # Score for important keywords
-#     keywords = ["part number", "ordering", "marking", "package option", "overview", "description"]
-#     score += sum(1 for kw in keywords if kw in chunk_lower)
-#     return score
-
-# def save_candidates(state: Dict) -> Dict:
-#     print("Save Candidates STATE KEYS:", list(state.keys()))
-#     out_dir = Path("candidates")
-#     out_dir.mkdir(exist_ok=True)
-#     out_path = out_dir / f"{Path(state['pdf_path']).stem}_candidates.json"
-#     with open(out_path, "w", encoding="utf-8") as f:
-#         json.dump(state["chunks"], f, indent=2)
-#     return state
-

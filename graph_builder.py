@@ -9,9 +9,9 @@ def build_graph():
     g.add_node("llm", call_llm)
     g.add_node("parse", parse_and_repair)
     g.add_node("final", finalize)
-    g.add_node("save", save_full_state)
     g.add_node("validate", validate_items)
     g.add_node("save_skipped", save_skipped_component)
+    g.add_node("save", save_full_state)
 
     g.add_edge(START, "load")
     g.add_edge("load", "anchor")

@@ -5,45 +5,67 @@ from typing import Dict, List, Any, Optional
 from docling.datamodel.base_models import InputFormat
 from docling.datamodel.pipeline_options import PdfPipelineOptions, EasyOcrOptions, TesseractCliOcrOptions
 from docling.document_converter import DocumentConverter, PdfFormatOption
-from docling.backend.pypdfium2_backend import PyPdfiumDocumentBackend
 from config import CSV_OUTPUT, CSV_VALIDATED_OUTPUT
 
 logger = logging.getLogger(__name__)
 
 def setup_converter() -> DocumentConverter:
+    """
+    Initializes and configures the DocumentConverter for processing PDFs.
+
+    This function sets up the pipeline with specific options, including enabling
+    Optical Character Recognition (OCR) and table structure analysis. It is
+    configured to use EasyOCR by default.
+
+    Returns:
+        DocumentConverter: A configured instance of the DocumentConverter.
+    """
     opts = PdfPipelineOptions()
-    opts.do_ocr = True
-    opts.do_table_structure = True
-    opts.table_structure_options.do_cell_matching = True
-    opts.images_scale = 2.0
-    opts.generate_page_images = True
-    opts.generate_picture_images = True
-    opts.ocr_options = EasyOcrOptions()
+    opts.do_ocr = True  # Enable OCR to extract text from images.
+    opts.do_table_structure = True  # Enable table structure analysis.
+    opts.table_structure_options.do_cell_matching = True    # Enable cell matching for better table structure recognition.
+    opts.images_scale = 2.0  # Scale images for better OCR accuracy.
+    opts.generate_page_images = True    # Generate images for each page in the PDF.
+    opts.generate_picture_images = True   # Generate images for pictures in the PDF.
+    opts.ocr_options = EasyOcrOptions()   # Use EasyOCR for text extraction from images.
     # opts.ocr_options = TesseractCliOcrOptions(force_full_page_ocr=True)
-    opts.ocr_options.lang = ["en"]
+    opts.ocr_options.lang = ["en"]  # Set the OCR language to English.
+
     return DocumentConverter(format_options={InputFormat.PDF: PdfFormatOption(pipeline_options=opts)})
 
 def score_chunk(chunk: str, components: list[str]) -> int:
     """
-    Scores a chunk based on a combination of component name matches and
-    the presence of important keywords found via regex.
+    Scores a text chunk based on the presence of relevant keywords and component names.
+
+    This function is used to identify the most relevant parts of a document for extraction.
+    It assigns a score by counting occurrences of predefined keywords (e.g., "part number",
+    "package") and the component names identified in the anchor extraction step.
+
+    Args:
+        chunk (str): The text chunk to score.
+        components (list[str]): A list of component names to search for.
+
+    Returns:
+        int: The calculated score for the chunk.
     """
     score = 0
     chunk_lower = chunk.lower()
 
+    # A regex pattern to find keywords related to component specifications.
     KEYWORD_PATTERN = re.compile(
     r"\b("
     r"part( numbers?)?|"
     r"type numbers?|"
     r"ordering|"
     r"markings?|"
-    r"package options?"
+    r"package options?|"
+    r"product series|"
+    r"packages?"
     r")\b",
-    re.IGNORECASE)
-
+    re.IGNORECASE
+    )
     if components:
         score += sum(1 for m in components if m.lower() in chunk_lower)
-
     keyword_matches = KEYWORD_PATTERN.findall(chunk)
     score += len(keyword_matches)
     
@@ -51,29 +73,44 @@ def score_chunk(chunk: str, components: list[str]) -> int:
 
 def clean_markdown_text(document_text: str) -> str:
     """
-    Safely removes common non-content artifacts from the markdown text.
-    This version is less aggressive to avoid damaging valid table structures.
+    Cleans raw markdown text by removing unwanted artifacts.
+
+    Specifically, this function removes lines that look like a table of contents
+    (e.g., "Section 1 .......... 5") and normalizes multiple newlines into a
+    standard double newline.
+
+    Args:
+        document_text (str): The raw markdown content.
+
+    Returns:
+        str: The cleaned markdown content.
     """
-    # This pattern is safe. It only removes lines with 5 or more dots,
-    # which is unique to dot-leader style Tables of Contents.
     toc_pattern = r'^.*\.{5,}.*\n?'
     cleaned_text = re.sub(toc_pattern, '', document_text, flags=re.MULTILINE)
-
-    # Clean up any resulting excess blank lines
     cleaned_text = re.sub(r'\n{2,}', '\n\n', cleaned_text)
+
     return cleaned_text.strip()
 
 def extract_all_tables_with_optional_header(markdown_content: str) -> List[Dict[str, Any]]:
     """
-    Extracts all valid Markdown tables (header + separator + at least one data row).
-    For each table, it includes the preceding '##' header and filters out ToC-like tables.
+    Extracts all markdown tables and their immediate preceding '##' header.
+
+    This function uses a regular expression to find all markdown-formatted tables.
+    It also captures the text immediately before each table to find a potential
+    header, which is assumed to be the last line starting with '##'.
+
+    Args:
+        markdown_content (str): The markdown text to search through.
+
+    Returns:
+        List[Dict[str, Any]]: A list of dictionaries, where each dictionary
+                               contains a 'table' and an optional 'header'.
     """
-    # Stricter regex: requires at least one data row by using '+'
     table_pattern_with_capture = re.compile(
         r'('
-        r'^\s*\|.*\|\s*\n'      # Header row
-        r'\s*\|[-|: ]+\|.*\n'   # Separator row
-        r'(?:^\s*\|.*\|\s*\n?)+' # Body rows (one or more required)
+        r'^\s*\|.*\|\s*\n'      
+        r'\s*\|[-|: ]+\|.*\n'   
+        r'(?:^\s*\|.*\|\s*\n?)+' 
         r')',
         re.MULTILINE
     )
@@ -100,9 +137,24 @@ def extract_all_tables_with_optional_header(markdown_content: str) -> List[Dict[
             'header': header,
             'table': table_str.strip()
         })
+
     return extracted_data
 
 def chunk_markdown(md: str, max_words: int = 1000) -> List[str]:
+    """
+    Splits a large markdown document into smaller chunks based on a word limit.
+
+    This function attempts to keep markdown sections (starting with '##')
+    together. It iterates through sections, adding them to a buffer until the
+    word count exceeds the maximum, at which point it creates a new chunk.
+
+    Args:
+        md (str): The markdown content to be chunked.
+        max_words (int): The maximum number of words allowed per chunk.
+
+    Returns:
+        List[str]: A list of markdown text chunks.
+    """
     print(f"Total words: {len(md.split())}")
     sections = re.split(r"\n(?=##\s)", md)
     chunks, buf = [], ""
@@ -121,6 +173,7 @@ def chunk_markdown(md: str, max_words: int = 1000) -> List[str]:
     if buf.strip():
         chunks.append(buf.strip())
     print(f"Number of words in chunks: {[len(chunk.split()) for chunk in chunks]}")
+
     return chunks
 
 def generate_anchor_prompt(excerpt: str) -> str:
@@ -233,34 +286,42 @@ def generate_repair_prompt(raw: str) -> str:
 
 def generate_validation_prompt(items: list) -> str:
     return f"""
-You are given a list of extracted items from a technical document.
+    You are given a list of extracted items from a technical document.
 
-Your task is to:
-1. Validate each item as-is.
-2. Update the `confidence` field (`high`, `medium`, or `low`) depending on the consistency and plausibility of the fields.
-3. Add a `validation_comment`:
-   - Briefly explain why confidence is not high (e.g., missing `top_marking`, inconsistent `package_case`, suspicious values).
-   - Leave it blank if the data is strong.
+    Your task is to:
+    1. Validate each item as-is.
+    2. Update the `confidence` field (`high`, `medium`, or `low`) depending on the consistency and plausibility of the fields.
+    3. Add a `validation_comment`:
+    - Briefly explain why confidence is not high (e.g., missing `top_marking`, inconsistent `package_case`, suspicious values).
+    - Leave it blank if the data is strong.
 
-Respond strictly in the following JSON format — no explanations, markdown code blocks, or extra text. The response **must** start with `[` and end with `]`.
+    Respond strictly in the following JSON format — no explanations, markdown code blocks, or extra text. The response **must** start with `[` and end with `]`.
 
-[
-  {{
-    "mpn": "...",
-    "top_marking": "...",  // or null
-    "package_case": "...", // or null
-    "description": "...",
-    "confidence": "...",   // high, medium, or low
-    "validation_comment": "Explain confidence or highlight issues in 1 sentence if there are, leave blank if confident."
-  }},
-  ...
-]
+    [
+    {{
+        "mpn": "...",
+        "top_marking": "...",  // or null
+        "package_case": "...", // or null
+        "description": "...",
+        "confidence": "...",   // high, medium, or low
+        "validation_comment": "Explain confidence or highlight issues in 1 sentence if there are, leave blank if confident."
+    }},
+    ...
+    ]
 
-Extracted Items:
-{json.dumps(items, indent=2)}
-"""
+    Extracted Items:
+    {json.dumps(items, indent=2)}
+    """
 
 def save_items(items: List[dict]):
+    """
+    Saves a list of extracted items to a CSV file.
+
+    Appends to the file if it exists, otherwise creates a new file with a header.
+
+    Args:
+        items (List[dict]): The list of dictionaries to save.
+    """
     df = pd.DataFrame(items)
     mode = "a" if CSV_OUTPUT.exists() else "w"
     header = not CSV_OUTPUT.exists()
@@ -268,6 +329,14 @@ def save_items(items: List[dict]):
     logger.info(f"Saved {len(items)} items to CSV")
 
 def save_validated_items(items: List[dict]):
+    """
+    Saves a list of validated items to a separate CSV file.
+
+    Appends to the file if it exists, otherwise creates a new file with a header.
+
+    Args:
+        items (List[dict]): The list of validated dictionaries to save.
+    """
     df = pd.DataFrame(items)
     mode = "a" if CSV_VALIDATED_OUTPUT.exists() else "w"
     header = not CSV_VALIDATED_OUTPUT.exists()
