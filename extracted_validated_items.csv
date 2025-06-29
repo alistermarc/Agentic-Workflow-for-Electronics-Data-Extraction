@@ -1,299 +1,296 @@
 mpn,top_marking,package_case,description,confidence,validation_comment,source
-TPC6.8,DDP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC6.8A,DEP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC7.5,DFP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC7.5A,DGP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC8.2,DHP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC8.2A,DKP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC9.1,DLP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC9.1A,DMP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC10,DNP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC10A,DPP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC11,DQP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC11A,DRP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC12,DSP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC12A,DTP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC13,DUP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC13A,DVP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC15,DWP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC15A,DXP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC16,DYP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC16A,DZP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC18,EDP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC18A,EEP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC20,EFP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC20A,EGP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC22,EHP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC22A,EKP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC24,ELP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC24A,EMP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC27,ENP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC27A,EPP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC30,EQP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC30A,ERP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC33,ESP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC33A,ETP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC36,EUP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC36A,EVP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC39,EWP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC39A,EXP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC43,EYP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-TPC43A,EZP,,Transient Voltage Suppression Diode,medium,,TPC7.5A__VISHAY_0_alldatasheet.pdf
-OPA182,,"SOIC, SOT-23",Operational amplifiers with various features including rail-to-rail output and zero-drift.,high,,OPA182IDBVR__TI_0_alldatasheet.pdf
-OPA2182,,"SOIC, VSSOP",Operational amplifiers with various features including rail-to-rail output and zero-drift.,high,,OPA182IDBVR__TI_0_alldatasheet.pdf
-OPA4182,,SOIC,Operational amplifiers with various features including rail-to-rail output and zero-drift.,high,,OPA182IDBVR__TI_0_alldatasheet.pdf
-MAX16060,,TQFN-EP,"Temperature range -40 °C to +125 °C, TQFN-EP package",high,,MAX16062ETG+T__MaximIntegratedProducts_1211_componentsearchengine.pdf
-MAX16061,,TQFN-EP,"Temperature range -40 °C to +125 °C, TQFN-EP package",high,,MAX16062ETG+T__MaximIntegratedProducts_1211_componentsearchengine.pdf
-MAX16062,,TQFN-EP,"Temperature range -40 °C to +125 °C, TQFN-EP package",high,,MAX16062ETG+T__MaximIntegratedProducts_1211_componentsearchengine.pdf
-THS4031CD,4031C,SOIC,70-MHz High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4031CDG4,4031C,SOIC,70-MHz High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4031CDGN,ACM,MSOP- PowerPAD,70-MHz High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4031CDGNG4,ACM,MSOP- PowerPAD,70-MHz High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4031CDGNR,ACM,MSOP- PowerPAD,70-MHz High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4031CDGNRG4,ACM,MSOP- PowerPAD,70-MHz High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4031CDR,4031C,SOIC,70-MHz High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4031CDRG4,4031C,SOIC,70-MHz High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4031ID,4031I,SOIC,70-MHz High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4031IDG4,4031I,SOIC,70-MHz High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4031IDGN,ACN,MSOP- PowerPAD,70-MHz High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4031IDGNG4,ACN,MSOP- PowerPAD,70-MHz High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4031IDGNR,ACN,MSOP- PowerPAD,70-MHz High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4031IDGNRG4,ACN,MSOP- PowerPAD,70-MHz High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4031IDR,4031I,SOIC,70-MHz High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4031IDRG4,4031I,SOIC,70-MHz High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4031MFKB,5962- 9959501Q2A THS4031MFKB,LCCC,70-MHz High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4031MJG,THS4031MJG,CDIP,70-MHz High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4031MJGB,9959501QPA THS4031M,CDIP,70-MHz High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4032CD,4032C,SOIC,175-MHz Low Power High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4032CDG4,4032C,SOIC,175-MHz Low Power High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4032CDGN,ABD,MSOP- PowerPAD,175-MHz Low Power High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4032CDGNG4,ABD,MSOP- PowerPAD,175-MHz Low Power High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4032CDR,4032C,SOIC,175-MHz Low Power High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4032CDRG4,4032C,SOIC,175-MHz Low Power High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4032ID,4032I,SOIC,175-MHz Low Power High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4032IDG4,4032I,SOIC,175-MHz Low Power High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4032IDGN,ABG,MSOP- PowerPAD,175-MHz Low Power High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4032IDGNG4,ABG,MSOP- PowerPAD,175-MHz Low Power High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4032IDGNR,ABG,MSOP- PowerPAD,175-MHz Low Power High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4032IDGNRG4,ABG,MSOP- PowerPAD,175-MHz Low Power High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4032IDR,4032I,SOIC,175-MHz Low Power High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-THS4032IDRG4,4032I,SOIC,175-MHz Low Power High-Speed Amplifiers,high,,THS4031MFKB__TI_0_alldatasheet.pdf
-OMAPL137BPTPH,OMAPL137BPTPH,HLQFP,Processor,high,,OMAPL137BPTPH__TI_0_alldatasheet.pdf
-OMAPL137BHKGD1,,KGD,Processor,medium,,OMAPL137BPTPH__TI_0_alldatasheet.pdf
-MAXIZSACNG,,24 Plastic DIP,Analog-to-digital converter with various electrical characteristics.,medium,,MAX178BCWG__MAXIM_0_alldatasheet.pdf
-MAXIZ8BCNG,,24 Plastic DIP,Analog-to-digital converter with various electrical characteristics.,medium,,MAX178BCWG__MAXIM_0_alldatasheet.pdf
-MAXIZSACWG,,24 Wide SO,Analog-to-digital converter with various electrical characteristics.,medium,,MAX178BCWG__MAXIM_0_alldatasheet.pdf
-MAXIZ8BCWG,,24 Wide SO,Analog-to-digital converter with various electrical characteristics.,medium,,MAX178BCWG__MAXIM_0_alldatasheet.pdf
-MAXIZSAENG,,24 Plaslic DIP,Analog-to-digital converter with various electrical characteristics.,medium,,MAX178BCWG__MAXIM_0_alldatasheet.pdf
-MAX 78BENG,,24 Plastic DIP,Analog-to-digital converter with various electrical characteristics.,medium,,MAX178BCWG__MAXIM_0_alldatasheet.pdf
-MAXI7BAEWG,,24 Wide SO,Analog-to-digital converter with various electrical characteristics.,medium,,MAX178BCWG__MAXIM_0_alldatasheet.pdf
-MAXIZ8BEWG,,24 Widc SO,Analog-to-digital converter with various electrical characteristics.,medium,,MAX178BCWG__MAXIM_0_alldatasheet.pdf
-MAX178BMRG,,24 CERDIP,Analog-to-digital converter with various electrical characteristics.,medium,,MAX178BCWG__MAXIM_0_alldatasheet.pdf
-MAX178A,,,Reference Output,medium,,MAX178BCWG__MAXIM_0_alldatasheet.pdf
-MAX178B,,,Use External Reference Only,medium,,MAX178BCWG__MAXIM_0_alldatasheet.pdf
-DDZ9678,D1,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9681,H9,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9682,HA,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9683,HB,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9684,HC,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9685,HD,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9686,HE,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9687,HF,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9688,HG,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9689,HH,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9690,HJ,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9691,HK,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9692,HL,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9693,HM,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9694,HN,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9696,HP,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9697,HQ,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9698,HR,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9699,HS,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9700,HT,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9701,HU,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9702,HV,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9703,HW,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9704,H8,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9705,HY,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9707,MD,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9708,ME,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9709,MF,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9711,MH,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9712,MJ,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9713,MK,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9714,ML,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9715,MM,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9716,MN,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-DDZ9717,MO,SOD123,Transient Voltage Suppression Diode,high,,DDZ9682-7__DiodesIncorporated_1789_componentsearchengine.pdf
-XC6220A,,"SOT-25, SOT-89-5, USP-6C",Voltage Regulator,high,,XC6220D501PR__TOREX_0_alldatasheet.pdf
-XC6220B,,"SOT-25, SOT-89-5, USP-6C",Voltage Regulator,high,,XC6220D501PR__TOREX_0_alldatasheet.pdf
-XC6220C,,"SOT-25, SOT-89-5, USP-6C",Voltage Regulator,high,,XC6220D501PR__TOREX_0_alldatasheet.pdf
-XC6220D,,"SOT-25, SOT-89-5, USP-6C",Voltage Regulator,high,,XC6220D501PR__TOREX_0_alldatasheet.pdf
-NSS1C200LT1G,,SOT-23 (Pb-Free),N-channel MOSFET with a maximum collector current of -2 A and a maximum collector-emitter voltage of -100 V.,high,,NSS1C200LT1G__ONSEMI_0_alldatasheet.pdf
-TPSMBJ11A,KZA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ11CA,AZA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ12A,LEA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ12CA,BEA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ13A,LGA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ13CA,BGA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ14A,LKA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ14CA,BKA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ15A,LMA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ15CA,BMA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ16A,LPA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ16CA,BPA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ17A,LRA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ17CA,BRA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ18A,LTA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ18CA,BTA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ19A,LBA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ19CA,BBA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ20A,LVA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ20CA,BVA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ22A,LXA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ22CA,BXA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ24A,LZA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ24CA,BZA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ26A,MEA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ26CA,CEA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ28A,MGA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ28CA,CGA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ30A,MKA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ30CA,CKA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ33A,MMA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ33CA,CMA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ36A,MPA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ36CA,CPA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ40A,MRA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ40CA,CRA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ43A,MTA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ43CA,CTA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ45A,MVA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ45CA,CVA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ48A,MXA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ48CA,CXA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ51A,MZA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ51CA,CZA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ54A,NEA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ54CA,DEA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ58A,NGA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ58CA,DGA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ60A,NKA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ60CA,DKA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ64A,NMA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ64CA,DMA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ70A,NPA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ70CA,DPA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ75A,NRA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ75CA,DRA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ78A,NTA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ78CA,DTA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ85A,NVA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ85CA,DVA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ90A,NXA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ90CA,DXA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ100A,NZA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ100CA,DZA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ110A,PEA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ110CA,EEA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ120A,PGA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ120CA,EGA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ130A,PKA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ130CA,EKA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ140A,PBA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ140CA,EBA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ150A,PMA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ150CA,EMA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ160A,PPA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ160CA,EPA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ170A,PRA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-TPSMBJ170CA,ERA,,Transient Voltage Suppression Diode,high,,TPSMBJ60CA__ANOVA_0_alldatasheet.pdf
-SN10501DBVT,,SOT-23-5,Single,high,,SN10502DGK__TI_0_alldatasheet.pdf
-SN10501DBVR,,SOT-23-5,Single,high,,SN10502DGK__TI_0_alldatasheet.pdf
-SN10501DGK,,MSOP-8,Single,high,,SN10502DGK__TI_0_alldatasheet.pdf
-SN10501DGKR,,MSOP-8,Single,high,,SN10502DGK__TI_0_alldatasheet.pdf
-SN10501DGN,,MSOP-8-PP,Single,high,,SN10502DGK__TI_0_alldatasheet.pdf
-SN10501DGNR,,MSOP-8-PP,Single,high,,SN10502DGK__TI_0_alldatasheet.pdf
-SN10501D,,SOIC,Single,high,,SN10502DGK__TI_0_alldatasheet.pdf
-SN10501DR,,SOIC,Single,high,,SN10502DGK__TI_0_alldatasheet.pdf
-SN10502DGK,,MSOP-8,Dual,high,,SN10502DGK__TI_0_alldatasheet.pdf
-SN10502DGKR,,MSOP-8,Dual,high,,SN10502DGK__TI_0_alldatasheet.pdf
-SN10502DGN,,MSOP-8-PP,Dual,high,,SN10502DGK__TI_0_alldatasheet.pdf
-SN10502DGNR,,MSOP-8-PP,Dual,high,,SN10502DGK__TI_0_alldatasheet.pdf
-SN10502D,,SOIC,Dual,high,,SN10502DGK__TI_0_alldatasheet.pdf
-SN10502DR,,SOIC,Dual,high,,SN10502DGK__TI_0_alldatasheet.pdf
-SN10503D,,SOIC,Triple,high,,SN10502DGK__TI_0_alldatasheet.pdf
-SN10503DR,,SOIC,Triple,high,,SN10502DGK__TI_0_alldatasheet.pdf
-SN10503PWP,,TSSOP-14-PP,Triple,high,,SN10502DGK__TI_0_alldatasheet.pdf
-SN10503PWPR,,TSSOP-14-PP,Triple,high,,SN10502DGK__TI_0_alldatasheet.pdf
-NTK3139PT1G,,SOT-723,N-channel MOSFET with a maximum Drain-to-Source Voltage of -20 V and a maximum Continuous Drain Current of -780 mA.,medium,,NTK3139PT1G__ONSEMI_0_alldatasheet.pdf
-NTK3139PT5G,,SOT-723,N-channel MOSFET with a maximum Drain-to-Source Voltage of -20 V and a maximum Continuous Drain Current of -780 mA.,medium,,NTK3139PT1G__ONSEMI_0_alldatasheet.pdf
-TXU0204-Q1WBQA,,VQFN (14),"Device with multiple input and output pins, referenced to supply voltages.",high,,TXU0204QPWRQ1__TexasInstruments_732_componentsearchengine.pdf
-TXU0204-Q1PW,,TSSOP (14),"Device with multiple input and output pins, referenced to supply voltages.",high,,TXU0204QPWRQ1__TexasInstruments_732_componentsearchengine.pdf
-TXU0204QPWRQ1,,TSSOP (PW),"Device with multiple input and output pins, referenced to supply voltages.",high,,TXU0204QPWRQ1__TexasInstruments_732_componentsearchengine.pdf
-TXU0204QWBQARQ1,,WQFN (BQA),"Device with multiple input and output pins, referenced to supply voltages.",high,,TXU0204QPWRQ1__TexasInstruments_732_componentsearchengine.pdf
-SMPC5.0A,GDE,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC6.0A,GDG,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC6.5A,GDK,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC7.0A,GDM,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC7.5A,GDP,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC8.0A,GDR,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC8.5A,GDT,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC9.0A,GDV,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC10A,GDX,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC11A,GDZ,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC12A,GEE,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC13A,GEG,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC14A,GEK,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC15A,GEM,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC16A,GEP,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC17A,GER,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC18A,GET,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC20A,GEV,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC22A,GEX,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC24A,GEZ,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC26A,GFE,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC28A,GFG,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC30A,GFK,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC33A,GFM,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-SMPC36A,GFP,,Transient Voltage Suppression Diode,high,,SMPC28A__VISHAY_0_alldatasheet.pdf
-OPA992,"1JS, O92F","SC70, SOT-23",Operational amplifiers in various packages,high,,OPA2992IDGKR__TI_0_alldatasheet.pdf
-OPA2992,"2992PW, 2JUT, O2992D, O92G","SOIC, SOT-23, TSSOP, VSSOP, WSON",Operational amplifiers in various packages,high,,OPA2992IDGKR__TI_0_alldatasheet.pdf
-OPA4992,,"SOIC, TSSOP",Operational amplifiers in various packages,high,,OPA2992IDGKR__TI_0_alldatasheet.pdf
-OPA992S,O92SD,SOT-23,Operational amplifiers in various packages,high,,OPA2992IDGKR__TI_0_alldatasheet.pdf
-LMZ31704RVQR,"54020, LMZ31704",B3QFN (RVQ),Voltage regulator with a maximum output current of 4 A and input voltage range of 4.5 V to 17 V.,high,,LMZ31704RVQR__TexasInstruments_3556_componentsearchengine.pdf
-LMZ31704RVQT,"54020, LMZ31704",B3QFN (RVQ),Voltage regulator with a maximum output current of 4 A and input voltage range of 4.5 V to 17 V.,high,,LMZ31704RVQR__TexasInstruments_3556_componentsearchengine.pdf
-ZL30771LFG7,,80-lead LGA,1-Channel IEEE 1588 & Synchronous Ethernet Packet Clock Network Synchronizer,high,,ZL30772__MICROSEMI_0_alldatasheet.pdf
-ZL30772LFG7,,80-lead LGA,2-Channel IEEE 1588 & Synchronous Ethernet Packet Clock Network Synchronizer,high,,ZL30772__MICROSEMI_0_alldatasheet.pdf
-ZL30773LFG7,,80-lead LGA,3-Channel IEEE 1588 & Synchronous Ethernet Packet Clock Network Synchronizer,high,,ZL30772__MICROSEMI_0_alldatasheet.pdf
-UCD3028RHAR,UCD3028,QFN,Digital controller for power management,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3028RHAT,UCD3028,QFN,Digital controller for power management,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3028RMHR,3028RMH,QFN,Digital controller for power management,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3028RMHT,3028RMH,QFN,Digital controller for power management,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3020RGZR,UCD3020,QFN,Digital controller for power management,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3020RGZT,UCD3020,QFN,Digital controller for power management,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3040RGCR,UCD3040,QFN,Digital controller for power management,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3040RGCT,UCD3040,QFN,Digital controller for power management,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3040PFCR,UCD3040,QFP,Digital controller for power management,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3040PFC,UCD3040,QFP,Digital controller for power management,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3028RHAR,UCD3028,QFN,,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3028RHAT,UCD3028,QFN,,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3028RMHR,3028RMH,QFN,,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3028RMHT,3028RMH,QFN,,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3020RGZR,UCD3020,QFN,,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3020RGZT,UCD3020,QFN,,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3040RGCR,UCD3040,QFN,,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3040RGCT,UCD3040,QFN,,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3040PFCR,UCD3040,QFP,,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3040PFC,UCD3040,QFP,,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3028RHAR,UCD3028,QFN,ARM7 core processor with various features including high-resolution DPWM outputs and multiple ADC channels.,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3028RHAT,UCD3028,QFN,ARM7 core processor with various features including high-resolution DPWM outputs and multiple ADC channels.,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3028RMHR,3028RMH,QFN,ARM7 core processor with various features including high-resolution DPWM outputs and multiple ADC channels.,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3028RMHT,3028RMH,QFN,ARM7 core processor with various features including high-resolution DPWM outputs and multiple ADC channels.,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3020RGZR,UCD3020,QFN,ARM7 core processor with various features including high-resolution DPWM outputs and multiple ADC channels.,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3020RGZT,UCD3020,QFN,ARM7 core processor with various features including high-resolution DPWM outputs and multiple ADC channels.,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3040RGCR,UCD3040,QFN,ARM7 core processor with various features including high-resolution DPWM outputs and multiple ADC channels.,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3040RGCT,UCD3040,QFN,ARM7 core processor with various features including high-resolution DPWM outputs and multiple ADC channels.,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3040PFCR,UCD3040,QFP,ARM7 core processor with various features including high-resolution DPWM outputs and multiple ADC channels.,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
-UCD3040PFC,UCD3040,QFP,ARM7 core processor with various features including high-resolution DPWM outputs and multiple ADC channels.,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+74AVC1T45W6-7,7A,SOT26,Buffer/Driver,high,,74AVC1T45.pdf
+74AVC1T45DW-7,7B,SOT363,Buffer/Driver,high,,74AVC1T45.pdf
+74AVC1T45FW3-7,7A,X2-DFN0910-6,Buffer/Driver,high,,74AVC1T45.pdf
+74AVC1T45FW5-7,7X,X1-DFN1010-6,Buffer/Driver,high,,74AVC1T45.pdf
+74AVC1T45FX4-7,7B,X2-DFN1409-6,Buffer/Driver,high,,74AVC1T45.pdf
+74AVC1T45FZ4-7,7C,X2-DFN1410-6,Buffer/Driver,high,,74AVC1T45.pdf
+PMBT3906,*2A,SOT23,NPN general-purpose transistor,high,,PMBT3906.pdf
+PCA9548ABS,548A,HVQFN24,8-channel I2C-bus switch with reset,high,,PCA9548A-3139384 (1).pdf
+"PCA9548ABS,118",548A,HVQFN24,8-channel I2C-bus switch with reset,high,,PCA9548A-3139384 (1).pdf
+PCA9548ABSHP,548A,HVQFN24,8-channel I2C-bus switch with reset,high,,PCA9548A-3139384 (1).pdf
+PCA9548AD,PCA9548AD,SO24,8-channel I2C-bus switch with reset,high,,PCA9548A-3139384 (1).pdf
+"PCA9548AD,112",PCA9548AD,SO24,8-channel I2C-bus switch with reset,high,,PCA9548A-3139384 (1).pdf
+"PCA9548AD,118",PCA9548AD,SO24,8-channel I2C-bus switch with reset,high,,PCA9548A-3139384 (1).pdf
+PCA9548APW,PCA9548A,TSSOP24,8-channel I2C-bus switch with reset,high,,PCA9548A-3139384 (1).pdf
+"PCA9548APW,112",PCA9548A,TSSOP24,8-channel I2C-bus switch with reset,high,,PCA9548A-3139384 (1).pdf
+"PCA9548APW,118",PCA9548A,TSSOP24,8-channel I2C-bus switch with reset,high,,PCA9548A-3139384 (1).pdf
+MAX9914 EXK+T,AGB,5 SC70,Amplifier,high,,MAX9914_MAX9917-3471180.pdf
+MAX9914EXK-T,AGB,5 SC70,Amplifier,high,,MAX9914_MAX9917-3471180.pdf
+MAX9915 EXT+T,ACB,6 SC70,Amplifier,high,,MAX9914_MAX9917-3471180.pdf
+MAX9915EXT-T,ACB,6 SC70,Amplifier,high,,MAX9914_MAX9917-3471180.pdf
+MAX9916 EKA+T,AEJZ,8 SOT23,Amplifier,high,,MAX9914_MAX9917-3471180.pdf
+MAX9916EKA-T,AEJZ,8 SOT23,Amplifier,high,,MAX9914_MAX9917-3471180.pdf
+MAX9917 EUB,-,10 µMAX,Amplifier,high,,MAX9914_MAX9917-3471180.pdf
+MAX9917EUB+,-,10 µMAX,Amplifier,high,,MAX9914_MAX9917-3471180.pdf
+PMBT3904,%1A,SOT23,Transient Voltage Suppression Diode,high,,PMBT3904.pdf
+2N7002KT1G,,SOT-23,N-Channel Enhancement Mode MOSFET,medium,,2N7002K-D.pdf
+2V7002KT1G,,SOT-23,N-Channel Enhancement Mode MOSFET,medium,,2N7002K-D.pdf
+2N7002KT7G,,SOT-23,N-Channel Enhancement Mode MOSFET,medium,,2N7002K-D.pdf
+FK2400013,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK0500003,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK12O0016,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK12O0017,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK1630009,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK1630011,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK1840006,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2450030,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2500040,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2500043,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2500084,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2600029,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2700036,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2860003E,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2990001,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK4000061,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK5000022,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK5000023,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK5000024,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK5000025,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK5000027,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK5120002,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK5400007,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK5660001,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FKAOOO015,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FKC500023,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2500095,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK3300012,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK6660006,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FKAOOOOO7,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FKCSOOOO9A,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK4800016,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK5000039,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK5000045,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FKAOOOOO8A,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FKC500012,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FKC500031,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FKC5OOO15Z,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FKC500030,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2660002,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2700005,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK3330012,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK4000038,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK4000041,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK4000042,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK4910004,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK5000004,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK5000044,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK6600009,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK6600013,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FKAOOO004,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK1220018,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2400043,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2400045,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2500027,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2500054,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2SOOO06,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK0730002,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK1220015,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK16O0011,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK1840007,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2400015,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2450013,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2500032,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2500101,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2500112,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2700024,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK3200003,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK5O00016,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK5000038,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK5O0005Q,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK7500011,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FKO2OOOO3M,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK1120004,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK1920012,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2400033,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2500020,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2500049,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2500051,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2600008,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2600042,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK3000006,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK3330027,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK1600014,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2OOOO01,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2400020,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2400036,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2400038,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+FK2500050,,3.2x2.5mm,Crystal Clock Oscillator,medium,,36953519-f395-40d8-bf2e-356c57286356.pdf
+MMDT3904-7-F,K6N,SOT363,Transient Voltage Suppression Diode,high,,ds30088.pdf
+BSS138P,AN*,TO-236AB,N-Channel MOSFET Transistor,high,,BSS138P.pdf
+H26M41208HPRQ,,153FBGA,NAND flash memory with various densities and package sizes,medium,,H26M Series.pdf
+H26M52208FPRQ,,,NAND flash memory with various densities and package sizes,low,,H26M Series.pdf
+H26M64208EMRQ,,,NAND flash memory with various densities and package sizes,low,,H26M Series.pdf
+H26M78208CMRQ,,,NAND flash memory with various densities and package sizes,low,,H26M Series.pdf
+H26M41208HPRA,,,NAND flash memory with various densities and package sizes,low,,H26M Series.pdf
+H26M52208FPRA,,,NAND flash memory with various densities and package sizes,low,,H26M Series.pdf
+H26M64208EMRA,,,NAND flash memory with various densities and package sizes,low,,H26M Series.pdf
+H26M78208CMRA,,,NAND flash memory with various densities and package sizes,low,,H26M Series.pdf
+H26M41208HPRI,,,NAND flash memory with various densities and package sizes,low,,H26M Series.pdf
+H26M52208FPRI,,,NAND flash memory with various densities and package sizes,low,,H26M Series.pdf
+H26M64208EMRI,,,NAND flash memory with various densities and package sizes,low,,H26M Series.pdf
+H26M78208CMRI,,,NAND flash memory with various densities and package sizes,low,,H26M Series.pdf
+H26M41208HPRN,,,NAND flash memory with various densities and package sizes,low,,H26M Series.pdf
+H26M52208FPRN,,,NAND flash memory with various densities and package sizes,low,,H26M Series.pdf
+H26M64208EMRN,,,NAND flash memory with various densities and package sizes,low,,H26M Series.pdf
+H26M78208CMRN,,,NAND flash memory with various densities and package sizes,low,,H26M Series.pdf
+SN74LVC1G17-Q1,"(34W5, C17O), (C7J, C7O), HM","SC-70, SON, SOT-23",Single Schmitt-trigger buffer,high,,sn74lvc1g17-q1 (1).pdf
+SN74LVC1G17QDBVRQ1,"(34W5, C17O)",SOT-23,Single Schmitt-trigger buffer,high,,sn74lvc1g17-q1 (1).pdf
+SN74LVC1G17QDCKRQ1,"(C7J, C7O)",SC70,Single Schmitt-trigger buffer,high,,sn74lvc1g17-q1 (1).pdf
+SN74LVC1G17QDRYRQ1,HM,SON,Single Schmitt-trigger buffer,high,,sn74lvc1g17-q1 (1).pdf
+LTC1983ES6-3#PBF,LTPC,TSOT-23,Voltage Inverter,high,,1983fc-2954208.pdf
+LTC1983ES6-3#TRPBF,,TSOT-23,Voltage Inverter,medium,,1983fc-2954208.pdf
+LTC1983ES6-5#PBF,LTYB,TSOT-23,Voltage Inverter,high,,1983fc-2954208.pdf
+LTC1983ES6-5#TRPBF,,TSOT-23,Voltage Inverter,medium,,1983fc-2954208.pdf
+LTC1261,,,Switched-Capacitor Regulated Voltage Inverter,low,,1983fc-2954208.pdf
+LTC1261L,,MSOP,Switched-Capacitor Regulated Voltage Inverter,low,,1983fc-2954208.pdf
+LTC1429,,,Clock-Synchronized Switched-Capacitor Voltage Inverter,low,,1983fc-2954208.pdf
+LTC1514,,,Step-Up/Step-Down Switched-Capacitor DC/DC Converters,low,,1983fc-2954208.pdf
+LTC1515,,,Step-Up/Step-Down Switched-Capacitor DC/DC Converters,low,,1983fc-2954208.pdf
+LTC1516,,,Micropower Regulated 5V Charge Pump DC/DC Converter,low,,1983fc-2954208.pdf
+LTC1522,,,Micropower Regulated 5V Charge Pump DC/DC Converter,low,,1983fc-2954208.pdf
+LTC1550L,,,"Low Noise, Switched-Capacitor Regulated Voltage Inverters",low,,1983fc-2954208.pdf
+LTC1551L,,,"Low Noise, Switched-Capacitor Regulated Voltage Inverters",low,,1983fc-2954208.pdf
+LT1611,,ThinSOT,1.4MHz Inverting Mode Switching Regulator,low,,1983fc-2954208.pdf
+LT1617,,,"Micropower, Switched-Capacitor Voltage Inverter",low,,1983fc-2954208.pdf
+LT1617-1,,,"Micropower, Switched-Capacitor Voltage Inverter",low,,1983fc-2954208.pdf
+LTC1682,,"MS8, SO-8",Doubler Charge Pumps with Low Noise LDO,low,,1983fc-2954208.pdf
+LTC1682-3.3,,"MS8, SO-8",Doubler Charge Pumps with Low Noise LDO,low,,1983fc-2954208.pdf
+LTC1682-5,,"MS8, SO-8",Doubler Charge Pumps with Low Noise LDO,low,,1983fc-2954208.pdf
+LTC1751,,MSOP,Doubler Charge Pumps,low,,1983fc-2954208.pdf
+LTC1751-3.3,,MSOP,Doubler Charge Pumps,low,,1983fc-2954208.pdf
+LTC1751-5,,MSOP,Doubler Charge Pumps,low,,1983fc-2954208.pdf
+LTC1754,,ThinSOT,Doubler Charge Pumps with Shutdown,low,,1983fc-2954208.pdf
+LTC1754-3.3,,ThinSOT,Doubler Charge Pumps with Shutdown,low,,1983fc-2954208.pdf
+LTC1754-5,,ThinSOT,Doubler Charge Pumps with Shutdown,low,,1983fc-2954208.pdf
+LTC1928-5,,,Doubler Charge Pump with Low Noise LDO,low,,1983fc-2954208.pdf
+LTC3200,,,Constant Frequency Doubler Charge Pump,low,,1983fc-2954208.pdf
+FL2500022,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL5000063Z,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2700102Z,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1350008,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL4800063Z,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL4000205Z,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1200112,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL5000058Z,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL4000157Z,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2000059,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1000002,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2000038,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1840007,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1600087,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1840006,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1920031,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500137Z,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2600177Z,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL3740009,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2400022,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2400135Z,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2000132Z,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2400041,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500279Z,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500283Z,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL3740015,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1200135,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1200138,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2400081,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500281,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1200060,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL3200037,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL3000027,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL3000037,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL5000014,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500328,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2000057,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2000099A,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2000141,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2000144,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2400095,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2400159,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2450032,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500066,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500096,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500121Z,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500155Z,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500157,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500249,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500323,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500327,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1200044,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1350025,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1470016,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1600124,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1600128,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1920048,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1200092,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1200103,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1600088,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2000087,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2210005,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2400040,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2400044,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2400137,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500013,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500032,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500079,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500091,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500101,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500117,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500130,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500174,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500179,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2500240,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1200068,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1200180,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1690007,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2000026,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2000033,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2000072,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2000083,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2000117,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2000120,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2400005,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1200129,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1200130,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1200132,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1220026,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1350009,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1920051,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL1920053Z,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2400050,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2400106,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+FL2400165,,,Electronic component from Diodes Incorporated,high,,DIOD_S_A0003395120_1-2512671.pdf
+DMP2305U-7,,SOT23,"20 V, 4.2 A P-channel MOSFET",medium,,DIOD_S_A0001068989_1-2512499.pdf
+DMP2305UQ-7,,SOT23,"20 V, 4.2 A P-channel MOSFET",medium,,DIOD_S_A0001068989_1-2512499.pdf
+TPS6285010MQDRLRQ1,10MQ,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS6285010MQDRLRQ1.A,10MQ,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS6285010MQDYCRQ1,10MQ,SOT-5X3 (DYC),Step-Down Converter,high,,tps628502-q1.pdf
+TPS6285010MQDYCRQ1.A,10MQ,SOT-5X3 (DYC),Step-Down Converter,high,,tps628502-q1.pdf
+TPS6285011HQDRLRQ1,11HQ,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS6285011HQDRLRQ1.A,11HQ,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS62850120QDRLRQ1,120Q,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS62850120QDRLRQ1.A,120Q,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS62850140QDYCRQ1,140Q,SOT-5X3 (DYC),Step-Down Converter,high,,tps628502-q1.pdf
+TPS62850140QDYCRQ1.A,140Q,SOT-5X3 (DYC),Step-Down Converter,high,,tps628502-q1.pdf
+TPS6285018AQDRLRQ1,18AQ,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS6285018AQDRLRQ1.A,18AQ,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS628501B0QDRLRQ1,10BQ,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS628501B0QDRLRQ1.A,10BQ,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS628501QDRLRQ1,100Q,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS628501QDRLRQ1.A,100Q,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS6285020AQDRLRQ1,20AQ,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS6285020AQDRLRQ1.A,20AQ,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS6285020MQDRLRQ1,20MQ,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS6285020MQDRLRQ1.A,20MQ,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS6285021HQDRLRQ1,21HQ,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS6285021HQDRLRQ1.A,21HQ,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS62850220QDRLRQ1,220Q,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS62850220QDRLRQ1.A,220Q,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS62850240QDRLRQ1,240Q,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS62850240QDRLRQ1.A,240Q,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS62850240QDYCRQ1,240Q,SOT-5X3 (DYC),Step-Down Converter,high,,tps628502-q1.pdf
+TPS62850240QDYCRQ1.A,240Q,SOT-5X3 (DYC),Step-Down Converter,high,,tps628502-q1.pdf
+TPS628502QDRLRQ1,200Q,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS628502QDRLRQ1.A,200Q,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS628503QDRLRQ1,300Q,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf
+TPS628503QDRLRQ1.A,300Q,SOT-5X3 (DRL),Step-Down Converter,high,,tps628502-q1.pdf

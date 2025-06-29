@@ -190,6 +190,8 @@ def generate_anchor_prompt(excerpt: str) -> str:
         - `is_chip_component`: Set to **true** ONLY if the component is explicitly described as a **resistor, capacitor (MLCC), inductor, or ferrite bead**. If the type is anything else or is not clearly mentioned, you MUST set this to **false**.
         - `is_through_hole`: Set to **true** ONLY if the excerpt explicitly mentions that the component is THT (Through Hole Technology). If the text describes the component as SMD/SMT (Surface Mount Technology / Device)), or does not specify the type, set this to **false**.
 
+    3.  **Justification**: If you set `is_chip_component` or `is_through_hole` to `true`, you MUST add an `explanation` field briefly stating the reason (e.g., "Component is described as a chip resistor", "The text explicitly mentions 'Through-Hole Technology'").
+
     Respond **strictly** in the correct JSON format, including the boolean classification:
 
     [
@@ -197,7 +199,8 @@ def generate_anchor_prompt(excerpt: str) -> str:
         "component": ["StartMPN", "EndMPN"],
         "description": "Short description of the component",
         "is_chip_component": boolean,
-        "is_through_hole": boolean
+        "is_through_hole": boolean,
+        "explanation": "Brief reason if is_chip_component or is_through_hole is true."
       }}
     ]
 
@@ -214,13 +217,11 @@ def generate_prompt(chunk: str, prev_items: List[dict], component: List[dict]) -
     2. A Markdown-formatted chunk of the document.
 
     Your task is to return a **single, updated list of extracted items** that:
-    - **Keeps all previously extracted items** intact.
-    - **Adds any new items** found in the current document chunk.
-    - **Do not hallucinate** or infer values — only include items clearly present in the document.
-    - **Does not remove or omit** previously found items, even if the current chunk contains no new data.
-    - **Returning the exact previous list** unchanged if there are **no new valid items** in this chunk.
+    - **CRUCIAL RULE: You MUST treat small variations in a part number (`mpn`) or `top_marking` as completely separate and unique items.** For example, if you find "TPS6285010MQDRLRQ1" and "TPS6285010MQDRLRQ1.A", they are two different items and you must include both.
+    - Extract every distinct part number you can find.
+    - Do not hallucinate or infer values — only include items clearly present in the document.
     - **Avoids duplicates**. Keep the more complete version if duplicates exist.
-    - A single component's information may be split across multiple tables (chunks). For example, the `mpn` might be in one table, while its `top_marking` is in another. If you find new information for an `mpn` that already exists in the "Previously Extracted Items" list, **you must update the existing item** with the new information instead of creating a new, separate entry.
+    - A single component's information may be split across multiple tables (chunks). For example, the `mpn` might be in one table, while its `top_marking` is in another. 
     - **Small variations in `mpn` or `top_marking`** (e.g., suffixes, added characters, etc., SN74LVC1G17DBVR is different from SN74LVC1G17DBVR.Z) **must be treated as unique items**.
     - For each item, include an optional `confidence` field with one of: `"high"`, `"medium"`, or `"low"`.
     - Use:
@@ -247,9 +248,6 @@ def generate_prompt(chunk: str, prev_items: List[dict], component: List[dict]) -
     }},
     ...
     ]
-    
-    Previously Extracted Items:
-    {prev}
 
     Document Chunk:
     {chunk}

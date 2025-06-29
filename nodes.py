@@ -156,7 +156,7 @@ def extract_anchor(state: Dict) -> Dict:
     prompt = generate_anchor_prompt(excerpt)
 
     resp = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="gpt-4o",
         messages=[
             {"role": "system", "content": "You are an information extraction assistant."},
             {"role": "user", "content": prompt}
@@ -180,6 +180,8 @@ def extract_anchor(state: Dict) -> Dict:
             description = item_data.get("description", "")
             is_chip = item_data.get("is_chip_component", False)
             is_tht = item_data.get("is_through_hole", False) 
+            explanation = item_data.get("explanation")
+            print(explanation)
         else:
             component, description, is_chip, is_tht = [], "", False, False
     except Exception as e:
@@ -196,7 +198,7 @@ def extract_anchor(state: Dict) -> Dict:
         logger.warning(f"Excluding document '{Path(state['pdf_path']).name}': {skip_reason}")
         return {**state, "component": component, "description": description, "skip_reason": skip_reason, "current_idx": 0, "chunks": []}
     
-    return {**state, "component": component, "description": description, "current_idx": 0, "items": []}
+    return {**state, "component": component, "description": description, "explanation": explanation, "current_idx": 0, "items": []}
 
 def filter_chunks(state: Dict) -> Dict:
     """
@@ -565,6 +567,7 @@ def save_skipped_component(state: Dict) -> Dict:
         "source": Path(state["pdf_path"]).name,
         "component": ", ".join(state.get("component", [])),
         "description": state.get("description", ""),
+        "explanation": state.get("explanation", ""),
         "reason": state.get("skip_reason", "")
     }
     df = pd.DataFrame([skipped_info])
