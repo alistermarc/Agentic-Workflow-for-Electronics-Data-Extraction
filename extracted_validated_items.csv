@@ -264,3 +264,36 @@ OPA4992,,"SOIC, TSSOP",Operational amplifiers in various packages,high,,OPA2992I
 OPA992S,O92SD,SOT-23,Operational amplifiers in various packages,high,,OPA2992IDGKR__TI_0_alldatasheet.pdf
 LMZ31704RVQR,"54020, LMZ31704",B3QFN (RVQ),Voltage regulator with a maximum output current of 4 A and input voltage range of 4.5 V to 17 V.,high,,LMZ31704RVQR__TexasInstruments_3556_componentsearchengine.pdf
 LMZ31704RVQT,"54020, LMZ31704",B3QFN (RVQ),Voltage regulator with a maximum output current of 4 A and input voltage range of 4.5 V to 17 V.,high,,LMZ31704RVQR__TexasInstruments_3556_componentsearchengine.pdf
+ZL30771LFG7,,80-lead LGA,1-Channel IEEE 1588 & Synchronous Ethernet Packet Clock Network Synchronizer,high,,ZL30772__MICROSEMI_0_alldatasheet.pdf
+ZL30772LFG7,,80-lead LGA,2-Channel IEEE 1588 & Synchronous Ethernet Packet Clock Network Synchronizer,high,,ZL30772__MICROSEMI_0_alldatasheet.pdf
+ZL30773LFG7,,80-lead LGA,3-Channel IEEE 1588 & Synchronous Ethernet Packet Clock Network Synchronizer,high,,ZL30772__MICROSEMI_0_alldatasheet.pdf
+UCD3028RHAR,UCD3028,QFN,Digital controller for power management,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3028RHAT,UCD3028,QFN,Digital controller for power management,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3028RMHR,3028RMH,QFN,Digital controller for power management,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3028RMHT,3028RMH,QFN,Digital controller for power management,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3020RGZR,UCD3020,QFN,Digital controller for power management,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3020RGZT,UCD3020,QFN,Digital controller for power management,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3040RGCR,UCD3040,QFN,Digital controller for power management,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3040RGCT,UCD3040,QFN,Digital controller for power management,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3040PFCR,UCD3040,QFP,Digital controller for power management,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3040PFC,UCD3040,QFP,Digital controller for power management,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3028RHAR,UCD3028,QFN,,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3028RHAT,UCD3028,QFN,,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3028RMHR,3028RMH,QFN,,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3028RMHT,3028RMH,QFN,,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3020RGZR,UCD3020,QFN,,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3020RGZT,UCD3020,QFN,,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3040RGCR,UCD3040,QFN,,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3040RGCT,UCD3040,QFN,,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3040PFCR,UCD3040,QFP,,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3040PFC,UCD3040,QFP,,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3028RHAR,UCD3028,QFN,ARM7 core processor with various features including high-resolution DPWM outputs and multiple ADC channels.,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3028RHAT,UCD3028,QFN,ARM7 core processor with various features including high-resolution DPWM outputs and multiple ADC channels.,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3028RMHR,3028RMH,QFN,ARM7 core processor with various features including high-resolution DPWM outputs and multiple ADC channels.,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3028RMHT,3028RMH,QFN,ARM7 core processor with various features including high-resolution DPWM outputs and multiple ADC channels.,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3020RGZR,UCD3020,QFN,ARM7 core processor with various features including high-resolution DPWM outputs and multiple ADC channels.,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3020RGZT,UCD3020,QFN,ARM7 core processor with various features including high-resolution DPWM outputs and multiple ADC channels.,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3040RGCR,UCD3040,QFN,ARM7 core processor with various features including high-resolution DPWM outputs and multiple ADC channels.,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3040RGCT,UCD3040,QFN,ARM7 core processor with various features including high-resolution DPWM outputs and multiple ADC channels.,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3040PFCR,UCD3040,QFP,ARM7 core processor with various features including high-resolution DPWM outputs and multiple ADC channels.,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf
+UCD3040PFC,UCD3040,QFP,ARM7 core processor with various features including high-resolution DPWM outputs and multiple ADC channels.,high,,UCD3020RGZR__TexasInstruments_959_componentsearchengine.pdf

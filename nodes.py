@@ -8,7 +8,7 @@ from datetime import datetime
 import time
 import pandas as pd
 from docling_core.types.doc import ImageRefMode, PictureItem, TableItem, TextItem
-from config import MARKDOWN_DIR, PROCESSED_DIR, SKIPPED_DIR, METADATA_DIR, CSV_SKIPPED_OUTPUT
+from config import MARKDOWN_DIR, PROCESSED_DIR, SKIPPED_DIR, METADATA_DIR, FAILED_DIR, CSV_SKIPPED_OUTPUT, CSV_FAILED_OUTPUT
 
 logger = logging.getLogger(__name__)
 
@@ -100,36 +100,41 @@ def load_and_split(state: Dict) -> Dict:
         full_md_content = md_path.read_text(encoding="utf-8").strip()
         print(f"Full Markdown content length: {len(full_md_content)} characters")
         cleaned_md = clean_markdown_text(full_md_content)
+
+        state["full_markdown_content"] = cleaned_md
+        state["attempt_number"] = 1
+        content_for_chunking = ""
         extracted_data = extract_all_tables_with_optional_header(cleaned_md)
-        print(f"Extracted {len(extracted_data)} tables from the cleaned Markdown content.")
         
         if extracted_data:
-            output_content = []
+            logger.info(f"Attempt 1: Tables found. Using table-only content for first pass.")
+            output_blocks = []
             for item in extracted_data:
+                block_parts = []
                 if item.get('header'):
-                    output_content.append(item['header'])
-                output_content.append(item['table'])
-            
-            final_output_string = "\n\n---\n\n".join(output_content)
-            
-            # Save the tables to a new file in the same folder.
+                    block_parts.append(item['header'])
+                block_parts.append(item['table'])
+                output_blocks.append("\n\n".join(block_parts))
+            content_for_chunking = "\n\n---\n\n".join(output_blocks)
             tables_only_md_path = output_dir / f"{pdf.stem}_tables.md"
-            tables_only_md_path.write_text(final_output_string, encoding="utf-8")
+            tables_only_md_path.write_text(content_for_chunking, encoding="utf-8")
             logger.info(f"Successfully saved extracted tables to: {tables_only_md_path.name}")
         else:
-            logger.info("No valid tables found to create a separate tables file.")
+            logger.info("Attempt 1: No tables found. Using full document content for first pass.")
+            content_for_chunking = cleaned_md
 
-        md = tables_only_md_path.read_text(encoding="utf-8").strip()
-        chunks = chunk_markdown(md)
+        print(f"Extracted {len(extracted_data)} tables from the cleaned Markdown content.")
+
+        chunks = chunk_markdown(content_for_chunking)
         logger.info(f"Markdown split into {len(chunks)} chunk(s)")
-        return {**state, "markdown": md, "chunks": chunks}
+        return {**state, "markdown": content_for_chunking, "chunks": chunks}
 
     except Exception as e:
         logger.error(f"Failed to process {pdf.name}: {e}")
         with open("failed_files.log", "a", encoding="utf-8") as log_file:
             log_file.write(f"[{datetime.now()}] {pdf.name} | Error: {e}\n")
 
-        return state
+        return {**state, "chunks": []}
     
 def extract_anchor(state: Dict) -> Dict:
     """
@@ -294,6 +299,7 @@ def call_llm(state: Dict) -> Dict:
         temperature=0
     )
     print(resp.choices[0].message.content.strip())
+
     return {**state, "raw_response": resp.choices[0].message.content.strip()}
 
 def parse_and_repair(state: Dict) -> Dict:
@@ -350,6 +356,66 @@ def parse_and_repair(state: Dict) -> Dict:
         logger.info("No valid items recovered after repair.")
 
     return {**state, "current_idx": state["current_idx"] + 1}
+
+def decide_what_to_do_next(state: Dict) -> str:
+    """
+    Node: A central router that decides the next step after an extraction attempt.
+    - If items were extracted, proceed to validation.
+    - If no items were found on the 1st attempt, trigger a retry using the full markdown.
+    - If no items were found on the 2nd attempt, log a failure.
+    """
+    logger.info("--- Deciding next step ---")
+    
+    if state.get("items"):
+        logger.info(f"SUCCESS: Found {len(state['items'])} items. Proceeding to validation.")
+        state['next_action'] = 'validate'
+        
+        return state
+
+    if state.get("attempt_number", 1) == 1:
+        logger.warning("Attempt 1 yielded no items. Triggering a retry with full document markdown.")
+        
+        state["attempt_number"] = 2
+        
+        full_md = state.get("full_markdown_content", "")
+        state["chunks"] = chunk_markdown(full_md)
+        state["items"] = []
+        
+        if state["chunks"]:
+            state['next_action'] = 'retry'   
+        else:
+            state['next_action'] = 'log_failure'
+            
+        return state 
+    
+    else:
+        logger.error("FAILURE: Attempt 2 also yielded no items. Logging extraction failure.")
+        state['next_action'] = 'log_failure'
+
+        return state
+
+def log_extraction_failure(state: Dict) -> Dict:
+    """
+    Node: Logs documents from which no items could be extracted after all attempts.
+    Moves the source PDF to the FAILED_EXTRACTION_DIR.
+    """
+    source_path = Path(state["pdf_path"])
+    logger.info(f"Logging complete extraction failure for: {source_path.name}")
+
+    failure_info = {
+        "source": source_path.name,
+        "timestamp": datetime.now().isoformat(),
+        "reason": "No structured items could be extracted after two attempts (table-only and full-text)."
+    }
+    df = pd.DataFrame([failure_info])
+    
+    mode = "a" if CSV_FAILED_OUTPUT.exists() else "w"
+    header = not CSV_FAILED_OUTPUT.exists()
+    df.to_csv(CSV_FAILED_OUTPUT, mode=mode, header=header, index=False)
+    FAILED_DIR.mkdir(exist_ok=True)
+    source_path.rename(FAILED_DIR / source_path.name)
+    
+    return state   
 
 def validate_items(state: Dict) -> Dict:
     """
