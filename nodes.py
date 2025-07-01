@@ -178,27 +178,28 @@ def extract_anchor(state: Dict) -> Dict:
             item_data = data[0]
             component = item_data.get("component", [])
             description = item_data.get("description", "")
+            package_case = item_data.get("package_case", "")
             is_chip = item_data.get("is_chip_component", False)
-            is_tht = item_data.get("is_through_hole", False) 
+            # is_tht = item_data.get("is_through_hole", False) 
             explanation = item_data.get("explanation")
-            print(explanation)
+
         else:
-            component, description, is_chip, is_tht = [], "", False, False
+            component, description, is_chip = [], "", False, False
     except Exception as e:
         logger.warning(f"Anchor parse failed: {e}")
-        component, description, is_chip, is_tht = [], "", False, False
+        component, description, is_chip = [], "", False, False
     
     skip_reason = None
     if is_chip:
         skip_reason = "LLM classified it as a chip component."
-    elif is_tht:
-        skip_reason = "LLM classified it as a Through-Hole (THT) component."
+    # elif is_tht:
+    #     skip_reason = "LLM classified it as a Through-Hole (THT) component."
 
     if skip_reason:
         logger.warning(f"Excluding document '{Path(state['pdf_path']).name}': {skip_reason}")
-        return {**state, "component": component, "description": description, "skip_reason": skip_reason, "current_idx": 0, "chunks": []}
+        return {**state, "component": component, "description": description, "skip_reason": skip_reason, "explanation": explanation, "chunks": []}
     
-    return {**state, "component": component, "description": description, "explanation": explanation, "current_idx": 0, "items": []}
+    return {**state, "component": component, "package_case": package_case, "description": description, "items": []}
 
 def filter_chunks(state: Dict) -> Dict:
     """
@@ -274,7 +275,7 @@ def filter_chunks(state: Dict) -> Dict:
         for i, chunk, score in indexed_scored_chunks
     ]
 
-    return {**state, "final_chunks": chunks_for_llm, "chunk_scores": chunk_scores_data, "current_idx": 0, "items": []}
+    return {**state, "final_chunks": chunks_for_llm, "chunk_scores": chunk_scores_data, "items": []}
 
 def call_llm(state: Dict) -> Dict:
     """
@@ -289,7 +290,7 @@ def call_llm(state: Dict) -> Dict:
     Returns:
         Dict: The updated state with the 'raw_response' from the LLM.
     """
-    chunk = state["final_chunks"][state["current_idx"]]
+    chunk = state["final_chunks"][0]
     prompt = generate_prompt(chunk, state["items"], state["component"])
     
     resp = state["client"].chat.completions.create(
@@ -323,7 +324,7 @@ def parse_and_repair(state: Dict) -> Dict:
 
     try:
         data = json.loads(raw)
-        print(f"Parsed {len(data)} items from chunk {state['current_idx'] + 1}")
+        print(f"Parsed {len(data)} items")
     except Exception:
         print("Initial JSON parsing failed. Attempting repair...")
 
@@ -357,7 +358,7 @@ def parse_and_repair(state: Dict) -> Dict:
     else:
         logger.info("No valid items recovered after repair.")
 
-    return {**state, "current_idx": state["current_idx"] + 1}
+    return {**state}
 
 def decide_what_to_do_next(state: Dict) -> str:
     """
@@ -469,8 +470,7 @@ def validate_items(state: Dict) -> Dict:
             "top_marking": ", ".join(sorted(set(top_markings))) if top_markings else None,
             "package_case": ", ".join(sorted(set(package_cases))) if package_cases else None,
             "description": description,
-            "confidence": confidence,
-            "validation_comment": ""
+            "confidence": confidence
         })
     validated_items = deduped 
     # prompt = generate_validation_prompt(deduped)
@@ -512,13 +512,28 @@ def finalize(state: Dict) -> Dict:
     Returns:
         Dict: The final state.
     """
+    filename = Path(state["pdf_path"]).name
+    manufacturer = None
+    parts = re.split(r'__|_', filename)
+    if len(parts) > 1:
+        manufacturer_block = parts[1]
+        sub_parts = manufacturer_block.split('_')
+        if sub_parts and sub_parts[0]:
+            manufacturer = sub_parts[0]
+
     for item in state["items"]:
         item["source"] = Path(state["pdf_path"]).name
         item["description"] = item.get("description") or state.get("description", "")
-    
+        item["package_case"] = item.get("package_case") or state.get("package_case", "")
+        if manufacturer:
+            item["manufacturer"] = manufacturer
+
     for item in state["validated_items"]:
         item["source"] = Path(state["pdf_path"]).name
         item["description"] = item.get("description") or state.get("description", "")
+        item["package_case"] = item.get("package_case") or state.get("package_case", "")
+        if manufacturer:
+            item["manufacturer"] = manufacturer
     
     save_items(state["items"])
     save_validated_items(state["validated_items"])
@@ -530,7 +545,7 @@ def save_full_state(state: Dict) -> Dict:
     print("Save Full State STATE KEYS:", list(state.keys()))
     METADATA_DIR.mkdir(exist_ok=True)
 
-    keys_to_save = ['title', 'model_name', 'component', 'description', 'chunks', 'final_chunks', 'current_idx']
+    keys_to_save = ['title', 'model_name', 'component', 'description', 'package_case', 'chunks', 'final_chunks']
 
     metadata = {
         k: json.dumps(state[k], ensure_ascii=False)

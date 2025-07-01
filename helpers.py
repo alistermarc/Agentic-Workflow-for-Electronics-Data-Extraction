@@ -3,7 +3,7 @@ import pandas as pd
 from typing import List
 from typing import Dict, List, Any, Optional
 from docling.datamodel.base_models import InputFormat
-from docling.datamodel.pipeline_options import PdfPipelineOptions, EasyOcrOptions, TesseractCliOcrOptions
+from docling.datamodel.pipeline_options import PdfPipelineOptions, EasyOcrOptions, TesseractCliOcrOptions, AcceleratorDevice, AcceleratorOptions
 from docling.document_converter import DocumentConverter, PdfFormatOption
 from config import CSV_OUTPUT, CSV_VALIDATED_OUTPUT
 
@@ -29,6 +29,7 @@ def setup_converter() -> DocumentConverter:
     opts.generate_picture_images = True   # Generate images for pictures in the PDF.
     opts.ocr_options = EasyOcrOptions()   # Use EasyOCR for text extraction from images.
     # opts.ocr_options = TesseractCliOcrOptions(force_full_page_ocr=True)
+    opts.accelerator_options = AcceleratorOptions(device=AcceleratorDevice.MPS, num_threads=4)
     opts.ocr_options.lang = ["en"]  # Set the OCR language to English.
 
     return DocumentConverter(format_options={InputFormat.PDF: PdfFormatOption(pipeline_options=opts)})
@@ -185,12 +186,12 @@ def generate_anchor_prompt(excerpt: str) -> str:
     1.  **Extraction**: Extract the following information:
         - The **main component name(s)** (e.g., MMBT3906). If a range is shown (e.g., `BZX84C2V4W - BZX84C39W`), extract the **start and end MPNs**.
         - A **short technical description** of the component (e.g., "40 V, 200 mA PNP switching transistor").
+        - The **package case** or type, if available (e.g., SOT-23, DO-214AB, QFN).
 
-    2.  **Classification**: Set the following boolean flags based on the component type.
+    2.  **Classification**: Set the following boolean flag based on the component type.
         - `is_chip_component`: Set to **true** ONLY if the component is explicitly described as a **resistor, capacitor (MLCC), inductor, or ferrite bead**. If the type is anything else or is not clearly mentioned, you MUST set this to **false**.
-        - `is_through_hole`: Set to **true** ONLY if the excerpt explicitly mentions that the component is THT (Through Hole Technology). If the text describes the component as SMD/SMT (Surface Mount Technology / Device)), or does not specify the type, set this to **false**.
 
-    3.  **Justification**: If you set `is_chip_component` or `is_through_hole` to `true`, you MUST add an `explanation` field briefly stating the reason (e.g., "Component is described as a chip resistor", "The text explicitly mentions 'Through-Hole Technology'").
+    3.  **Justification**: If you set `is_chip_component` to `true`, you MUST add an `explanation` field briefly stating the reason (e.g., "Component is described as a chip resistor").
 
     Respond **strictly** in the correct JSON format, including the boolean classification:
 
@@ -198,8 +199,8 @@ def generate_anchor_prompt(excerpt: str) -> str:
       {{
         "component": ["StartMPN", "EndMPN"],
         "description": "Short description of the component",
+        "package_case": "Package type if available(e.g., SOT-23, DO-214AB)",
         "is_chip_component": boolean,
-        "is_through_hole": boolean,
         "explanation": "Brief reason if is_chip_component or is_through_hole is true."
       }}
     ]
@@ -266,11 +267,10 @@ def generate_repair_prompt(raw: str) -> str:
     [
     {{
         "mpn": "...",
-        "top_marking": "...",
-        "package_case": "...",
-        "description": "...",
+        "top_marking": "...", // or null
+        "package_case": "...", // or null
+        "description": "...", // or null
         "confidence": "...", 
-        "validation_comment": "..."
     }},
     ...
     ]

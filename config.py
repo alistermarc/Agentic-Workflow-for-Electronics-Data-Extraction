@@ -9,6 +9,7 @@ CSV_OUTPUT = Path("extracted_items.csv")
 CSV_VALIDATED_OUTPUT = Path("extracted_validated_items.csv")
 CSV_SKIPPED_OUTPUT = Path("skipped_components.csv")
 CSV_FAILED_OUTPUT = Path("failed_extractions.csv")
+SKIPPED_LARGE_FILES_DIR = Path("skipped_large_files")
 METADATA_DIR = Path("metadata")
 MODEL_NAME = "llama-3.3-70b-versatile"
 # MODEL_NAME = "deepseek-r1-distill-llama-70b"

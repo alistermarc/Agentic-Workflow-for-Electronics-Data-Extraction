@@ -13,3 +13,6 @@ batch_1/
 metadata/
 processed/
 documents/
+failed/
+skipped/
+skipped_large_files/

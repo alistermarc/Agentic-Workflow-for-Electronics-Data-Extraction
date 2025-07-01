@@ -24,7 +24,11 @@ def build_graph():
     )
     g.add_edge("save_skipped", END)
 
-    g.add_edge("filter", "llm")
+    g.add_conditional_edges(
+        "filter",
+        lambda s: "llm" if s.get("final_chunks") else "decide",
+        {"llm": "llm", "decide": "decide"}
+    )
     g.add_edge("llm", "parse")
     g.add_edge("parse", "decide")
     g.add_conditional_edges(

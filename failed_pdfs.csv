@@ -1,1 +1,21 @@
-timestamp,pdf_name,error
+timestamp,pdf_name,error2025-06-30T20:29:51.851131,SI1905DL_VISHAY_1_alldatasheet.pdf,list index out of range
+2025-06-30T21:12:24.795953,X1G005351000700_SeikoEpsonCorporation_4_componentsearchengine.pdf,list index out of range
+2025-06-30T21:12:45.546788,FW2500025Z_DiodesIncorporated_273_componentsearchengine.pdf,list index out of range
+2025-06-30T21:56:32.408591,2N7002K_TGS_17_alldatasheet.pdf,list index out of range
+2025-06-30T22:08:37.152150,2N7002K_R1_00001_PANJIT_2_componentsearchengine.pdf,list index out of range
+2025-06-30T22:19:49.239304,"2SK880-Y(TE85L,F)__Toshiba_1_componentsearchengine.pdf",list index out of range
+2025-06-30T22:46:07.521023,CDNBS08-T15C_Bourns_124_componentsearchengine.pdf,list index out of range
+2025-06-30T23:20:27.782943,C85A939-62.5M-C__BlileyTechnologiesInc_22_componentsearchengine.pdf,list index out of range
+2025-06-30T23:48:08.449525,SI1905DL_VISHAY_1_alldatasheet.pdf,list index out of range
+2025-06-30T23:48:14.690255,FW2500025Z_DiodesIncorporated_273_componentsearchengine.pdf,list index out of range
+2025-06-30T23:48:19.194422,2N7002K_TGS_17_alldatasheet.pdf,list index out of range
+2025-06-30T23:48:21.445775,2N7002K_R1_00001_PANJIT_2_componentsearchengine.pdf,list index out of range
+2025-06-30T23:48:27.483471,CDNBS08-T15C_Bourns_124_componentsearchengine.pdf,list index out of range
+2025-07-01T00:07:58.060729,SI1905DL_VISHAY_1_alldatasheet.pdf,list index out of range
+2025-07-01T00:08:01.784430,FW2500025Z_DiodesIncorporated_273_componentsearchengine.pdf,list index out of range
+2025-07-01T00:08:07.881002,2N7002K_TGS_17_alldatasheet.pdf,list index out of range
+2025-07-01T00:08:09.733801,2N7002K_R1_00001_PANJIT_2_componentsearchengine.pdf,list index out of range
+2025-07-01T00:08:13.307850,CDNBS08-T15C_Bourns_124_componentsearchengine.pdf,list index out of range
+2025-07-01T00:08:48.736602,KT24-1A-40L-SMD_Meder_414_componentsearchengine.pdf,list index out of range
+2025-07-02T00:38:29.010885,NC7SZ66P5X_onsemi_28_componentsearchengine.pdf,'markdown'
+2025-07-02T02:41:45.767841,MAX96714GTJ_slash_VY+__AnalogDevices_5_componentsearchengine.pdf,"Error code: 503 - {'error': {'message': 'Service unavailable. Visit https://groqstatus.com/ to see if there is an active incident.', 'type': 'internal_server_error'}}"
