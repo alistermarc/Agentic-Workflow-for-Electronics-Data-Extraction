@@ -33,7 +33,7 @@ def main():
     PROCESSED_DIR.mkdir(exist_ok=True)
     app = build_graph()
 
-    file_limit = 500
+    file_limit = 700
     processed_count = 0
 
     for pdf in Path(DOCUMENTS_DIR).glob("*.pdf"):

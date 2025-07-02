@@ -188,8 +188,8 @@ def generate_anchor_prompt(excerpt: str) -> str:
 
     1.  **Extraction**: Extract the following information:
         - The **main component name(s)** (e.g., MMBT3906). If a range is shown (e.g., `BZX84C2V4W - BZX84C39W`), extract the **start and end MPNs**.
-        - A **short technical description** of the component (e.g., "40 V, 200 mA PNP switching transistor").
-        - The **package case** or type, if available (e.g., SOT-23, DO-214AB, QFN).
+        - A **short technical description** of the component (e.g., "40 V, 200 mA PNP switching transistor"). If not found, leave this blank.
+        - The **package case** or type, if available (e.g., SOT-23, DO-214AB, QFN). If not found, leave this blank.
 
     2.  **Classification**: Set the following boolean flag based on the component type.
         - `is_chip_component`: Set to **true** ONLY if the component is explicitly described as a **resistor, capacitor (MLCC), inductor, or ferrite bead**. If the type is anything else or is not clearly mentioned, you MUST set this to **false**.
@@ -221,8 +221,8 @@ def generate_prompt(chunk: str, prev_items: List[dict], component: List[dict]) -
     2. A Markdown-formatted chunk of the document.
 
     Your task is to return a **single, updated list of extracted items** that:
-    - **CRUCIAL RULE: You MUST treat small variations in a part number (`mpn`) or `top_marking` as completely separate and unique items.** For example, if you find "TPS6285010MQDRLRQ1" and "TPS6285010MQDRLRQ1.A", they are two different items and you must include both.
-    - Extract every distinct part number you can find.
+    - **CRUCIAL RULE: You MUST treat small variations in a part number (`mpn`) or `top_marking` as completely separate and unique items.** For example, if you find "TPS6285010MQDRLRQ1" and "TPS6285010MQDRLRQ1.A", they are two different items and you must include both. Extract every distinct part number you can find may it be active or obsolete.
+    - **Capture the FULL Part Number:** The `mpn` value **MUST** be the complete, orderable part number exactly as it appears in the text. This includes all suffixes, prefixes, spaces, and special characters (`+`, `-`, `/`, etc.).
     - Do not hallucinate or infer values — only include items clearly present in the document.
     - **Avoids duplicates**. Keep the more complete version if duplicates exist.
     - A single component's information may be split across multiple tables (chunks). For example, the `mpn` might be in one table, while its `top_marking` is in another. 
@@ -235,10 +235,10 @@ def generate_prompt(chunk: str, prev_items: List[dict], component: List[dict]) -
 
     For each item, return:
 
-    - mpn: Manufacturer Part Number (Manufacturer Part Number, Type Number, or similar terms). This is like the **full name of a specific variant of a component**, often derived from a known base component {comp}.
-    - top_marking: Short alphanumeric code on the component (Top Marking Code, Marking Code, or similar identifiers)
-    - package_case: Standardized mechanical format (e.g., DO-214AB, SOD-123)
-    - description: Functional description (e.g., "Transient Voltage Suppression Diode")
+    - mpn: Manufacturer Part Number (Manufacturer Part Number, Type Number, or similar terms). This field is mandatory and must not be null.
+    - top_marking: Short alphanumeric code on the component (Device Marking, Top Marking Code, Marking Code, or similar identifiers). If not found, leave this blank.
+    - package_case: Standardized mechanical format (e.g., DO-214AB, SOD-123). If not found, leave this blank.
+    - description: Functional description (e.g., "Transient Voltage Suppression Diode"). If not found, leave this blank.
 
     Respond **only** with a JSON array of items. Do **not** include any explanation, thought process, or markdown formatting.
 
@@ -270,9 +270,9 @@ def generate_repair_prompt(raw: str) -> str:
     [
     {{
         "mpn": "...",
-        "top_marking": "...", // or null
-        "package_case": "...", // or null
-        "description": "...", // or null
+        "top_marking": "...",
+        "package_case": "...",
+        "description": "...",
         "confidence": "...", 
     }},
     ...

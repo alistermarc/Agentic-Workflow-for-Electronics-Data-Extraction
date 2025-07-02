@@ -322,14 +322,20 @@ def parse_and_repair(state: Dict) -> Dict:
     """
     client = state["client"]
     raw = state["raw_response"]
-
+    cleaned_raw = re.sub(r'<think>.*?</think>', '', raw, flags=re.DOTALL)
+    match = re.search(r'```json\s*([\s\S]*?)\s*```|(\[[\s\S]*\])', cleaned_raw.strip())
+    json_to_parse = None
+    if match:
+        json_to_parse = match.group(1) or match.group(2)
+    else:
+        json_to_parse = cleaned_raw.strip()
     try:
-        data = json.loads(raw)
+        data = json.loads(json_to_parse)
         print(f"Parsed {len(data)} items")
     except Exception:
         print("Initial JSON parsing failed. Attempting repair...")
 
-        repair_prompt = generate_repair_prompt(raw)
+        repair_prompt = generate_repair_prompt(json_to_parse)
 
         resp = client.chat.completions.create(
             model=state["model_name"],
@@ -515,7 +521,10 @@ def finalize(state: Dict) -> Dict:
     """
     filename = Path(state["pdf_path"]).name
     manufacturer = None
-    parts = re.split(r'__|_', filename)
+    if '__' in filename:
+        parts = filename.split('__')
+    else:
+        parts = filename.split('_')
     if len(parts) > 1:
         manufacturer_block = parts[1]
         sub_parts = manufacturer_block.split('_')
