@@ -34,7 +34,7 @@ def setup_converter() -> DocumentConverter:
 
     return DocumentConverter(format_options={InputFormat.PDF: PdfFormatOption(pipeline_options=opts)})
 
-def score_chunk(chunk: str, components: list[str]) -> int:
+def score_chunk(chunk: str, components: list[str], title: str) -> int:
     """
     Scores a text chunk based on the presence of relevant keywords and component names.
 
@@ -65,6 +65,9 @@ def score_chunk(chunk: str, components: list[str]) -> int:
     r")\b",
     re.IGNORECASE
     )
+    if len(title) >= 5:
+        title_prefix = title[:5].lower()
+        score += chunk_lower.count(title_prefix)*0.5
     if components:
         score += sum(1 for m in components if m.lower() in chunk_lower)
     keyword_matches = KEYWORD_PATTERN.findall(chunk)

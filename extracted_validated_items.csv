@@ -8406,3 +8406,110 @@ BTT62001ENAXUMA1,,DSO-8,Smart high-side power switch,low,BTT62001ENAXUMA1_Infine
 74ACT244MTC,,TSSOP,20-Lead Thin Shrink Small Outline Package,medium,74ACT244MTCX_FAIRCHILD_1_alldatasheet.pdf,FAIRCHILD
 74ACT244MTCX_NL,,TSSOP,Pb-Free 20-Lead Thin Shrink Small Outline Package,medium,74ACT244MTCX_FAIRCHILD_1_alldatasheet.pdf,FAIRCHILD
 74ACT244PC,,PDIP,20-Lead Plastic Dual-In-Line Package,medium,74ACT244MTCX_FAIRCHILD_1_alldatasheet.pdf,FAIRCHILD
+MAX96714,,32-Pin TQFN-SW,GMSL2/1 serializer/deserializer with advanced features,low,MAX96714GTJ_slash_VY+__AnalogDevices_5_componentsearchengine.pdf,slash
+MAX96714F,,32-Pin TQFN-SW,GMSL2/1 serializer/deserializer with advanced features,low,MAX96714GTJ_slash_VY+__AnalogDevices_5_componentsearchengine.pdf,slash
+MAX96714 GTJ/VY+,,32-Pin TQFN-SW-EP,GMSL2/1 serializer/deserializer with advanced features,high,MAX96714GTJ_slash_VY+__AnalogDevices_5_componentsearchengine.pdf,slash
+MAX96714GTJ/VY+T,,32-Pin TQFN-SW-EP,GMSL2/1 serializer/deserializer with advanced features,high,MAX96714GTJ_slash_VY+__AnalogDevices_5_componentsearchengine.pdf,slash
+MAX96714F GTJ/VY+,,32-Pin TQFN-SW-EP,GMSL2/1 serializer/deserializer with advanced features,high,MAX96714GTJ_slash_VY+__AnalogDevices_5_componentsearchengine.pdf,slash
+MAX96714FGTJ/VY+T,,32-Pin TQFN-SW-EP,GMSL2/1 serializer/deserializer with advanced features,high,MAX96714GTJ_slash_VY+__AnalogDevices_5_componentsearchengine.pdf,slash
+MAX96714FGTJ/V+,,32-Pin TQFN-EP,GMSL2/1 serializer/deserializer with advanced features,high,MAX96714GTJ_slash_VY+__AnalogDevices_5_componentsearchengine.pdf,slash
+MAX96714FGTJ/V+T,,32-Pin TQFN-EP,GMSL2/1 serializer/deserializer with advanced features,high,MAX96714GTJ_slash_VY+__AnalogDevices_5_componentsearchengine.pdf,slash
+MAX96714R GTJ/VY,,32-Pin TQFN-SW-EP,GMSL2/1 serializer/deserializer with advanced features,high,MAX96714GTJ_slash_VY+__AnalogDevices_5_componentsearchengine.pdf,slash
+MAX96714RGTJ/VY+T,,32-Pin TQFN-SW-EP,GMSL2/1 serializer/deserializer with advanced features,high,MAX96714GTJ_slash_VY+__AnalogDevices_5_componentsearchengine.pdf,slash
+MAX96714RGTJ/V+,,32-Pin TQFN-EP,GMSL2/1 serializer/deserializer with advanced features,high,MAX96714GTJ_slash_VY+__AnalogDevices_5_componentsearchengine.pdf,slash
+MAX96714RGTJ/V+T,,32-Pin TQFN-EP,GMSL2/1 serializer/deserializer with advanced features,high,MAX96714GTJ_slash_VY+__AnalogDevices_5_componentsearchengine.pdf,slash
+ISL90727UIE627Z-TK,ANI,6 Ld SC-70,"Digital Potentiometer, 50 kΩ",high,ISL90727WIE627Z-TK_RenesasElectronics_379_componentsearchengine.pdf,RenesasElectronics
+ISL90727WIE627Z-T7A,ANH,6 Ld SC-70,"Digital Potentiometer, 10 kΩ",high,ISL90727WIE627Z-TK_RenesasElectronics_379_componentsearchengine.pdf,RenesasElectronics
+ISL90727WIE627Z-TK,ANH,6 Ld SC-70,"Digital Potentiometer, 10 kΩ",high,ISL90727WIE627Z-TK_RenesasElectronics_379_componentsearchengine.pdf,RenesasElectronics
+ISL90728UIE627Z-TK,CDY,6 Ld SC-70,"Digital Potentiometer, 50 kΩ",high,ISL90727WIE627Z-TK_RenesasElectronics_379_componentsearchengine.pdf,RenesasElectronics
+ISL90728WIE627Z-T7A,CCF,6 Ld SC-70,"Digital Potentiometer, 10 kΩ",high,ISL90727WIE627Z-TK_RenesasElectronics_379_componentsearchengine.pdf,RenesasElectronics
+ISL90728WIE627Z-TK,CCF,6 Ld SC-70,"Digital Potentiometer, 10 kΩ",high,ISL90727WIE627Z-TK_RenesasElectronics_379_componentsearchengine.pdf,RenesasElectronics
+LM5122-Q1,,HTSSOP,High-performance synchronous boost controller,high,LM5122QMHE_slash_NOPB__TexasInstruments_46_componentsearchengine.pdf,slash
+LM5122QMH/NOPB,LM5122 QMH,HTSSOP,High-performance synchronous boost controller,high,LM5122QMHE_slash_NOPB__TexasInstruments_46_componentsearchengine.pdf,slash
+LM5122QMHE/NOPB,LM5122 QMH,HTSSOP,High-performance synchronous boost controller,high,LM5122QMHE_slash_NOPB__TexasInstruments_46_componentsearchengine.pdf,slash
+LM5122QMHX/NOPB,LM5122 QMH,HTSSOP,High-performance synchronous boost controller,high,LM5122QMHE_slash_NOPB__TexasInstruments_46_componentsearchengine.pdf,slash
+DS1631U+,D1631,8-Pin μ SOP,DS1631 in Lead-Free 8-Pin μ SOP,high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+DS1631U+T&R,D1631,8-Pin μ SOP,"DS1631 in Lead-Free 8-Pin μ SOP, 3000 Piece Tape-and-Reel",high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+DS1631Z+,DS1631Z,150 mil 8-Pin SO,DS1631 in Lead-Free 150 mil 8-Pin SO,high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+DS1631Z+T&R,DS1631Z,150 mil 8-Pin SO,"DS1631 in Lead-Free 150 mil 8-Pin SO, 2500 Piece Tape-and-Reel",high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+DS1631AU+,1631A,8-Pin μ SOP,DS1631A in Lead-Free 8-Pin μ SOP,high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+DS1631AU+T&R,1631A,8-Pin μ SOP,"DS1631A in Lead-Free 8-Pin μ SOP, 3000 Piece Tape-and-Reel",high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+DS1631S+,DS1631S,208 mil 8-Pin SO,DS1631 in Lead-Free 208 mil 8-Pin SO,high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+DS1631S+T&R,DS1631S,208 mil 8-Pin SO,"DS1631 in Lead-Free 208 mil 8-Pin SO, 2000 Piece Tape-and-Reel",high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+DS1631+,DS1631,300 mil 8-Pin DIP,DS1631 in Lead-Free 300 mil 8-Pin DIP,high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+DS1731U+,D1731,8-Pin μ SOP,DS1731 in Lead-Free 8-Pin μ SOP,high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+DS1731U+T&R,D1731,8-Pin μ SOP,"DS1731 in Lead-Free 8-Pin μ SOP, 3000 Piece Tape-and-Reel",high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+DS1631U,D1631,8-Pin μ SOP,DS1631 in 8-Pin μ SOP,high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+DS1631U/T&R,D1631,8-Pin μ SOP,"DS1631 in 8-Pin μ SOP, 3000-Piece Tape-and-Reel",high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+DS1631Z,DS1631Z,150mil 8-Pin SO,DS1631 in 150mil 8-Pin SO,high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+DS1631Z/T&R,DS1631Z,150mil 8-Pin SO,"DS1631 in 150mil 8-Pin SO, 2500-Piece Tape-and-Reel",high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+DS1631AU,1631A,8-Pin μ SOP,DS1631A in 8-Pin μ SOP,high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+DS1631AU/T&R,1631A,8-Pin μ SOP,"DS1631A in 8-Pin μ SOP, 3000-Piece Tape-and-Reel",high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+DS1631S,DS1631S,208 mil 8-Pin SO,DS1631 in 208 mil 8-Pin SO,high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+DS1631S/T&R,DS1631S,208 mil 8-Pin SO,"DS1631 in Lead-Free 208 mil 8-Pin SO, 2000 Piece Tape- and-Reel",high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+DS1631,DS1631,300 mil 8-Pin DIP,DS1631 in 300 mil 8-Pin DIP,high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+DS1731U,D1731,8-Pin μ SOP,DS1731 in 8-Pin μ SOP,high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+DS1731U/T&R,D1731,8-Pin μ SOP,"DS1731 in 8-Pin μ SOP, 3000-Piece Tape-and-Reel",high,DS1731U+_MAXIM_0_alldatasheet.pdf,MAXIM
+MachXO3D-4300,,"WLCSP, QFN, caBGA, ftBGA","FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+MachXO3D-9400,,"WLCSP, QFN, caBGA, ftBGA","FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-4300HC-5SG72C,,QFN,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-4300HC-6SG72C,,QFN,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-4300HC-5SG72I,,QFN,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-4300HC-6SG72I,,QFN,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-4300HC-5BG256C,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-4300HC-6BG256C,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-4300HC-5BG256I,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-4300HC-6BG256I,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-4300HC-5FTG256C,,ftBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-4300HC-6FTG256C,,ftBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-4300HC-5FTG256I,,ftBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-4300HC-6FTG256I,,ftBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-4300ZC-2SG72C,,QFN,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-4300ZC-3SG72C,,QFN,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-4300ZC-2SG72I,,QFN,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-4300ZC-3SG72I,,QFN,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-4300ZC-2BG256C,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-4300ZC-3BG256C,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-4300ZC-2BG256I,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-4300ZC-3BG256I,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400HC-5SG72C,,QFN,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400HC-6SG72C,,QFN,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400HC-5SG72I,,QFN,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400HC-6SG72I,,QFN,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400HC-5BG256C,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400HC-6BG256C,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400HC-5BG256I,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400HC-6BG256I,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400HC-5BG400C,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400HC-6BG400C,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400HC-5BG400I,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400HC-6BG400I,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400HC-5BG484C,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400HC-6BG484C,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400HC-5BG484I,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400HC-6BG484I,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400HE-5UTG69CTR1K,,WLCSP,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400HE-5UTG69CTR,,WLCSP,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400HE-5UTG69ITR1K,,WLCSP,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400HE-5UTG69ITR,,WLCSP,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400ZC-2SG72C,,QFN,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400ZC-3SG72C,,QFN,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400ZC-2SG72I,,QFN,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400ZC-3SG72I,,QFN,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400ZC-2BG256C,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400ZC-3BG256C,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400ZC-2BG256I,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400ZC-3BG256I,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400ZC-2BG400C,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400ZC-3BG400C,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400ZC-2BG400I,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LCMXO3D-9400ZC-3BG400I,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LAMXO3D-4300HC-5BG256E,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LAMXO3D-9400ZC-2BG256E,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LAMXO3D-9400HE-5BG256E,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LAMXO3D-9400ZC-2BG484E,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+LAMXO3D-9400HE-5BG484E,,caBGA,"FPGA with 4300 to 9400 LUTs, embedded security features, and multiple hardened functions",high,LCMXO3D-9400HC-5BG400C_LatticeSemiconductor_425_componentsearchengine.pdf,LatticeSemiconductor
+74AUP1G07GW,,TSSOP5,Low-power buffer with open-drain output,medium,74AUP1G07GW_NXP_1_alldatasheet.pdf,NXP
+74AUP1G07GM,,XSON6,Low-power buffer with open-drain output,medium,74AUP1G07GW_NXP_1_alldatasheet.pdf,NXP
+74AUP1G07GF,,XSON6,Low-power buffer with open-drain output,medium,74AUP1G07GW_NXP_1_alldatasheet.pdf,NXP
+MMBT3906L,2A,DFN1006-3,Transient Voltage Suppression Diode,high,MMBT3906LG_GalaxyMicroelectronics_530_componentsearchengine.pdf,GalaxyMicroelectronics

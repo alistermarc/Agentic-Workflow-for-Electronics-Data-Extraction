@@ -217,6 +217,7 @@ def filter_chunks(state: Dict) -> Dict:
     """
     chunks = state.get("chunks", [])
     raw_components = state.get("component", "[]")
+    title = state.get("title", "")
     
     if isinstance(raw_components, str):
         raw_components = raw_components.strip()
@@ -232,7 +233,7 @@ def filter_chunks(state: Dict) -> Dict:
 
     # 1. Score each chunk and store it with its original index.
     indexed_scored_chunks = [
-        (i, chunk, score_chunk(chunk, components))
+        (i, chunk, score_chunk(chunk, components, title))
         for i, chunk in enumerate(chunks)
     ]
 
@@ -252,8 +253,8 @@ def filter_chunks(state: Dict) -> Dict:
     # 2. Temporarily sort the high-scoring chunks by score to find the top 3.
     sorted_by_score = sorted(high_scoring_chunks, key=lambda x: x[2], reverse=True)
 
-    # 3. Slice to get only the top 4 entries.
-    top_entries = sorted_by_score[:4]
+    # 3. Slice to get only the top 6 entries.
+    top_entries = sorted_by_score[:6]
 
     # 4. Sort the top entries back by their original index.
     top_entries_in_original_order = sorted(top_entries, key=lambda x: x[0])
