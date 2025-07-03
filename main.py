@@ -1,31 +1,24 @@
-import ssl
-ssl._create_default_https_context = ssl._create_unverified_context
-
-import logging
-import os
-from pathlib import Path
-from dotenv import load_dotenv, find_dotenv
-from openai import OpenAI
-from config import DOCUMENTS_DIR, PROCESSED_DIR, MODEL_NAME, SKIPPED_LARGE_FILES_DIR
-from helpers import setup_converter
-from graph_builder import build_graph
-from datetime import datetime
 import csv
+import logging
+import ssl
+from datetime import datetime
+from pathlib import Path
+
+from dotenv import find_dotenv, load_dotenv
 from groq import Groq
 from openai import OpenAI
 from PyPDF2 import PdfReader
 
+from config import DOCUMENTS_DIR, PROCESSED_DIR, MODEL_NAME, ANCHOR_MODEL_NAME, SKIPPED_LARGE_FILES_DIR, FAILURE_LOG_PATH
+from graph_builder import build_graph
+from helpers import setup_converter, log_failure
+
+ssl._create_default_https_context = ssl._create_unverified_context
+
 logging.basicConfig(format="%(asctime)s [%(levelname)s] %(message)s", level=logging.INFO)
 
-FAILURE_LOG_PATH = Path("failed_pdfs.csv")
-
-def log_failure(pdf_path: Path, error: Exception):
-    FAILURE_LOG_PATH.parent.mkdir(exist_ok=True)
-    with open(FAILURE_LOG_PATH, "a", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow([datetime.now().isoformat(), pdf_path.name, str(error)])
-
 def main():
+    """Main function to process PDF documents through the graph."""
     load_dotenv(find_dotenv())
     client = Groq()
     client_anchor = OpenAI()
@@ -55,13 +48,15 @@ def main():
                 continue
         except Exception as e:
             logging.error(f"Failed to read {pdf.name}: {e}")
+            log_failure(pdf, e)
         state = {
             "pdf_path": str(pdf),
             "title": pdf.stem,
             "client": client,
             "client_anchor": client_anchor,
             "converter": converter,
-            "model_name": MODEL_NAME
+            "model_name": MODEL_NAME,
+            "anchor_model_name": ANCHOR_MODEL_NAME
         }
         try:
             app.invoke(state, {"recursion_limit": 100})

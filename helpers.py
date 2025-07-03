@@ -1,11 +1,17 @@
-import re, json, logging
+import csv
+import json
+import logging
+import re
+from datetime import datetime
+from pathlib import Path
+from typing import Any, Dict, List, Optional
+
 import pandas as pd
-from typing import List
-from typing import Dict, List, Any, Optional
 from docling.datamodel.base_models import InputFormat
-from docling.datamodel.pipeline_options import PdfPipelineOptions, EasyOcrOptions, TesseractCliOcrOptions, AcceleratorDevice, AcceleratorOptions
+from docling.datamodel.pipeline_options import AcceleratorDevice, AcceleratorOptions, EasyOcrOptions, PdfPipelineOptions, TesseractCliOcrOptions
 from docling.document_converter import DocumentConverter, PdfFormatOption
-from config import CSV_OUTPUT, CSV_VALIDATED_OUTPUT
+
+from config import CSV_OUTPUT, CSV_VALIDATED_OUTPUT, FAILURE_LOG_PATH
 
 logger = logging.getLogger(__name__)
 
@@ -285,34 +291,41 @@ def generate_repair_prompt(raw: str) -> str:
     {raw}
     """
 
-def generate_validation_prompt(items: list) -> str:
-    return f"""
-    You are given a list of extracted items from a technical document.
+# def generate_validation_prompt(items: list) -> str:
+#     return f"""
+#     You are given a list of extracted items from a technical document.
 
-    Your task is to:
-    1. Validate each item as-is.
-    2. Update the `confidence` field (`high`, `medium`, or `low`) depending on the consistency and plausibility of the fields.
-    3. Add a `validation_comment`:
-    - Briefly explain why confidence is not high (e.g., missing `top_marking`, inconsistent `package_case`, suspicious values).
-    - Leave it blank if the data is strong.
+#     Your task is to:
+#     1. Validate each item as-is.
+#     2. Update the `confidence` field (`high`, `medium`, or `low`) depending on the consistency and plausibility of the fields.
+#     3. Add a `validation_comment`:
+#     - Briefly explain why confidence is not high (e.g., missing `top_marking`, inconsistent `package_case`, suspicious values).
+#     - Leave it blank if the data is strong.
 
-    Respond strictly in the following JSON format — no explanations, markdown code blocks, or extra text. The response **must** start with `[` and end with `]`.
+#     Respond strictly in the following JSON format — no explanations, markdown code blocks, or extra text. The response **must** start with `[` and end with `]`.
 
-    [
-    {{
-        "mpn": "...",
-        "top_marking": "...",  // or null
-        "package_case": "...", // or null
-        "description": "...",
-        "confidence": "...",   // high, medium, or low
-        "validation_comment": "Explain confidence or highlight issues in 1 sentence if there are, leave blank if confident."
-    }},
-    ...
-    ]
+#     [
+#     {{
+#         "mpn": "...",
+#         "top_marking": "...",  // or null
+#         "package_case": "...", // or null
+#         "description": "...",
+#         "confidence": "...",   // high, medium, or low
+#         "validation_comment": "Explain confidence or highlight issues in 1 sentence if there are, leave blank if confident."
+#     }},
+#     ...
+#     ]
 
-    Extracted Items:
-    {json.dumps(items, indent=2)}
-    """
+#     Extracted Items:
+#     {json.dumps(items, indent=2)}
+#     """
+
+def log_failure(pdf_path: Path, error: Exception): # <-- Add this entire function
+    """Logs a PDF processing failure to a CSV file."""
+    FAILURE_LOG_PATH.parent.mkdir(exist_ok=True)
+    with open(FAILURE_LOG_PATH, "a", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerow([datetime.now().isoformat(), pdf_path.name, str(error)])
 
 def save_items(items: List[dict]):
     """

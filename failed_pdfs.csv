@@ -452,3 +452,24 @@ timestamp,pdf_name,error
 2025-07-03T01:24:39.138931,PMV30XPEAR_Nexperia_157_componentsearchengine.pdf,Connection error.
 2025-07-03T01:24:40.369475,DMN65D8L-7_DiodesIncorporated_184_componentsearchengine.pdf,Connection error.
 2025-07-03T01:29:50.788664,NC7SZ66P5X_onsemi_28_componentsearchengine.pdf,'markdown'
+2025-07-04T01:05:44.345362,"TMBT3904,LM_Toshiba_47_componentsearchengine.pdf",Connection error.
+2025-07-04T01:05:45.515725,SN74LVC2G07DCKRG4_TexasInstruments_118_componentsearchengine.pdf,Connection error.
+2025-07-04T01:05:46.856266,TS3L100DBQR_TexasInstruments_14_componentsearchengine.pdf,Connection error.
+2025-07-04T01:05:48.286305,LT1965IDD#TRPBF__LinearTechnology_30_componentsearchengine.pdf,Connection error.
+2025-07-04T01:05:48.303704,MCP6022T-I_slash_SN__Microchip_11_componentsearchengine.pdf,PyCryptodome is required for AES algorithm
+2025-07-04T01:05:49.623065,MCP6022T-I_slash_SN__Microchip_11_componentsearchengine.pdf,Connection error.
+2025-07-04T01:05:50.875456,STPS0560Z_STMicroelectronics_155_componentsearchengine.pdf,Connection error.
+2025-07-04T01:05:52.201659,IPD100N06S4-3__Infineon_8_future_electronic.pdf,Connection error.
+2025-07-04T01:05:53.566434,AD7276BUJZ-REEL7_AnalogDevices_15_componentsearchengine.pdf,Connection error.
+2025-07-04T01:05:54.805133,24C32D-SSHM-T__Microchip_6_future_electronic.pdf,Connection error.
+2025-07-04T01:05:56.104940,ADM2483BRWZ_AnalogDevices_1_componentsearchengine.pdf,Connection error.
+2025-07-04T01:05:57.459826,LM4040AIM3-2.5_slash_NOPB__TexasInstruments_27_componentsearchengine.pdf,Connection error.
+2025-07-04T01:05:58.769230,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,Connection error.
+2025-07-04T01:06:00.011164,VIPER26LDTR_STMicroelectronics_19_componentsearchengine.pdf,Connection error.
+2025-07-04T01:06:01.347727,IRFR4615TRLPBF_InternationalRectifier_362_componentsearchengine.pdf,Connection error.
+2025-07-04T01:06:02.765080,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,Connection error.
+2025-07-04T01:06:04.199543,74LVC1G74DC_NXP_2_alldatasheet.pdf,Connection error.
+2025-07-04T01:06:04.204117,FUSB2805MLX_onsemi_271_componentsearchengine.pdf,PyCryptodome is required for AES algorithm
+2025-07-04T01:06:05.539432,FUSB2805MLX_onsemi_271_componentsearchengine.pdf,Connection error.
+2025-07-04T01:06:12.563684,"TMBT3904,LM_Toshiba_47_componentsearchengine.pdf",Connection error.
+2025-07-04T01:07:12.006777,MCP6022T-I_slash_SN__Microchip_11_componentsearchengine.pdf,PyCryptodome is required for AES algorithm

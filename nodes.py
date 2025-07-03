@@ -1,15 +1,17 @@
-import json, logging
-import re
 import ast
-from pathlib import Path
-from helpers import chunk_markdown, generate_prompt, generate_anchor_prompt, generate_repair_prompt, generate_validation_prompt, save_items, save_validated_items, clean_markdown_text, extract_all_tables_with_optional_header, score_chunk
-from typing import Dict, List, Any, Optional
-from datetime import datetime
+import json
+import logging
+import re
 import time
-import pandas as pd
-from docling_core.types.doc import ImageRefMode, PictureItem, TableItem, TextItem
-from config import MARKDOWN_DIR, PROCESSED_DIR, SKIPPED_DIR, METADATA_DIR, FAILED_DIR, CSV_SKIPPED_OUTPUT, CSV_FAILED_OUTPUT
+from datetime import datetime
+from pathlib import Path
+from typing import Any, Dict, List
 
+import pandas as pd
+from docling_core.types.doc import (ImageRefMode, PictureItem, TableItem)
+
+from config import CSV_FAILED_OUTPUT, CSV_SKIPPED_OUTPUT, FAILED_DIR, MARKDOWN_DIR, METADATA_DIR, PROCESSED_DIR, SKIPPED_DIR
+from helpers import chunk_markdown, clean_markdown_text, extract_all_tables_with_optional_header, generate_anchor_prompt, generate_prompt, generate_repair_prompt, save_items, save_validated_items, score_chunk, log_failure
 logger = logging.getLogger(__name__)
 
 def load_and_split(state: Dict) -> Dict:
@@ -98,7 +100,6 @@ def load_and_split(state: Dict) -> Dict:
 
         logger.info(f"Attempting to extract tables from {md_path.name}...")
         full_md_content = md_path.read_text(encoding="utf-8").strip()
-        print(f"Full Markdown content length: {len(full_md_content)} characters")
         cleaned_md = clean_markdown_text(full_md_content)
 
         state["full_markdown_content"] = cleaned_md
@@ -123,16 +124,13 @@ def load_and_split(state: Dict) -> Dict:
             logger.info("Attempt 1: No tables found. Using full document content for first pass.")
             content_for_chunking = cleaned_md
 
-        print(f"Extracted {len(extracted_data)} tables from the cleaned Markdown content.")
-
         chunks = chunk_markdown(content_for_chunking)
         logger.info(f"Markdown split into {len(chunks)} chunk(s)")
         return {**state, "markdown": content_for_chunking, "chunks": chunks}
 
     except Exception as e:
         logger.error(f"Failed to process {pdf.name}: {e}")
-        with open("failed_files.log", "a", encoding="utf-8") as log_file:
-            log_file.write(f"[{datetime.now()}] {pdf.name} | Error: {e}\n")
+        log_failure(pdf, e)
 
         return {**state, "chunks": []}
     
@@ -156,7 +154,7 @@ def extract_anchor(state: Dict) -> Dict:
     prompt = generate_anchor_prompt(excerpt)
 
     resp = client.chat.completions.create(
-        model="gpt-4o",
+        model=state["anchor_model_name"],
         messages=[
             {"role": "system", "content": "You are an information extraction assistant."},
             {"role": "user", "content": prompt}
@@ -180,7 +178,6 @@ def extract_anchor(state: Dict) -> Dict:
             description = item_data.get("description", "")
             package_case = item_data.get("package_case", "")
             is_chip = item_data.get("is_chip_component", False)
-            # is_tht = item_data.get("is_through_hole", False) 
             explanation = item_data.get("explanation")
 
         else:
@@ -192,8 +189,6 @@ def extract_anchor(state: Dict) -> Dict:
     skip_reason = None
     if is_chip:
         skip_reason = "LLM classified it as a chip component."
-    # elif is_tht:
-    #     skip_reason = "LLM classified it as a Through-Hole (THT) component."
 
     if skip_reason:
         logger.warning(f"Excluding document '{Path(state['pdf_path']).name}': {skip_reason}")
@@ -239,7 +234,7 @@ def filter_chunks(state: Dict) -> Dict:
 
     print("\n--- Chunk Scoring Details ---")
     if not indexed_scored_chunks:
-        print("  No chunks to score.")
+        print("No chunks to score.")
     else:
         for i, chunk, score in indexed_scored_chunks:
             print(f"  - Chunk {i+1:02d}/{len(chunks):02d} | Score: {score}")
@@ -302,7 +297,6 @@ def call_llm(state: Dict) -> Dict:
         ],
         temperature=0
     )
-    print(resp.choices[0].message.content.strip())
 
     return {**state, "raw_response": resp.choices[0].message.content.strip()}
 
@@ -331,9 +325,8 @@ def parse_and_repair(state: Dict) -> Dict:
         json_to_parse = cleaned_raw.strip()
     try:
         data = json.loads(json_to_parse)
-        print(f"Parsed {len(data)} items")
     except Exception:
-        print("Initial JSON parsing failed. Attempting repair...")
+        logger.info("Initial JSON parsing failed. Attempting repair...")
 
         repair_prompt = generate_repair_prompt(json_to_parse)
 
