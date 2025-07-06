@@ -2,6 +2,7 @@ import ast
 import json
 import logging
 import re
+import shutil
 import time
 from datetime import datetime
 from pathlib import Path
@@ -47,7 +48,7 @@ def load_and_split(state: Dict) -> Dict:
     output_dir.mkdir(parents=True, exist_ok=True)
     md_path = output_dir / f"{pdf.stem}-with-image-refs.md"
 
-    logger.info(f"Processing: {pdf.name}")
+    logger.info(f"Processing for OCR: {pdf.name}")
 
     try:
         if not md_path.exists():
@@ -367,7 +368,6 @@ def decide_what_to_do_next(state: Dict) -> str:
     - If no items were found on the 1st attempt, trigger a retry using the full markdown.
     - If no items were found on the 2nd attempt, log a failure.
     """
-    logger.info("--- Deciding next step ---")
     
     if state.get("items"):
         logger.info(f"SUCCESS: Found {len(state['items'])} items. Proceeding to validation.")
@@ -416,7 +416,7 @@ def log_extraction_failure(state: Dict) -> Dict:
     header = not CSV_FAILED_OUTPUT.exists()
     df.to_csv(CSV_FAILED_OUTPUT, mode=mode, header=header, index=False)
     FAILED_DIR.mkdir(exist_ok=True)
-    source_path.rename(FAILED_DIR / source_path.name)
+    shutil.move(source_path, FAILED_DIR / source_path.name)
     
     return state   
 
@@ -512,7 +512,8 @@ def finalize(state: Dict) -> Dict:
     Returns:
         Dict: The final state.
     """
-    filename = Path(state["pdf_path"]).name
+    pdf_path = Path(state["pdf_path"])
+    filename = pdf_path.name
     manufacturer = None
     if '__' in filename:
         parts = filename.split('__')
@@ -540,8 +541,7 @@ def finalize(state: Dict) -> Dict:
     
     save_items(state["items"])
     save_validated_items(state["validated_items"])
-
-    Path(state["pdf_path"]).rename(PROCESSED_DIR / Path(state["pdf_path"]).name)
+    shutil.move(pdf_path, PROCESSED_DIR / filename)
     return state
 
 def save_full_state(state: Dict) -> Dict:
@@ -581,6 +581,7 @@ def save_skipped_component(state: Dict) -> Dict:
     Returns:
         Dict: The final state for the skipped item.
     """
+    pdf_path = Path(state["pdf_path"])
     skipped_info = {
         "source": Path(state["pdf_path"]).name,
         "component": ", ".join(state.get("component", [])),
@@ -596,6 +597,6 @@ def save_skipped_component(state: Dict) -> Dict:
     
     logger.info(f"Logged skipped component from '{skipped_info['source']}' to {CSV_SKIPPED_OUTPUT}")
     SKIPPED_DIR.mkdir(exist_ok=True)
-    Path(state["pdf_path"]).rename(SKIPPED_DIR / Path(state["pdf_path"]).name)
+    shutil.move(pdf_path, SKIPPED_DIR / pdf_path.name)
 
     return state

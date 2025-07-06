@@ -6605,3 +6605,563 @@ LM4040EIM7,,"TO-92, SC70, SOT-23",,high,LM4040AIM3-2.5_slash_NOPB__TexasInstrume
 LM4040QCIM3,,"TO-92, SC70, SOT-23",,high,LM4040AIM3-2.5_slash_NOPB__TexasInstruments_27_componentsearchengine.pdf,TexasInstruments
 LM4040QDIM3,,"TO-92, SC70, SOT-23",,high,LM4040AIM3-2.5_slash_NOPB__TexasInstruments_27_componentsearchengine.pdf,TexasInstruments
 LM4040QEIM3,,"TO-92, SC70, SOT-23",,high,LM4040AIM3-2.5_slash_NOPB__TexasInstruments_27_componentsearchengine.pdf,TexasInstruments
+TCAN1051DQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051DRBRQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051DRBTQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051DRQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GDQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GDRBRQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GDRBTQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GDRQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GVDQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GVDRBRQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GVDRBTQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GVDRQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HDQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HDRBRQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HDRBTQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HDRQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGDQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGDRBRQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGDRBTQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGDRQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGVDQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGVDRBRQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGVDRBTQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGVDRQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HVDQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HVDRBRQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HVDRBTQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HVDRQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051VDQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051VDRBRQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051VDRBTQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051VDRQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+VIPER26LN,,DIP-7,,high,VIPER26LDTR_STMicroelectronics_19_componentsearchengine.pdf,STMicroelectronics
+VIPER26HN,,DIP-7,,high,VIPER26LDTR_STMicroelectronics_19_componentsearchengine.pdf,STMicroelectronics
+VIPER26HD,,SO16N,,high,VIPER26LDTR_STMicroelectronics_19_componentsearchengine.pdf,STMicroelectronics
+VIPER26HDTR,,SO16N,,high,VIPER26LDTR_STMicroelectronics_19_componentsearchengine.pdf,STMicroelectronics
+VIPER26LD,,SO16N,,high,VIPER26LDTR_STMicroelectronics_19_componentsearchengine.pdf,STMicroelectronics
+VIPER26LDTR,,SO16N,,high,VIPER26LDTR_STMicroelectronics_19_componentsearchengine.pdf,STMicroelectronics
+IRFR4615PbF,,D-PAK,,high,IRFR4615TRLPBF_InternationalRectifier_362_componentsearchengine.pdf,InternationalRectifier
+IRFR4615TRLPbF,,D-PAK,,high,IRFR4615TRLPBF_InternationalRectifier_362_componentsearchengine.pdf,InternationalRectifier
+IRFU4615PbF,,I-PAK,,high,IRFR4615TRLPBF_InternationalRectifier_362_componentsearchengine.pdf,InternationalRectifier
+SMCJ5.0(C)A,BDE,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ6.0(C)A,BDG,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ6.5(C)A,BDK,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ7.0(C)A,BDM,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ7.5(C)A,BDP,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ8.0(C)A,BDR,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ8.5(C)A,BDT,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ9.0(C)A,BDV,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ10(C)A,BDX,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ11(C)A,BDZ,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ12(C)A,BEE,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ13(C)A,BEG,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ14(C)A,BEK,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ15(C)A,BEM,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ16(C)A,BEP,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ17(C)A,BER,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ18(C)A,BET,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ20(C)A,BEV,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ22(C)A,BEX,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ24(C)A,BEZ,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ26(C)A,BFE,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ28(C)A,BFG,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ30(C)A,BFK,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ33(C)A,BFM,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ36(C)A,BFP,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ40(C)A,BFR,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ43(C)A,BFT,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ45(C)A,BFV,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ48(C)A,BFX,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ51(C)A,BFZ,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ54(C)A,BGE,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ58(C)A,BGG,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ60(C)A,BGK,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ64(C)A,BGM,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ70(C)A,BGP,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ75(C)A,BGR,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ78(C)A,BGT,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ85(C)A,BGV,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ90(C)A,BGX,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ100(C)A,BGZ,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ110(C)A,BHE,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ120(C)A,BHG,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ130(C)A,BHK,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ150(C)A,BHM,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ160(C)A,BHP,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ170(C)A,BHR,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ200(C)A,BHV,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJX.X(C)A-13-F,,SMC,,low,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJXX(C)A-13-F,,SMC,,low,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJXXX(C)A-13-F,,SMC,,low,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+74LVC1G74DP,V74,TSSOP8,Single D-type flip-flop with set and reset; positive edge trigger,high,74LVC1G74DC_NXP_2_alldatasheet.pdf,NXP
+74LVC1G74DC,V74,VSSOP8,Single D-type flip-flop with set and reset; positive edge trigger,high,74LVC1G74DC_NXP_2_alldatasheet.pdf,NXP
+74LVC1G74GT,V74,XSON8,Single D-type flip-flop with set and reset; positive edge trigger,high,74LVC1G74DC_NXP_2_alldatasheet.pdf,NXP
+74LVC1G74GF,Y4,XSON8,Single D-type flip-flop with set and reset; positive edge trigger,high,74LVC1G74DC_NXP_2_alldatasheet.pdf,NXP
+74LVC1G74GD,V74,XSON8U,Single D-type flip-flop with set and reset; positive edge trigger,high,74LVC1G74DC_NXP_2_alldatasheet.pdf,NXP
+74LVC1G74GM,V74,XQFN8U,Single D-type flip-flop with set and reset; positive edge trigger,high,74LVC1G74DC_NXP_2_alldatasheet.pdf,NXP
+FUSB2805MLX,FUSB2805,"32-Terminal, Molded Leadless Package (MLP), Quad, JEDEC MO-220",,high,FUSB2805MLX_onsemi_271_componentsearchengine.pdf,onsemi
+PI3PCIE3212ZBE,,"20-contact, Very Thin Quad Flat No-Lead (TQFN)",,high,PI3PCIE3212ZBE_PericomSemiconductorCorporation_136_componentsearchengine.pdf,PericomSemiconductorCorporation
+ECS-.327-7-34B-TR,,3.2 x 1.5 mm,SMD Tuning Fork Crystal,high,ECX-31B_ECS_4_alldatasheet.pdf,ECS
+ECS-.327-12.5-34B-TR,,3.2 x 1.5 mm,SMD Tuning Fork Crystal,high,ECX-31B_ECS_4_alldatasheet.pdf,ECS
+ECS-.327-12.5-34B-C-TR,,3.2 x 1.5 mm,SMD Tuning Fork Crystal,high,ECX-31B_ECS_4_alldatasheet.pdf,ECS
+ECS-.327-7-34B-C-TR,,3.2 x 1.5 mm,SMD Tuning Fork Crystal,high,ECX-31B_ECS_4_alldatasheet.pdf,ECS
+ECS-.327-9-34B-TR,,3.2 x 1.5 mm,SMD Tuning Fork Crystal,high,ECX-31B_ECS_4_alldatasheet.pdf,ECS
+ECS-.327-9-34B-C-TR,,3.2 x 1.5 mm,SMD Tuning Fork Crystal,high,ECX-31B_ECS_4_alldatasheet.pdf,ECS
+ECS-.327-12.5-34B,,3.2 x 1.5 mm,SMD Tuning Fork Crystal,high,ECX-31B_ECS_4_alldatasheet.pdf,ECS
+ECX-31B,,3.2 x 1.5 mm,SMD Tuning Fork Crystal,high,ECX-31B_ECS_4_alldatasheet.pdf,ECS
+MMSZ4681-V,CF,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4682-V,CH,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4683-V,CJ,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4684-V,CK,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4685-V,CM,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4686-V,CN,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4687-V,CP,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4688-V,CT,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4689-V,CU,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4690-V,CV,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4691-V,CA,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4692-V,CX,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4693-V,CY,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4694-V,CZ,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4695-V,DC,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4696-V,DD,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4697-V,DE,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4698-V,DF,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4699-V,DH,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4700-V,DJ,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4701-V,DK,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4702-V,DM,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4703-V,DN,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4704-V,DP,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4705-V,DT,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4706-V,DU,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4707-V,DV,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4708-V,DA,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4709-V,DZ,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4710-V,DY,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4711-V,EA,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4712-V,EC,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4713-V,ED,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4714-V,EE,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4715-V,EF,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4716-V,EH,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+MMSZ4717-V,EJ,SOD-123,Transient Voltage Suppression Diode,high,MMSZ4699-V-GS08_VishaySemiconductors_543_componentsearchengine.pdf,VishaySemiconductors
+LMC7101AIM5/NOPB,A00A,SOT-23,,high,LMC7101AIM5X_slash_NOPB__TexasInstruments_53_componentsearchengine.pdf,TexasInstruments
+LMC7101AIM5X/NOPB,A00A,SOT-23,,high,LMC7101AIM5X_slash_NOPB__TexasInstruments_53_componentsearchengine.pdf,TexasInstruments
+LMC7101BIM5/NOPB,A00B,SOT-23,,high,LMC7101AIM5X_slash_NOPB__TexasInstruments_53_componentsearchengine.pdf,TexasInstruments
+LMC7101BIM5X/NOPB,A00B,SOT-23,,high,LMC7101AIM5X_slash_NOPB__TexasInstruments_53_componentsearchengine.pdf,TexasInstruments
+ISO1640BDR,1640B,SOIC,,high,ISO1640BD_TI_3_alldatasheet.pdf,TI
+ISO1640DWR,ISO1640,SOIC,,high,ISO1640BD_TI_3_alldatasheet.pdf,TI
+ISO1641BDR,1641B,SOIC,,high,ISO1640BD_TI_3_alldatasheet.pdf,TI
+ISO1641DWR,ISO1641,SOIC,,high,ISO1640BD_TI_3_alldatasheet.pdf,TI
+ISO1642DWR,ISO1642,SOIC,,high,ISO1640BD_TI_3_alldatasheet.pdf,TI
+ISO1643DWR,ISO1643,SOIC,,high,ISO1640BD_TI_3_alldatasheet.pdf,TI
+ISO1644DWR,ISO1644,SOIC,,high,ISO1640BD_TI_3_alldatasheet.pdf,TI
+DG4157EDL-T1-GE3,,SC-70-6L,,high,DG4157EDL-T1-GE3_Vishay_176_componentsearchengine.pdf,Vishay
+DG4157EDN-T1-GE4,,µDFN-6L,,high,DG4157EDL-T1-GE3_Vishay_176_componentsearchengine.pdf,Vishay
+2N3904BU,2N3904,TO-92 3L,"40 V, 200 mA NPN switching transistor",high,MMBT3904_NL_FairchildSemiconductorCorporation_38_componentsearchengine.pdf,NL
+2N3904TA,2N3904,TO-92 3L,"40 V, 200 mA NPN switching transistor",high,MMBT3904_NL_FairchildSemiconductorCorporation_38_componentsearchengine.pdf,NL
+2N3904TAR,2N3904,TO-92 3L,"40 V, 200 mA NPN switching transistor",high,MMBT3904_NL_FairchildSemiconductorCorporation_38_componentsearchengine.pdf,NL
+2N3904TF,2N3904,TO-92 3L,"40 V, 200 mA NPN switching transistor",high,MMBT3904_NL_FairchildSemiconductorCorporation_38_componentsearchengine.pdf,NL
+2N3904TFR,2N3904,TO-92 3L,"40 V, 200 mA NPN switching transistor",high,MMBT3904_NL_FairchildSemiconductorCorporation_38_componentsearchengine.pdf,NL
+MMBT3904,1A,SOT-23 3L,"40 V, 200 mA NPN switching transistor",high,MMBT3904_NL_FairchildSemiconductorCorporation_38_componentsearchengine.pdf,NL
+PZT3904,3904,SOT-223 4L,"40 V, 200 mA NPN switching transistor",high,MMBT3904_NL_FairchildSemiconductorCorporation_38_componentsearchengine.pdf,NL
+MIC29150-3.3BT,,3-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29150-3.3BU,,3-Pin TO-263,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29150-3.3WT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29150-3.3WU,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29150-5.0BT,,3-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29150-5.0BU,,3-Pin TO-263,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29150-5.0WT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29150-5.0WU,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29150-12BT,,3-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29150-12BU,,3-Pin TO-263,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29150-12WT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29150-12WU,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29151-3.3BT,,5-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29151-3.3BU,,5-Pin TO-263,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29151-3.3WT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29151-3.3WU,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29151-5.0BT,,5-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29151-5.0BU,,5-Pin TO-263,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29151-5.0WT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29151-5.0WU,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29151-12BT,,5-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29151-12BU,,5-Pin TO-263,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29151-12WT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29151-12WU,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29152BT,,5-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29152BU,,5-Pin TO-263,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29152WT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29152WU,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29152WD,,5-Pin TO-252,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29153BT,,5-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29153BU,,5-Pin TO-263,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29300-3.3BT,,3-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29300-3.3BU,,3-Pin TO-263,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29300-3.3WT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29300-3.3WU,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29300-5.0BT,,3-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29300-5.0BU,,3-Pin TO-263,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29300-5.0WT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29300-5.0WU,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29300-12BT,,3-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29300-12BU,,3-Pin TO-263,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29300-12WT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29300-12WU,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29301-3.3BT,,5-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29301-3.3BU,,5-Pin TO-263,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29301-3.3WT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29301-3.3WU,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29301-5.0BT,,5-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29301-5.0BU,,5-Pin TO-263,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29301-5.0WT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29301-5.0WU,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29301-12BT,,5-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29301-12BU,,5-Pin TO-263,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29301-12WT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29301-12WU,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29302BT,,5-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29302BU,,5-Pin TO-263,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29302WT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29302WU,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29303BT,,5-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29303BU,,5-Pin TO-263,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29303WT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29303WU,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29500-3.3BT,,3-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29500-3.3WT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29500-5.0BT,,3-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29500-5.0WT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29501-3.3BT,,5-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29501-3.3BU,,5-Pin TO-263,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29501-3.3WT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29501-3.3WU,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29501-5.0BT,,5-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29501-5.0BU,,5-Pin TO-263,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29501-5.0WT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29501-5.0WU,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29502BT,,5-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29502BU,,5-Pin TO-263,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29502WT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29502WU,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29503BT,,5-Pin TO-220,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29503BU,,5-Pin TO-263,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29503WT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29503WU,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29750-3.3BWT,,3-Pin TO-247,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29750-5.0BWT,,3-Pin TO-247,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29751-3.3BWT,,5-Pin TO-247,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29751-5.0BWT,,5-Pin TO-247,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29752BWT,,5-Pin TO-247,"Adjustable voltage, 1.5A to 7.5A linear voltage regulators",high,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+MIC29752WWT,,"TO-220, TO-263, TO-247, TO-252","Adjustable voltage, 1.5A to 7.5A linear voltage regulators",medium,MIC29502WU-TR_MicrelInc_511_componentsearchengine.pdf,MicrelInc
+PDTC143ZE,38,SOT416,"50 V, 100 mA NPN resistor-equipped transistor",high,"PDTC143ZT,215_Nexperia_56_componentsearchengine.pdf",Nexperia
+PDTC143ZM,E3,SOT883,"50 V, 100 mA NPN resistor-equipped transistor",high,"PDTC143ZT,215_Nexperia_56_componentsearchengine.pdf",Nexperia
+PDTC143ZT,*18,SOT23,"50 V, 100 mA NPN resistor-equipped transistor",high,"PDTC143ZT,215_Nexperia_56_componentsearchengine.pdf",Nexperia
+PDTC143ZU,*54,SOT323,"50 V, 100 mA NPN resistor-equipped transistor",high,"PDTC143ZT,215_Nexperia_56_componentsearchengine.pdf",Nexperia
+PDTA143ZE,,"SOT416, SOT883, SOT23, SOT323","50 V, 100 mA NPN resistor-equipped transistor",low,"PDTC143ZT,215_Nexperia_56_componentsearchengine.pdf",Nexperia
+PDTA143ZM,,"SOT416, SOT883, SOT23, SOT323","50 V, 100 mA NPN resistor-equipped transistor",low,"PDTC143ZT,215_Nexperia_56_componentsearchengine.pdf",Nexperia
+PDTA143ZT,,"SOT416, SOT883, SOT23, SOT323","50 V, 100 mA NPN resistor-equipped transistor",low,"PDTC143ZT,215_Nexperia_56_componentsearchengine.pdf",Nexperia
+PDTA143ZU,,"SOT416, SOT883, SOT23, SOT323","50 V, 100 mA NPN resistor-equipped transistor",low,"PDTC143ZT,215_Nexperia_56_componentsearchengine.pdf",Nexperia
+74LCX541WM,,SOIC,,medium,74LCX541MTC_ONSEMI_0_alldatasheet.pdf,ONSEMI
+74LCX541SJ,,SOP,,medium,74LCX541MTC_ONSEMI_0_alldatasheet.pdf,ONSEMI
+74LCX541BQX,,DQFN,,medium,74LCX541MTC_ONSEMI_0_alldatasheet.pdf,ONSEMI
+74LCX541MSA,,SSOP,,medium,74LCX541MTC_ONSEMI_0_alldatasheet.pdf,ONSEMI
+74LCX541MTC,,TSSOP,,medium,74LCX541MTC_ONSEMI_0_alldatasheet.pdf,ONSEMI
+MX25U25645GMI00,,16-SOP (300mil),,high,MX25U25645GXDI00_Macronix_14_componentsearchengine.pdf,Macronix
+MX25U25645GXDI00,,24-Ball BGA (5x5 ball array),,high,MX25U25645GXDI00_Macronix_14_componentsearchengine.pdf,Macronix
+MX25U25645GZ4I00,,"8-WSON (8x6mm, 3.4 x 4.3 EP)",,high,MX25U25645GXDI00_Macronix_14_componentsearchengine.pdf,Macronix
+MX25U25645GGAI00,,8-WLGA (6x5mm),,high,MX25U25645GXDI00_Macronix_14_componentsearchengine.pdf,Macronix
+MX25U25645GBFI00,,48-Ball WLCSP,,high,MX25U25645GXDI00_Macronix_14_componentsearchengine.pdf,Macronix
+170382-0002,,,ZXPfi Modular I/O Interconnect System,high,170382-0002_Molex_0_componentsearchengine.pdf,Molex
+TC7PZ17FU,,SOT-363,Dual Schmitt Buffer,high,TC7PZ17FU_Toshiba_170_componentsearchengine.pdf,Toshiba
+BSZ0901NSI,0901NSI,PG-TSDSON-8 FL,,high,BSZ0901NSI_Infineon_92_componentsearchengine.pdf,Infineon
+74AHCT541PW,,,,low,74AHCT541PW_PHILIPS_0_alldatasheet.pdf,PHILIPS
+74CBTLV3251PGG,,TSSOP,,high,74CBTLV3251QG_RENESAS_1_alldatasheet.pdf,RENESAS
+74CBTLV3251PGG8,,TSSOP,,high,74CBTLV3251QG_RENESAS_1_alldatasheet.pdf,RENESAS
+74CBTLV3251QG,,QSOP,,high,74CBTLV3251QG_RENESAS_1_alldatasheet.pdf,RENESAS
+74CBTLV3251QG8,,QSOP,,high,74CBTLV3251QG_RENESAS_1_alldatasheet.pdf,RENESAS
+LM5066,LM5066PMH,HTSSOP,,high,LM5066PMHE_slash_NOPB__TexasInstruments_44_componentsearchengine.pdf,TexasInstruments
+LM5066PMH/NOPB,LM5066PMH,HTSSOP,,high,LM5066PMHE_slash_NOPB__TexasInstruments_44_componentsearchengine.pdf,TexasInstruments
+LM5066PMHE/NOPB,LM5066PMH,HTSSOP,,high,LM5066PMHE_slash_NOPB__TexasInstruments_44_componentsearchengine.pdf,TexasInstruments
+LM5066PMHX/NOPB,LM5066PMH,HTSSOP,,high,LM5066PMHE_slash_NOPB__TexasInstruments_44_componentsearchengine.pdf,TexasInstruments
+"GTL2005PW/DG,118",GTL2005,SOT402-1 (TSSOP14),,high,"GTL2005PW,118_NXP_20_componentsearchengine.pdf",NXP
+"GTL2005PW,112",GTL2005,SOT402-1 (TSSOP14),,high,"GTL2005PW,118_NXP_20_componentsearchengine.pdf",NXP
+"GTL2005PW,118",GTL2005,SOT402-1 (TSSOP14),,high,"GTL2005PW,118_NXP_20_componentsearchengine.pdf",NXP
+"GTL2005PW/G,118",GTL2005,SOT402-1 (TSSOP14),,high,"GTL2005PW,118_NXP_20_componentsearchengine.pdf",NXP
+STD6N95K5,6N95K5,DPAK,"950 V, 9 A MOSFET",high,STD6N95K5_STMicroelectronics_140_componentsearchengine.pdf,STMicroelectronics
+SN54LVC14AFK,,LCCC (20),,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN54LVC14AJ,,CDIP (14),,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN54LVC14AW,,CFP (14),,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14ANS,,SO (14),,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14AD,,SOIC (14),,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14ADB,,SSOP (14),,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14APW,,TSSOP (14),,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14ADGV,,TVSOP (14),,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14ARGY,,VQFN (14),,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+5962-9761501Q2A,5962-9761501Q2A SNJ54LVC14AFK,LCCC,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+5962-9761501QCA,5962-9761501QC A SNJ54LVC14AJ,CDIP,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+5962-9761501QDA,5962-9761501QD A SNJ54LVC14AW,CFP,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+5962-9761501V2A,5962-9761501V2A SNV54LVC14AFK,LCCC,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+5962-9761501VCA,5962-9761501VC A SNV54LVC14AJ,CDIP,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+5962-9761501VDA,5962-9761501VD A SNV54LVC14AW,CFP,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14AD,LVC14A,SOIC,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14ADBR,LC14A,SSOP,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14ADBRE4,LC14A,SSOP,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14ADE4,LVC14A,SOIC,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14ADG4,LVC14A,SOIC,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14ADGVR,LC14A,TVSOP,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14ADR,LVC14A,SOIC,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14ADRE4,LVC14A,SOIC,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14ADRG3,LVC14A,SOIC,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14ADRG4,LVC14A,SOIC,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14ADT,LVC14A,SOIC,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14ANSR,LVC14A,SOP,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14APW,LC14A,TSSOP,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14APWG4,LC14A,TSSOP,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14APWR,LC14A,TSSOP,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14APWRE4,LC14A,TSSOP,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14APWRG3,LC14A,TSSOP,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14APWRG4,LC14A,TSSOP,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14APWT,LC14A,TSSOP,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14APWTG4,LC14A,TSSOP,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14ARGYR,LC14A,VQFN,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SN74LVC14ARGYRG4,LC14A,VQFN,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SNJ54LVC14AFK,5962-9761501Q2A SNJ54LVC14AFK,LCCC,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SNJ54LVC14AJ,5962-9761501QC A SNJ54LVC14AJ,CDIP,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+SNJ54LVC14AW,5962-9761501QD A SNJ54LVC14AW,CFP,,high,SN74LVC14APW_TexasInstruments_96_componentsearchengine.pdf,TexasInstruments
+74AHC541D,,SO20,Octal buffer/line driver; 3-state,high,74AHCT541PW_NEXPERIA_2_alldatasheet.pdf,NEXPERIA
+74AHCT541D,,SO20,Octal buffer/line driver; 3-state,high,74AHCT541PW_NEXPERIA_2_alldatasheet.pdf,NEXPERIA
+74AHC541PW,,TSSOP20,Octal buffer/line driver; 3-state,high,74AHCT541PW_NEXPERIA_2_alldatasheet.pdf,NEXPERIA
+74AHCT541PW,,TSSOP20,Octal buffer/line driver; 3-state,high,74AHCT541PW_NEXPERIA_2_alldatasheet.pdf,NEXPERIA
+74AHC541BQ,,DHVQFN20,Octal buffer/line driver; 3-state,high,74AHCT541PW_NEXPERIA_2_alldatasheet.pdf,NEXPERIA
+74AHCT541BQ,,DHVQFN20,Octal buffer/line driver; 3-state,high,74AHCT541PW_NEXPERIA_2_alldatasheet.pdf,NEXPERIA
+VC-820-EAW-KAAN-125M00000,,2.5 x 3.2 x 1.0mm,Crystal Oscillator (XO) is a quartz stabilized square wave generator with a CMOS output,high,VC-820-HAW-KAAN-125M000000_VectronInternational_24_componentsearchengine.pdf,VectronInternational
+VC-820-EAW-KAAN-125M000000_SNPB,,2.5 x 3.2 x 1.0mm,Crystal Oscillator (XO) is a quartz stabilized square wave generator with a CMOS output,high,VC-820-HAW-KAAN-125M000000_VectronInternational_24_componentsearchengine.pdf,VectronInternational
+Q13FC13500003xx,,,kHz Range Crystal unit,medium,Q13FC1350000300_SeikoEpsonCorporation_171_componentsearchengine.pdf,SeikoEpsonCorporation
+Q13FC1350000300,,,kHz Range Crystal unit,low,Q13FC1350000300_SeikoEpsonCorporation_171_componentsearchengine.pdf,SeikoEpsonCorporation
+LM74CIM-3,LM74 CIM3,SOIC,Temperature-to-digital converter,high,LM74CIMX-3_slash_NOPB__TexasInstruments_47_componentsearchengine.pdf,TexasInstruments
+LM74CIM-3/NOPB,LM74 CIM3,SOIC,Temperature-to-digital converter,high,LM74CIMX-3_slash_NOPB__TexasInstruments_47_componentsearchengine.pdf,TexasInstruments
+LM74CIM-5,LM74 CIM5,SOIC,Temperature-to-digital converter,high,LM74CIMX-3_slash_NOPB__TexasInstruments_47_componentsearchengine.pdf,TexasInstruments
+LM74CIM-5/NOPB,LM74 CIM5,SOIC,Temperature-to-digital converter,high,LM74CIMX-3_slash_NOPB__TexasInstruments_47_componentsearchengine.pdf,TexasInstruments
+LM74CIMX-3,LM74 CIM3,SOIC,Temperature-to-digital converter,high,LM74CIMX-3_slash_NOPB__TexasInstruments_47_componentsearchengine.pdf,TexasInstruments
+LM74CIMX-3/NOPB,LM74 CIM3,SOIC,Temperature-to-digital converter,high,LM74CIMX-3_slash_NOPB__TexasInstruments_47_componentsearchengine.pdf,TexasInstruments
+LM74CIMX-5/NOPB,LM74 CIM5,SOIC,Temperature-to-digital converter,high,LM74CIMX-3_slash_NOPB__TexasInstruments_47_componentsearchengine.pdf,TexasInstruments
+LM74CITP-3/NOPB,10,DSBGA,Temperature-to-digital converter,high,LM74CIMX-3_slash_NOPB__TexasInstruments_47_componentsearchengine.pdf,TexasInstruments
+LM74CITPX-3/NOPB,10,DSBGA,Temperature-to-digital converter,high,LM74CIMX-3_slash_NOPB__TexasInstruments_47_componentsearchengine.pdf,TexasInstruments
+1.5SMC6.8A,6V8A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC6.8CA,6V8C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC7.5A,7V5A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC7.5CA,7V5C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC8.2A,8V2A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC8.2CA,8V2C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC9.1A,9V1A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC9.1CA,9V1C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC10A,10A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC10CA,10C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC11A,11A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC11CA,11C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC12A,12A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC12CA,12C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC13A,13A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC13CA,13C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC15A,15A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC15CA,15C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC16A,16A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC16CA,16C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC18A,18A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC18CA,18C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC20A,20A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC20CA,20C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC22A,22A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC22CA,22C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC24A,24A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC24CA,24C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC27A,27A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC27CA,27C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC30A,30A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC30CA,30C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC33A,33A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC33CA,33C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC36A,36A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC36CA,36C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC39A,39A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC39CA,39C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC43A,43A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC43CA,43C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC47A,47A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC47CA,47C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC51A,51A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC51CA,51C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC56A,56A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC56CA,56C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC62A,62A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC62CA,62C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC68A,68A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC68CA,68C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC75A,75A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC75CA,75C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC82A,82A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC82CA,82C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC91A,91A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC91CA,91C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC100A,100A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC100CA,100C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC110A,110A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC110CA,110C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC120A,120A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC120CA,120C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC130A,130A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC130CA,130C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC150A,150A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC150CA,150C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC160A,160A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC160CA,160C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC170A,,SMC,,low,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC170CA,170C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC180A,180A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC180CA,180C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC220A,220A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC220CA,220C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC250A,,SMC,,low,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC250CA,,SMC,,low,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC300A,,SMC,,low,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC300CA,,SMC,,low,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC350A,350A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC350CA,,SMC,,low,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC380A,380A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC380CA,380C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC400A,400A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC400CA,400C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC440A,440A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC440CA,440C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC500A,,SMC,,low,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC500CA,500C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC520A,,SMC,,low,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC520CA,520C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC550A,550A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC550CA,550C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC600A,600A,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+1.5SMC600CA,600C,SMC,,high,1.5SMC350CA_LUGUANG_15_alldatasheet.pdf,LUGUANG
+MMBT2907ALT1G,,SOT-23 (Pb-Free),PNP switching transistor,high,MMBT2907ALT3G_onsemi_522_componentsearchengine.pdf,onsemi
+SMMBT2907ALT1G,,SOT-23 (Pb-Free),PNP switching transistor,high,MMBT2907ALT3G_onsemi_522_componentsearchengine.pdf,onsemi
+MMBT2907ALT3G,,SOT-23 (Pb-Free),PNP switching transistor,high,MMBT2907ALT3G_onsemi_522_componentsearchengine.pdf,onsemi
+SMMBT2907ALT3G,,SOT-23 (Pb-Free),PNP switching transistor,high,MMBT2907ALT3G_onsemi_522_componentsearchengine.pdf,onsemi
+SN74LVC1G3157DBVR,(CC55 ~ CC5F ~ CC5K ~ CC5R),SOT-23,,high,SN74LVC1G3157DBV_TI_0_alldatasheet.pdf,TI
+SN74LVC1G3157DCKR,(C55 ~ C5F ~ C5K ~ C5R),SC70,,high,SN74LVC1G3157DBV_TI_0_alldatasheet.pdf,TI
+SN74LVC1G3157DRLR,(C57 ~ C5R),SOT,,high,SN74LVC1G3157DBV_TI_0_alldatasheet.pdf,TI
+SN74LVC1G3157DRYR,C5,SON,,high,SN74LVC1G3157DBV_TI_0_alldatasheet.pdf,TI
+SN74LVC1G3157DSFR,C5,SON,,high,SN74LVC1G3157DBV_TI_0_alldatasheet.pdf,TI
+SN74LVC1G3157YZPR,(C57 ~ C5N),DSBGA,,high,SN74LVC1G3157DBV_TI_0_alldatasheet.pdf,TI
+74LVC1G3157DBVRG4,CC5F,SOT-23,,high,SN74LVC1G3157DBV_TI_0_alldatasheet.pdf,TI
+74LVC1G3157DCKRE4,(C55 ~ C5F ~ C5K ~ C5R),SC70,,high,SN74LVC1G3157DBV_TI_0_alldatasheet.pdf,TI
+74LVC1G3157DCKRG4,(C55 ~ C5F ~ C5K ~ C5R),SC70,,high,SN74LVC1G3157DBV_TI_0_alldatasheet.pdf,TI
+74LVC1G3157DRLRG4,(C57 ~ C5R),SOT,,high,SN74LVC1G3157DBV_TI_0_alldatasheet.pdf,TI
+74LVC1G3157DRYRG4,C5,SON,,high,SN74LVC1G3157DBV_TI_0_alldatasheet.pdf,TI
+CX2016DB19200D0FLJC1,,,Quartz Crystal,high,CX2016DB25000D0FLJC2.pdf
+CX2016DB24000D0FLJC6,,,Quartz Crystal,high,CX2016DB25000D0FLJC2.pdf
+CX2016DB24576D0FLJC1,,,Quartz Crystal,high,CX2016DB25000D0FLJC2.pdf
+CX2016DB25000D0FLJC2,,,Quartz Crystal,high,CX2016DB25000D0FLJC2.pdf
+CX2016DB26000D0FLJC4,,,Quartz Crystal,high,CX2016DB25000D0FLJC2.pdf
+CX2016DB27000D0FLJC1,,,Quartz Crystal,high,CX2016DB25000D0FLJC2.pdf
+CX2016DB30000D0FLJC1,,,Quartz Crystal,high,CX2016DB25000D0FLJC2.pdf
+CX2016DB38400D0FLJC2,,,Quartz Crystal,high,CX2016DB25000D0FLJC2.pdf
+CX2016DB48000D0FLJC1,,,Quartz Crystal,high,CX2016DB25000D0FLJC2.pdf
+TCAN1051DQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051DRBRQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051DRBTQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051DRQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GDQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GDRBRQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GDRBTQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GDRQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GVDQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GVDRBRQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GVDRBTQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GVDRQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HDQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HDRBRQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HDRBTQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HDRQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGDQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGDRBRQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGDRBTQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGDRQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGVDQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGVDRBRQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGVDRBTQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGVDRQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HVDRBRQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HVDRBTQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HVDRQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051VDQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051VDRBRQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051VDRBTQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051VDRQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+VIPER26LN,,DIP-7,,high,VIPER26LDTR_STMicroelectronics_19_componentsearchengine.pdf,STMicroelectronics
+VIPER26HN,,DIP-7,,high,VIPER26LDTR_STMicroelectronics_19_componentsearchengine.pdf,STMicroelectronics
+VIPER26HD,,SO16N,,high,VIPER26LDTR_STMicroelectronics_19_componentsearchengine.pdf,STMicroelectronics
+VIPER26HDTR,,SO16N,,high,VIPER26LDTR_STMicroelectronics_19_componentsearchengine.pdf,STMicroelectronics
+VIPER26LD,,SO16N,,high,VIPER26LDTR_STMicroelectronics_19_componentsearchengine.pdf,STMicroelectronics
+VIPER26LDTR,,SO16N,,high,VIPER26LDTR_STMicroelectronics_19_componentsearchengine.pdf,STMicroelectronics
+IRFR4615PbF,,D-PAK,,high,IRFR4615TRLPBF_InternationalRectifier_362_componentsearchengine.pdf,InternationalRectifier
+IRFR4615TRLPbF,,D-PAK,,high,IRFR4615TRLPBF_InternationalRectifier_362_componentsearchengine.pdf,InternationalRectifier
+IRFU4615PbF,,I-PAK,,high,IRFR4615TRLPBF_InternationalRectifier_362_componentsearchengine.pdf,InternationalRectifier
+SMCJ5.0(C)A,BDE,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ6.0(C)A,BDG,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ6.5(C)A,BDK,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ7.0(C)A,BDM,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ7.5(C)A,BDP,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ8.0(C)A,BDR,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ8.5(C)A,BDT,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ9.0(C)A,BDV,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ10(C)A,BDX,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ11(C)A,BDZ,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ12(C)A,BEE,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ13(C)A,BEG,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ14(C)A,BEK,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ15(C)A,BEM,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ16(C)A,BEP,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ17(C)A,BER,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ18(C)A,BET,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ20(C)A,BEV,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ22(C)A,BEX,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ24(C)A,BEZ,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ26(C)A,BFE,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ28(C)A,BFG,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ30(C)A,BFK,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ33(C)A,BFM,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ36(C)A,BFP,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ40(C)A,BFR,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ43(C)A,BFT,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ45(C)A,BFV,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ48(C)A,BFX,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ51(C)A,BFZ,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ54(C)A,BGE,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ58(C)A,BGG,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ60(C)A,BGK,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ64(C)A,BGM,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ70(C)A,BGP,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ75(C)A,BGR,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ78(C)A,BGT,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ85(C)A,BGV,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ90(C)A,BGX,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ100(C)A,BGZ,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ110(C)A,BHE,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ120(C)A,BHG,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ130(C)A,BHK,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ150(C)A,BHM,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ160(C)A,BHP,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ170(C)A,BHR,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ200(C)A,BHV,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+74LVC1G74DP,V74,TSSOP8,Single D-type flip-flop with set and reset; positive edge trigger,high,74LVC1G74DC_NXP_2_alldatasheet.pdf,NXP
+74LVC1G74DC,V74,VSSOP8,Single D-type flip-flop with set and reset; positive edge trigger,high,74LVC1G74DC_NXP_2_alldatasheet.pdf,NXP
+74LVC1G74GT,V74,XSON8,Single D-type flip-flop with set and reset; positive edge trigger,high,74LVC1G74DC_NXP_2_alldatasheet.pdf,NXP
+74LVC1G74GF,Y4,XSON8,Single D-type flip-flop with set and reset; positive edge trigger,high,74LVC1G74DC_NXP_2_alldatasheet.pdf,NXP
+74LVC1G74GD,V74,XSON8U,Single D-type flip-flop with set and reset; positive edge trigger,high,74LVC1G74DC_NXP_2_alldatasheet.pdf,NXP
+74LVC1G74GM,V74,XQFN8U,Single D-type flip-flop with set and reset; positive edge trigger,high,74LVC1G74DC_NXP_2_alldatasheet.pdf,NXP
+FUSB2805MLX,FUSB2805,"32-Terminal, Molded Leadless Package (MLP), Quad, JEDEC MO-220",,high,FUSB2805MLX_onsemi_271_componentsearchengine.pdf,onsemi
+PI3PCIE3212ZBE,,"20-contact, Very Thin Quad Flat No-Lead (TQFN)",,high,PI3PCIE3212ZBE_PericomSemiconductorCorporation_136_componentsearchengine.pdf,PericomSemiconductorCorporation

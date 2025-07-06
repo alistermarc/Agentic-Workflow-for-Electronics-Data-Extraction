@@ -1,5 +1,6 @@
 import csv
 import logging
+import shutil 
 import ssl
 from datetime import datetime
 from pathlib import Path
@@ -43,7 +44,7 @@ def main():
                 reason = f"File has {page_count} pages, exceeding the limit of 300."
                 logging.warning(f"SKIPPING '{pdf.name}': {reason}")
                 SKIPPED_LARGE_FILES_DIR.mkdir(exist_ok=True)
-                pdf.rename(SKIPPED_LARGE_FILES_DIR / pdf.name)
+                shutil.move(pdf, SKIPPED_LARGE_FILES_DIR / pdf.name)
                 logging.info(f"Moved large file to {SKIPPED_LARGE_FILES_DIR}")
                 continue
         except Exception as e:

@@ -6562,3 +6562,98 @@ LM4040EIM7,,"TO-92, SC70, SOT-23",,high,LM4040AIM3-2.5_slash_NOPB__TexasInstrume
 LM4040QCIM3,,"TO-92, SC70, SOT-23",,high,LM4040AIM3-2.5_slash_NOPB__TexasInstruments_27_componentsearchengine.pdf,TexasInstruments
 LM4040QDIM3,,"TO-92, SC70, SOT-23",,high,LM4040AIM3-2.5_slash_NOPB__TexasInstruments_27_componentsearchengine.pdf,TexasInstruments
 LM4040QEIM3,,"TO-92, SC70, SOT-23",,high,LM4040AIM3-2.5_slash_NOPB__TexasInstruments_27_componentsearchengine.pdf,TexasInstruments
+TCAN1051DQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051DRBRQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051DRBTQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051DRQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GDQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GDRBRQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GDRBTQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GDRQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GVDQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GVDRBRQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GVDRBTQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051GVDRQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HDQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HDRBRQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HDRBTQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HDRQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGDQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGDRBRQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGDRBTQ1,1051,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGDRQ1,1051,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGVDQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGVDRBRQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGVDRBTQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HGVDRQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HVDRBRQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HVDRBTQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051HVDRQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051VDQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051VDRBRQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051VDRBTQ1,1051V,SON,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+TCAN1051VDRQ1,1051V,SOIC,,high,TCAN1051GVDRQ1_TexasInstruments_179_componentsearchengine.pdf,TexasInstruments
+VIPER26LN,,DIP-7,,high,VIPER26LDTR_STMicroelectronics_19_componentsearchengine.pdf,STMicroelectronics
+VIPER26HN,,DIP-7,,high,VIPER26LDTR_STMicroelectronics_19_componentsearchengine.pdf,STMicroelectronics
+VIPER26HD,,SO16N,,high,VIPER26LDTR_STMicroelectronics_19_componentsearchengine.pdf,STMicroelectronics
+VIPER26HDTR,,SO16N,,high,VIPER26LDTR_STMicroelectronics_19_componentsearchengine.pdf,STMicroelectronics
+VIPER26LD,,SO16N,,high,VIPER26LDTR_STMicroelectronics_19_componentsearchengine.pdf,STMicroelectronics
+VIPER26LDTR,,SO16N,,high,VIPER26LDTR_STMicroelectronics_19_componentsearchengine.pdf,STMicroelectronics
+IRFR4615PbF,,D-PAK,,high,IRFR4615TRLPBF_InternationalRectifier_362_componentsearchengine.pdf,InternationalRectifier
+IRFR4615TRLPbF,,D-PAK,,high,IRFR4615TRLPBF_InternationalRectifier_362_componentsearchengine.pdf,InternationalRectifier
+IRFU4615PbF,,I-PAK,,high,IRFR4615TRLPBF_InternationalRectifier_362_componentsearchengine.pdf,InternationalRectifier
+SMCJ5.0(C)A,BDE,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ6.0(C)A,BDG,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ6.5(C)A,BDK,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ7.0(C)A,BDM,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ7.5(C)A,BDP,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ8.0(C)A,BDR,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ8.5(C)A,BDT,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ9.0(C)A,BDV,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ10(C)A,BDX,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ11(C)A,BDZ,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ12(C)A,BEE,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ13(C)A,BEG,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ14(C)A,BEK,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ15(C)A,BEM,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ16(C)A,BEP,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ17(C)A,BER,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ18(C)A,BET,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ20(C)A,BEV,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ22(C)A,BEX,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ24(C)A,BEZ,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ26(C)A,BFE,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ28(C)A,BFG,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ30(C)A,BFK,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ33(C)A,BFM,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ36(C)A,BFP,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ40(C)A,BFR,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ43(C)A,BFT,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ45(C)A,BFV,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ48(C)A,BFX,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ51(C)A,BFZ,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ54(C)A,BGE,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ58(C)A,BGG,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ60(C)A,BGK,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ64(C)A,BGM,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ70(C)A,BGP,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ75(C)A,BGR,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ78(C)A,BGT,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ85(C)A,BGV,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ90(C)A,BGX,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ100(C)A,BGZ,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ110(C)A,BHE,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ120(C)A,BHG,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ130(C)A,BHK,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ150(C)A,BHM,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ160(C)A,BHP,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ170(C)A,BHR,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+SMCJ200(C)A,BHV,SMC,,high,SMCJ12A-13-F_DiodesIncorporated_66_componentsearchengine.pdf,DiodesIncorporated
+74LVC1G74DP,V74,TSSOP8,Single D-type flip-flop with set and reset; positive edge trigger,high,74LVC1G74DC_NXP_2_alldatasheet.pdf,NXP
+74LVC1G74DC,V74,VSSOP8,Single D-type flip-flop with set and reset; positive edge trigger,high,74LVC1G74DC_NXP_2_alldatasheet.pdf,NXP
+74LVC1G74GT,V74,XSON8,Single D-type flip-flop with set and reset; positive edge trigger,high,74LVC1G74DC_NXP_2_alldatasheet.pdf,NXP
+74LVC1G74GF,Y4,XSON8,Single D-type flip-flop with set and reset; positive edge trigger,high,74LVC1G74DC_NXP_2_alldatasheet.pdf,NXP
+74LVC1G74GD,V74,XSON8U,Single D-type flip-flop with set and reset; positive edge trigger,high,74LVC1G74DC_NXP_2_alldatasheet.pdf,NXP
+74LVC1G74GM,V74,XQFN8U,Single D-type flip-flop with set and reset; positive edge trigger,high,74LVC1G74DC_NXP_2_alldatasheet.pdf,NXP
+FUSB2805MLX,FUSB2805,"32-Terminal, Molded Leadless Package (MLP), Quad, JEDEC MO-220",,high,FUSB2805MLX_onsemi_271_componentsearchengine.pdf,onsemi
+PI3PCIE3212ZBE,,"20-contact, Very Thin Quad Flat No-Lead (TQFN)",,high,PI3PCIE3212ZBE_PericomSemiconductorCorporation_136_componentsearchengine.pdf,PericomSemiconductorCorporation
