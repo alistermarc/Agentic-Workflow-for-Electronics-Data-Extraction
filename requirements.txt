@@ -2,6 +2,4 @@ openai
 groq
 docling
 langgraph
-tesseract
 accelerate
-PyPDF2

@@ -1,3 +1,4 @@
+# Standard Library
 import concurrent.futures
 import csv
 import logging
@@ -7,11 +8,12 @@ import ssl
 from datetime import datetime
 from pathlib import Path
 
+# Third-Party
 from dotenv import find_dotenv, load_dotenv
 from groq import Groq
 from openai import OpenAI
-from PyPDF2 import PdfReader
 
+# Local Application
 from config import (ANCHOR_MODEL_NAME, DOCUMENTS_DIR, FAILURE_LOG_PATH,
                     MODEL_NAME, PROCESSED_DIR, SKIPPED_LARGE_FILES_DIR)
 from graph_builder import build_graph
@@ -21,32 +23,23 @@ ssl._create_default_https_context = ssl._create_unverified_context
 
 logging.basicConfig(format="%(asctime)s [%(levelname)s] %(message)s", level=logging.INFO)
 
-MAX_WORKERS = os.cpu_count() or 4
+NUM_GPUS = 5
+MAX_WORKERS = (NUM_GPUS * 4)
 
-def process_single_pdf(pdf_path: Path):
+
+def process_single_pdf(pdf_path: Path, gpu_id: int):
     """
     This function encapsulates the entire workflow for processing a single PDF file.
-    It will be executed by each worker process in the pool.
+    It is assigned a specific GPU to use.
     """
+    os.environ['CUDA_VISIBLE_DEVICES'] = str(gpu_id)
+    logging.info(f"Worker for {pdf_path.name} assigned to GPU: {gpu_id}")
+
     if (PROCESSED_DIR / pdf_path.name).exists():
         logging.info(f"Skipping already processed file: {pdf_path.name}")
         return
 
     logging.info(f"Starting processing for: {pdf_path.name}")
-
-    try:
-        reader = PdfReader(pdf_path)
-        page_count = len(reader.pages)
-        if page_count > 500:
-            reason = f"File has {page_count} pages, exceeding the limit of 500."
-            logging.warning(f"SKIPPING '{pdf_path.name}': {reason}")
-            SKIPPED_LARGE_FILES_DIR.mkdir(exist_ok=True)
-            shutil.move(pdf_path, SKIPPED_LARGE_FILES_DIR / pdf_path.name)
-            logging.info(f"Moved large file to {SKIPPED_LARGE_FILES_DIR}")
-            return
-    except Exception as e:
-        logging.error(f"Failed to read {pdf_path.name}: {e}")
-        log_failure(pdf_path, e)
 
     try:
         client = Groq()
@@ -74,10 +67,15 @@ def process_single_pdf(pdf_path: Path):
 
 def main():
     """
-    Main function to manage the batch processing of PDF documents.
-    It finds all PDFs and distributes them to a pool of worker processes.
+    Main function to manage the batch processing of PDF documents across multiple GPUs.
     """
     load_dotenv(find_dotenv())
+
+    if NUM_GPUS == 0:
+        logging.error("No GPUs found. Please ensure PyTorch and CUDA are set up correctly. Exiting.")
+        return
+    
+    logging.info(f"Found {NUM_GPUS} GPUs. Distributing work accordingly.")
 
     all_pdfs = list(Path(DOCUMENTS_DIR).glob("*.pdf"))
     logging.info(f"Found {len(all_pdfs)} total PDFs in the documents directory.")
@@ -86,14 +84,19 @@ def main():
         logging.info("No PDFs to process. Exiting.")
         return
 
-    file_limit = 700
+    file_limit = 4000
     files_to_process = all_pdfs[:file_limit]
     logging.info(f"Processing up to {len(files_to_process)} files due to limit of {file_limit}.")
 
     with concurrent.futures.ProcessPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        logging.info(f"Starting PDF processing with {MAX_WORKERS} parallel workers...")
+        logging.info(f"Starting PDF processing with {MAX_WORKERS} parallel workers across {NUM_GPUS} GPUs...")
 
-        future_to_pdf = {executor.submit(process_single_pdf, pdf): pdf for pdf in files_to_process}
+        future_to_pdf = {}
+        for i, pdf in enumerate(files_to_process):
+            # Assign a GPU to each task in a round-robin fashion
+            gpu_id_to_use = i % NUM_GPUS
+            future = executor.submit(process_single_pdf, pdf, gpu_id_to_use)
+            future_to_pdf[future] = pdf
 
         for future in concurrent.futures.as_completed(future_to_pdf):
             pdf = future_to_pdf[future]

@@ -34,7 +34,6 @@ def setup_converter() -> DocumentConverter:
     opts.generate_page_images = True    # Generate images for each page in the PDF.
     opts.generate_picture_images = True   # Generate images for pictures in the PDF.
     opts.ocr_options = EasyOcrOptions()   # Use EasyOCR for text extraction from images.
-    # opts.ocr_options = TesseractCliOcrOptions(force_full_page_ocr=True)
     opts.accelerator_options = AcceleratorOptions(device=AcceleratorDevice.CUDA, num_threads=4)
     opts.ocr_options.lang = ["en"]  # Set the OCR language to English.
 
