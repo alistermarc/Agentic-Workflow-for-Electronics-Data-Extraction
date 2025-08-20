@@ -1,4 +1,4 @@
-# 🧠 Agentic Workflow for Electronics Data Extraction
+# 🧠 Automated Workflow for Electronics Data Extraction
 
 This project implements a robust agentic workflow for extracting structured information (e.g., MPNs, descriptions, packaging, markings) from unstructured electronics datasheets (PDFs). It uses a combination of OCR, markdown conversion, chunking, and LLM-driven parsing in a graph-based pipeline.
 
